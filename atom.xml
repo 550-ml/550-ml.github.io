@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>WT de Blog</title>
   <icon>http://550-ml.github.io/icon.png</icon>
-  <subtitle>奔赴山海，保持热爱</subtitle>
+  <subtitle>WT の Blog</subtitle>
   <link href="http://550-ml.github.io/atom.xml" rel="self"/>
   
   <link href="http://550-ml.github.io/"/>
