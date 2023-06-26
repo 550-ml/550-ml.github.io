@@ -6,7 +6,7 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
+    <title>my_test</title>
     <url>/2023/06/26/hexo-github-bo-ke-da-jian/</url>
     <content><![CDATA[<p><a name="uNA7B"></a></p>
 <h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>略，等我想写再写吧<br><a name="HQvUC"></a></p>
@@ -32,7 +32,9 @@ date: 2019-08-10 21:44:44
 <h5 id="2-2-tags页面"><a href="#2-2-tags页面" class="headerlink" title="2.2 tags页面"></a>2.2 tags页面</h5><p>在<code> git bath here</code>用以下命令创建tags</p>
 <pre><code>hexo new page "tags"
 </code></pre>
-<p>编辑刚刚创建的<code> hexo new page "tags"</code>页面<br>`` </p>
+<p>编辑刚刚创建的<code> hexo new page "tags"</code>页面<br> ···</p>
+<pre><code>啊啊啊
+</code></pre>
 ]]></content>
   </entry>
   <entry>
