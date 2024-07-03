@@ -31,6 +31,9 @@ date: 2019-08-10 21:44:44
 <pre><code>啊啊啊
 </code></pre>
 ]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
   </entry>
   <entry>
     <title>MarkDown</title>
@@ -102,69 +105,34 @@ date: 2019-08-10 21:44:44
 <p><a name="jJSb9"></a></p>
 <h2 id="15-分割线"><a href="#15-分割线" class="headerlink" title="15.分割线"></a>15.分割线</h2><p><code>*** 或 ——————</code>就可以了</p>
 ]]></content>
+      <categories>
+        <category>基础语法</category>
+      </categories>
+      <tags>
+        <tag>语法</tag>
+        <tag>MarkDown</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/1970/01/01/markdown-yu-fa/</url>
-    <content><![CDATA[<h2 id="0-写markdown要用半角标点"><a href="#0-写markdown要用半角标点" class="headerlink" title="0.写markdown要用半角标点"></a>0.写markdown要用半角标点</h2><h2 id="1-标题-注意：标点符号后面要加空格-space就是标题"><a href="#1-标题-注意：标点符号后面要加空格-space就是标题" class="headerlink" title="1.标题 注意：标点符号后面要加空格 # + space就是标题"></a>1.标题 注意：标点符号后面要加空格 # + space就是标题</h2><pre><code># 一级标题
-## 二级标题
+    <url>/2023/06/26/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
 </code></pre>
-<h2 id="2-强调-用-或者-结尾要加一个空格"><a href="#2-强调-用-或者-结尾要加一个空格" class="headerlink" title="2. 强调 [用** 或者_]结尾要加一个空格"></a>2. 强调 [用** 或者_]结尾要加一个空格</h2><p><strong>北京</strong>这就是强i到<br><strong>bejing</strong>这也是强调<br><strong>ctrl+B</strong>也可以是强调</p>
-<h2 id="3-斜体-一个-或者是"><a href="#3-斜体-一个-或者是" class="headerlink" title="3. 斜体[一个*或者是_]"></a>3. 斜体[一个*或者是_]</h2><p><em>斜体</em></p>
-<pre class=" language-Python"><code class="language-Python">这个地方做一个总结
-*斜体*
-**加粗**
-***斜体加加粗*** 
-注意空格
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
 </code></pre>
-<pre class=" language-bash"><code class="language-bash">$ hexo generate
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
 </code></pre>
-<h2 id="4-删除线-两个波浪线"><a href="#4-删除线-两个波浪线" class="headerlink" title="4.删除线[~~两个波浪线]"></a>4.删除线[~~两个波浪线]</h2><p><del>我宣布个事</del>删除了</p>
-<h2 id="5-高亮-试一下高亮"><a href="#5-高亮-试一下高亮" class="headerlink" title="5.高亮[试一下高亮]"></a>5.高亮[试一下高亮]</h2><p>语法就是<code>==</code> </p>
-<h2 id="6-代码-用-96-包围"><a href="#6-代码-用-96-包围" class="headerlink" title="6.代码[用`包围]"></a>6.代码[用`包围]</h2><p><code>zheshiyigedaima</code>代码成功了</p>
-<h2 id="7-代码块-用-96-96-96-回车"><a href="#7-代码块-用-96-96-96-回车" class="headerlink" title="7.代码块[ 用```+回车]"></a>7.代码块[ 用```+回车]</h2><h2 id="8-引用-gt-空格-回车"><a href="#8-引用-gt-空格-回车" class="headerlink" title="8.引用[ >+空格+回车]"></a>8.引用[ &gt;+空格+回车]</h2><blockquote>
-<p>这就是一个引用</p>
-</blockquote>
-<h2 id="9-列表-space-Tab往后缩进-enter往前缩进"><a href="#9-列表-space-Tab往后缩进-enter往前缩进" class="headerlink" title="9.列表[- +space][Tab往后缩进][enter往前缩进]"></a>9.列表[- +space][Tab往后缩进][enter往前缩进]</h2><ul>
-<li>这就是第一个缩进,加粗怎么说<strong>加粗</strong>然后斜体_就我用的最多<strong>加粗且斜体</strong>_<del>删除线</del>怎么说还有高亮<ul>
-<li>还挺是为</li>
-</ul>
-</li>
-<li>这不就行了<ul>
-<li>没什么问题</li>
-</ul>
-</li>
-</ul>
-<h2 id="10-有序列表-1-space即可"><a href="#10-有序列表-1-space即可" class="headerlink" title="10.有序列表[1 . space即可]"></a>10.有序列表[1 . space即可]</h2><h2 id="11-上下标"><a href="#11-上下标" class="headerlink" title="11.上下标[^,~]"></a>11.上下标[^,~]</h2><p>27788哈哈哈22<br>H2o水怎么说</p>
-<h2 id="11-链接"><a href="#11-链接" class="headerlink" title="11. 链接[[]+()]"></a>11. 链接[[]+()]</h2><p><a href="http">来看看word</a></p>
-<h2 id="13-任务列表-x"><a href="#13-任务列表-x" class="headerlink" title="13.任务列表[[]  [x]]"></a>13.任务列表[[]  [x]]</h2><ul>
-<li><input checked="" disabled="" type="checkbox"> </li>
-</ul>
-<h2 id="14-表格"><a href="#14-表格" class="headerlink" title="14.表格"></a>14.表格</h2><table>
-<thead>
-<tr>
-<th>学号</th>
-<th>姓名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>这一行是对齐方式</th>
-<th>:—:</th>
-</tr>
-</thead>
-<tbody><tr>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
   </entry>
   <entry>
     <title>Vim</title>
@@ -242,23 +210,12 @@ date: 2019-08-10 21:44:44
 <h3 id="E-粘贴到上一行、下一行：p-P"><a href="#E-粘贴到上一行、下一行：p-P" class="headerlink" title="[E]粘贴到上一行、下一行：p``P"></a>[E]粘贴到上一行、下一行：<code>p``P</code></h3><p><code>dd</code>+<code>p</code>：删除，加入到缓冲区，put放置<br><a name="ApR8p"></a></p>
 <h3 id="当前行置顶，zt-zz-zb"><a href="#当前行置顶，zt-zz-zb" class="headerlink" title="当前行置顶，zt``zz``zb"></a>当前行置顶，<code>zt``zz``zb</code></h3><p><a name="iYG9p"></a></p>
 <h3 id="缩进：-lt-gt"><a href="#缩进：-lt-gt" class="headerlink" title="缩进：<``>"></a>缩进：<code>&lt;``&gt;</code></h3>]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/06/25/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
+      <categories>
+        <category>基础语法</category>
+      </categories>
+      <tags>
+        <tag>语法</tag>
+        <tag>Vim</tag>
+      </tags>
   </entry>
 </search>
