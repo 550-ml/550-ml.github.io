@@ -6,7 +6,7 @@
   <link href="http://550-ml.github.io/atom.xml" rel="self"/>
   
   <link href="http://550-ml.github.io/"/>
-  <updated>2023-06-26T12:01:34.275Z</updated>
+  <updated>2024-07-03T12:03:47.748Z</updated>
   <id>http://550-ml.github.io/</id>
   
   <author>
@@ -17,11 +17,55 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>my_test</title>
+    <title>MarkDown</title>
+    <link href="http://550-ml.github.io/2024/07/03/markdown/"/>
+    <id>http://550-ml.github.io/2024/07/03/markdown/</id>
+    <published>2024-07-03T06:31:39.000Z</published>
+    <updated>2024-07-03T12:03:47.748Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a name=&quot;ixfyf&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;0-写markdown要用半角标点&quot;&gt;&lt;a href=&quot;#0-写markdown要用半角标点&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Vim</title>
+    <link href="http://550-ml.github.io/2024/07/03/vim/"/>
+    <id>http://550-ml.github.io/2024/07/03/vim/</id>
+    <published>2024-07-03T06:31:39.000Z</published>
+    <updated>2024-07-03T12:05:01.571Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a name=&quot;ZiI1U&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;批量修改：选中修改行-：s-old-new-g&quot;&gt;&lt;a href=&quot;#批量修改：选中修改行-：s-old-new-g&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>模板</title>
     <link href="http://550-ml.github.io/2023/06/26/hexo-github-bo-ke-da-jian/"/>
     <id>http://550-ml.github.io/2023/06/26/hexo-github-bo-ke-da-jian/</id>
     <published>2023-06-26T06:31:39.000Z</published>
-    <updated>2023-06-26T12:01:34.275Z</updated>
+    <updated>2024-07-03T12:01:27.340Z</updated>
     
     
       
@@ -32,19 +76,6 @@
 &lt;h2 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h2&gt;&lt;p&gt;略，等我想写再写吧&lt;br&gt;&lt;a</summary>
         
       
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>my_test</title>
-    <link href="http://550-ml.github.io/2023/06/26/my-test/"/>
-    <id>http://550-ml.github.io/2023/06/26/my-test/</id>
-    <published>2023-06-26T06:31:39.000Z</published>
-    <updated>2023-06-26T06:31:39.667Z</updated>
-    
     
     
     
