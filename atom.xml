@@ -45,6 +45,33 @@
   </entry>
   
   <entry>
+    <title>Shell第二节</title>
+    <link href="http://550-ml.github.io/2024/07/04/shell-di-er-jie/"/>
+    <id>http://550-ml.github.io/2024/07/04/shell-di-er-jie/</id>
+    <published>2024-07-04T06:31:39.000Z</published>
+    <updated>2024-07-04T05:17:08.336Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;shell脚本&quot;&gt;&lt;a href=&quot;#shell脚本&quot; class=&quot;headerlink&quot; title=&quot;shell脚本&quot;&gt;&lt;/a&gt;shell脚本&lt;/h2&gt;&lt;h3 id=&quot;一、变量赋值的方式&quot;&gt;&lt;a href=&quot;#一、变量赋值的方式&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="基础语法" scheme="http://550-ml.github.io/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+    
+    <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+    <category term="Shell" scheme="http://550-ml.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Shell</title>
     <link href="http://550-ml.github.io/2024/07/04/shell/"/>
     <id>http://550-ml.github.io/2024/07/04/shell/</id>
@@ -97,33 +124,6 @@
     <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
     <category term="Tmux" scheme="http://550-ml.github.io/tags/Tmux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shell第二节</title>
-    <link href="http://550-ml.github.io/2024/07/04/shell-di-er-jie/"/>
-    <id>http://550-ml.github.io/2024/07/04/shell-di-er-jie/</id>
-    <published>2024-07-04T06:31:39.000Z</published>
-    <updated>2024-07-04T05:17:08.336Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;shell脚本&quot;&gt;&lt;a href=&quot;#shell脚本&quot; class=&quot;headerlink&quot; title=&quot;shell脚本&quot;&gt;&lt;/a&gt;shell脚本&lt;/h2&gt;&lt;h3 id=&quot;一、变量赋值的方式&quot;&gt;&lt;a href=&quot;#一、变量赋值的方式&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="基础语法" scheme="http://550-ml.github.io/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
-    
-    
-    <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
-    
-    <category term="Shell" scheme="http://550-ml.github.io/tags/Shell/"/>
     
   </entry>
   

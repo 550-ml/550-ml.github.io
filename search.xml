@@ -1,39 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>模板</title>
-    <url>/2023/06/26/hexo-github-bo-ke-da-jian/</url>
-    <content><![CDATA[<p><a name="uNA7B"></a></p>
-<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>略，等我想写再写吧<br><a name="HQvUC"></a></p>
-<h2 id="二、定制搭建过程"><a href="#二、定制搭建过程" class="headerlink" title="二、定制搭建过程"></a>二、定制搭建过程</h2><p><a name="TtafO"></a></p>
-<h3 id="1-Hexo本身文件配置"><a href="#1-Hexo本身文件配置" class="headerlink" title="1. Hexo本身文件配置"></a>1. Hexo本身文件配置</h3><p><a name="caZdc"></a></p>
-<h4 id="1-1-Hexo基本配置"><a href="#1-1-Hexo基本配置" class="headerlink" title="1.1 Hexo基本配置"></a>1.1 Hexo基本配置</h4><p><a name="Xs1KB"></a></p>
-<h5 id="1-1-1-网址"><a href="#1-1-1-网址" class="headerlink" title="1.1.1 网址"></a>1.1.1 网址</h5><p><a href="https://hexo.io/zh-cn/docs/permalinks">永久链接</a>看这个可以学会改参数<br><a name="CSd5T"></a></p>
-<h5 id="1-1-2-Front-matter"><a href="#1-1-2-Front-matter" class="headerlink" title="1.1.2 Front-matter"></a>1.1.2 Front-matter</h5><p>Front-matter 是md文件最上方以 —分隔的区域，用于指定个别文件的变量，举例来说：</p>
-<pre><code>title: Hexo+Github博客搭建记录
-date: 2019-08-10 21:44:44
+    <title>Git</title>
+    <url>/2024/07/04/git/</url>
+    <content><![CDATA[<p><a name="ubm5W"></a></p>
+<h2 id="一、Git的数据模型"><a href="#一、Git的数据模型" class="headerlink" title="一、Git的数据模型"></a>一、Git的数据模型</h2><p><a name="PLXpU"></a></p>
+<h3 id="快照"><a href="#快照" class="headerlink" title="快照"></a>快照</h3><p>把目录称之为“树”，文件叫做Blob对象<br><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1693898808150-2cdb9aab-0e42-41c1-9f42-c7376c6d857d.png#averageHue=%23f3f3f3&amp;clientId=ub47429f8-47a0-4&amp;from=paste&amp;height=175&amp;id=u3603191d&amp;originHeight=219&amp;originWidth=725&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=17592&amp;status=done&amp;style=none&amp;taskId=uf853008c-bfa2-4fea-8af4-2708d39a1a9&amp;title=&amp;width=580" alt="image.png"><br><code>folder-tree</code><br><a name="Lvda4"></a></p>
+<h3 id="历史记录建模：关联快照"><a href="#历史记录建模：关联快照" class="headerlink" title="历史记录建模：关联快照"></a>历史记录建模：关联快照</h3><p>有向无环图<br><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1693899282047-416b5a81-8e61-4537-b818-cfa2e3d3a4d8.png#averageHue=%23f7f7f7&amp;clientId=ub47429f8-47a0-4&amp;from=paste&amp;height=109&amp;id=u7138cbd6&amp;originHeight=136&amp;originWidth=725&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=4095&amp;status=done&amp;style=none&amp;taskId=u0bac6b82-36ac-4ed6-b77b-512f9466806&amp;title=&amp;width=580" alt="image.png"><br><a name="xxfK9"></a></p>
+<h3 id="数据模型及伪代码表示"><a href="#数据模型及伪代码表示" class="headerlink" title="数据模型及伪代码表示"></a>数据模型及伪代码表示</h3><pre class=" language-python"><code class="language-python">type blob <span class="token operator">=</span> array<span class="token operator">&lt;</span>byte<span class="token operator">></span> 一个file就是一堆字节流
+type tree <span class="token operator">=</span> map<span class="token operator">&lt;</span>string<span class="token punctuation">,</span> tree<span class="token operator">|</span> blob<span class="token operator">></span>  tree映射的就是文件
+type commit <span class="token operator">=</span> struct<span class="token punctuation">{</span>
+    parent array<span class="token operator">&lt;</span>commit<span class="token operator">></span>
+    auther
+    message<span class="token punctuation">:</span> string
+    snapshot<span class="token punctuation">:</span> tree
+<span class="token punctuation">}</span> 每一次的快照称作commit<span class="token punctuation">,</span>记录
 </code></pre>
-<p>参数描述</p>
-<ul>
-<li>layout布局</li>
-<li>title标题</li>
-</ul>
-<p>date建立日期updated更新日期comments开启文章的评论功能tags标签（不适用于分页）categories分类（不适用于分页）permalink覆盖文章网址<br><a name="fmv1m"></a></p>
-<h3 id="2-Theme"><a href="#2-Theme" class="headerlink" title="2.Theme"></a>2.Theme</h3><p><a name="PuHMZ"></a></p>
-<h5 id="2-1-切换主题"><a href="#2-1-切换主题" class="headerlink" title="2.1 切换主题"></a>2.1 切换主题</h5><blockquote>
-<p>首先需要明白什么是站点配置文件，什么是主题配置文件，站点配置文件就是根目录下的配置文件，主图配置文件就是主题的文件` </p>
-</blockquote>
-<p><a name="E7VcE"></a></p>
-<h5 id="2-2-tags页面"><a href="#2-2-tags页面" class="headerlink" title="2.2 tags页面"></a>2.2 tags页面</h5><p>在<code> git bath here</code>用以下命令创建tags</p>
-<pre><code>hexo new page "tags"
+<p><a name="K4knU"></a></p>
+<h3 id="对象和内存寻址"><a href="#对象和内存寻址" class="headerlink" title="对象和内存寻址"></a>对象和内存寻址</h3><p>哈希函数：把一堆数据转变成一个短的字符<br>Git的对象：上面已经说了三种<br>object表</p>
+<pre class=" language-python"><code class="language-python">objects <span class="token operator">=</span> map<span class="token operator">&lt;</span>string<span class="token punctuation">,</span> object<span class="token operator">></span>
+
+<span class="token keyword">def</span> <span class="token function">store</span><span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    id <span class="token operator">=</span> sha1<span class="token punctuation">(</span>object<span class="token punctuation">)</span>
+    objects<span class="token punctuation">[</span>id<span class="token punctuation">]</span> <span class="token operator">=</span> object
+
+<span class="token keyword">def</span> <span class="token function">load</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> objects<span class="token punctuation">[</span>id<span class="token punctuation">]</span>
 </code></pre>
-<p>编辑刚刚创建的<code> hexo new page "tags"</code>页面<br> ···</p>
-<pre><code>啊啊啊
-</code></pre>
-]]></content>
+<p><a name="yUjiw"></a></p>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>维护一组引用<br>Git 的解决方法是给这些哈希值赋予人类可读的名字，也就是引用（references）。引用是指向提交的指针。与对象不同的是，它是可变的（引用可以被更新，指向新的提交）。例如，master 引用通常会指向主分支的最新一次提交。	<br><a name="enrki"></a></p>
+<h2 id="二、Git的命令行接口"><a href="#二、Git的命令行接口" class="headerlink" title="二、Git的命令行接口"></a>二、Git的命令行接口</h2><p><a name="ZYDKW"></a></p>
+<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>-<code>git diff &lt;filename&gt;</code>：显示与暂存区的文件差异<br>-<code>git add -A</code>：添加所有的修改文件到暂存区、<br>-<code>git commit</code>：提交文件，<code>^X+Y+</code>enter`退出</p>
+<p><a name="praCx"></a></p>
+<h3 id="分支和合并"><a href="#分支和合并" class="headerlink" title="分支和合并"></a>分支和合并</h3><p>-<code>git branch &lt;name&gt;</code>：创建分支<br>-<code>git checkout &lt;name&gt;</code>：切换分支<br>-<code>git checkout -b &lt;name&gt;</code>：创建分支并切换到分支<br><a name="ncnNf"></a></p>
+<h3 id="远端操作"><a href="#远端操作" class="headerlink" title="远端操作"></a>远端操作</h3><p>-<code>git remote</code>：列出远端<br>-<code>git clone</code>：克隆仓库<br>-<code>git remote add name usl</code>：添加新的远程<br>-<code>git push &lt;remote&gt; &lt;local branch&gt;:&lt;remote branch&gt;</code>：将对象传送至远端并更新远端引用</p>
+<p><a name="YJQte"></a></p>
+<h2 id="三、gitignore-怎么写"><a href="#三、gitignore-怎么写" class="headerlink" title="三、gitignore 怎么写"></a>三、gitignore 怎么写</h2><p><a name="ksVUT"></a></p>
+<h3 id="3-1-一个文件或者文件夹"><a href="#3-1-一个文件或者文件夹" class="headerlink" title="3.1 一个文件或者文件夹"></a>3.1 一个文件或者文件夹</h3><p><a name="KnpLm"></a></p>
+<h3 id="3-2-特定的文件或者文件夹"><a href="#3-2-特定的文件或者文件夹" class="headerlink" title="3.2 特定的文件或者文件夹"></a>3.2 特定的文件或者文件夹</h3><p><code>img*</code><br><code>*.md</code><br># 忽略所有 .md 文件<br>.md</p>
+<h1 id="不忽略-README-md-文件-README-md"><a href="#不忽略-README-md-文件-README-md" class="headerlink" title="不忽略 README.md 文件!README.md"></a>不忽略 README.md 文件<br>!README.md</h1>]]></content>
       <categories>
-        <category>测试</category>
+        <category>基础语法</category>
       </categories>
+      <tags>
+        <tag>语法</tag>
+        <tag>Git</tag>
+      </tags>
   </entry>
   <entry>
     <title>MarkDown</title>
@@ -114,155 +126,65 @@ date: 2019-08-10 21:44:44
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/06/26/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+    <title>模板</title>
+    <url>/2023/06/26/hexo-github-bo-ke-da-jian/</url>
+    <content><![CDATA[<p><a name="uNA7B"></a></p>
+<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>略，等我想写再写吧<br><a name="HQvUC"></a></p>
+<h2 id="二、定制搭建过程"><a href="#二、定制搭建过程" class="headerlink" title="二、定制搭建过程"></a>二、定制搭建过程</h2><p><a name="TtafO"></a></p>
+<h3 id="1-Hexo本身文件配置"><a href="#1-Hexo本身文件配置" class="headerlink" title="1. Hexo本身文件配置"></a>1. Hexo本身文件配置</h3><p><a name="caZdc"></a></p>
+<h4 id="1-1-Hexo基本配置"><a href="#1-1-Hexo基本配置" class="headerlink" title="1.1 Hexo基本配置"></a>1.1 Hexo基本配置</h4><p><a name="Xs1KB"></a></p>
+<h5 id="1-1-1-网址"><a href="#1-1-1-网址" class="headerlink" title="1.1.1 网址"></a>1.1.1 网址</h5><p><a href="https://hexo.io/zh-cn/docs/permalinks">永久链接</a>看这个可以学会改参数<br><a name="CSd5T"></a></p>
+<h5 id="1-1-2-Front-matter"><a href="#1-1-2-Front-matter" class="headerlink" title="1.1.2 Front-matter"></a>1.1.2 Front-matter</h5><p>Front-matter 是md文件最上方以 —分隔的区域，用于指定个别文件的变量，举例来说：</p>
+<pre><code>title: Hexo+Github博客搭建记录
+date: 2019-08-10 21:44:44
 </code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
+<p>参数描述</p>
+<ul>
+<li>layout布局</li>
+<li>title标题</li>
+</ul>
+<p>date建立日期updated更新日期comments开启文章的评论功能tags标签（不适用于分页）categories分类（不适用于分页）permalink覆盖文章网址<br><a name="fmv1m"></a></p>
+<h3 id="2-Theme"><a href="#2-Theme" class="headerlink" title="2.Theme"></a>2.Theme</h3><p><a name="PuHMZ"></a></p>
+<h5 id="2-1-切换主题"><a href="#2-1-切换主题" class="headerlink" title="2.1 切换主题"></a>2.1 切换主题</h5><blockquote>
+<p>首先需要明白什么是站点配置文件，什么是主题配置文件，站点配置文件就是根目录下的配置文件，主图配置文件就是主题的文件` </p>
+</blockquote>
+<p><a name="E7VcE"></a></p>
+<h5 id="2-2-tags页面"><a href="#2-2-tags页面" class="headerlink" title="2.2 tags页面"></a>2.2 tags页面</h5><p>在<code> git bath here</code>用以下命令创建tags</p>
+<pre><code>hexo new page "tags"
 </code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
+<p>编辑刚刚创建的<code> hexo new page "tags"</code>页面<br> ···</p>
+<pre><code>啊啊啊
 </code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
         <category>测试</category>
       </categories>
   </entry>
   <entry>
-    <title>Vim</title>
-    <url>/2024/07/03/vim/</url>
-    <content><![CDATA[<p><a name="ZiI1U"></a></p>
-<h2 id="批量修改：选中修改行-：s-old-new-g"><a href="#批量修改：选中修改行-：s-old-new-g" class="headerlink" title="批量修改：选中修改行+：s/old/new/g"></a>批量修改：<code>选中修改行</code>+<code>：s/old/new/g</code></h2><p><a name="fnHzu"></a></p>
-<h2 id="回退到上一次修改的位置：-96-96-96-2"><a href="#回退到上一次修改的位置：-96-96-96-2" class="headerlink" title="回退到上一次修改的位置：```*2"></a>回退到上一次修改的位置：```*2</h2><p><a name="VwGCk"></a></p>
-<h2 id="在行后添加分号：A-；"><a href="#在行后添加分号：A-；" class="headerlink" title="在行后添加分号：A+；"></a>在行后添加分号：<code>A</code>+<code>；</code></h2><p><a name="wDXai"></a></p>
-<h2 id="插入头文件再返回：gg-O"><a href="#插入头文件再返回：gg-O" class="headerlink" title="插入头文件再返回：gg+O"></a>插入头文件再返回：<code>gg</code>+<code>O</code></h2><p><a name="p0Nnx"></a></p>
-<h2 id="修改if中的内容：ciw-co-quot-da-quot"><a href="#修改if中的内容：ciw-co-quot-da-quot" class="headerlink" title="修改if中的内容：ciw``co&quot;``da&quot;"></a>修改if中的内容：<code>ciw``co"``da"</code></h2><p><a name="q8Ghj"></a></p>
-<h2 id="复制全文：yae"><a href="#复制全文：yae" class="headerlink" title="复制全文：yae"></a>复制全文：<code>yae</code></h2><p><a name="I7GEU"></a></p>
-<h2 id="修改变量名：-选中所有，ciw修改，-重复操作的宏"><a href="#修改变量名：-选中所有，ciw修改，-重复操作的宏" class="headerlink" title="修改变量名：*选中所有，ciw修改，.重复操作的宏"></a>修改变量名：<code>*</code>选中所有，<code>ciw</code>修改，<code>.</code>重复操作的宏</h2><p><a name="euDlJ"></a></p>
-<h2 id="进入一次normal模式：-o"><a href="#进入一次normal模式：-o" class="headerlink" title="进入一次normal模式：^o"></a>进入一次normal模式：<code>^o</code></h2><p><a name="QvOLG"></a></p>
-<h2 id="匹配修改：：s-touch-toch-g"><a href="#匹配修改：：s-touch-toch-g" class="headerlink" title="匹配修改：：s/touch/toch/g"></a>匹配修改：<code>：s/touch/toch/g</code></h2><p><a name="Kxgxe"></a></p>
-<h2 id="匹配到行首："><a href="#匹配到行首：" class="headerlink" title="匹配到行首：^"></a>匹配到行首：^</h2><p><a name="dKVX5"></a></p>
-<h2 id="快速跳转：17gg"><a href="#快速跳转：17gg" class="headerlink" title="快速跳转：17gg"></a>快速跳转：17<code>gg</code></h2><p><a name="DkCrb"></a></p>
-<h2 id="缩进：-gt"><a href="#缩进：-gt" class="headerlink" title="缩进：>"></a>缩进：<code>&gt;</code></h2><p><a name="R7u5n"></a></p>
-<h2 id="一、vscode快捷键"><a href="#一、vscode快捷键" class="headerlink" title="一、vscode快捷键"></a>一、vscode快捷键</h2><p>^C+B:<br>^C+P<br>^C+Shift+P<br>^C+1<br>^C+,<br><a name="cbVVG"></a></p>
-<h2 id="二、术语"><a href="#二、术语" class="headerlink" title="二、术语"></a>二、术语</h2><hr>
+    <title>Shell第二节</title>
+    <url>/2024/07/04/shell-di-er-jie/</url>
+    <content><![CDATA[<h2 id="shell脚本"><a href="#shell脚本" class="headerlink" title="shell脚本"></a>shell脚本</h2><h3 id="一、变量赋值的方式"><a href="#一、变量赋值的方式" class="headerlink" title="一、变量赋值的方式"></a>一、变量赋值的方式</h3><p><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1683719775509-be219b23-d595-4bd7-ae4f-2b1be5a4625c.png#averageHue=%232e323a&amp;clientId=ub1622ae7-0a2c-4&amp;from=paste&amp;height=325&amp;id=u42f5e231&amp;originHeight=406&amp;originWidth=614&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=48346&amp;status=done&amp;style=none&amp;taskId=ud6ec8172-3d48-4257-8393-2c200e85df9&amp;title=&amp;width=491.2" alt="image.png"></p>
 <ul>
-<li>模式：n,i,v</li>
-<li>操作：d,c,y,f+作用范围</li>
-<li>范围：<br><a name="jUR5r"></a></li>
+<li>$表示后面的为变量</li>
+<li>“”可以为变量赋值</li>
+<li>‘’无法为变量赋值</li>
 </ul>
-<h2 id="三、入门"><a href="#三、入门" class="headerlink" title="三、入门"></a>三、入门</h2><ul>
-<li>标准模式：<code>：</code>加一些东西，可以执行命令</li>
-<li>插入模式：<code>i</code>进行插入模式，也就是编辑模式，按<code>ESC</code>退出<br><a name="occjt"></a></li>
-</ul>
-<h3 id="执行命令：：conmand"><a href="#执行命令：：conmand" class="headerlink" title="执行命令：：conmand"></a>执行命令：<code>：conmand</code></h3><p><a name="DI7Vm"></a></p>
-<h3 id="退出Vim-q-ZZ"><a href="#退出Vim-q-ZZ" class="headerlink" title="退出Vim::q/ZZ"></a>退出Vim:<code>:q/ZZ</code></h3><ul>
-<li><code>:q</code>:退出，不做任何改动</li>
-<li><code>:q!</code>：退出，丢弃改动</li>
-<li><code>：wq</code>：保存并退出</li>
-<li><code>ZZ</code>：等于上面的保存并退出<br><a name="ieBYu"></a></li>
-</ul>
-<h3 id="保存文件：：w"><a href="#保存文件：：w" class="headerlink" title="保存文件：：w"></a>保存文件：<code>：w</code></h3><p><code>:w</code>：保存<br><code>w&lt;filename&gt;</code>：保存到新文件<br><a name="MoOgX"></a></p>
-<h3 id="M-基本移动：h-j-k-l"><a href="#M-基本移动：h-j-k-l" class="headerlink" title="[M]基本移动：h,j,k,l"></a>[M]基本移动：<code>h,j,k,l</code></h3><p>分别对应<code>左下上右</code><br><a name="biVD1"></a></p>
-<h3 id="M-前往第一行-x2F-最后一行：gg-G"><a href="#M-前往第一行-x2F-最后一行：gg-G" class="headerlink" title="[M]前往第一行/最后一行：gg``G"></a>[M]前往第一行/最后一行：<code>gg``G</code></h3><p><code>gg</code>：前往第一行<br><code>G</code>：前往最后一行<br><a name="sj3vQ"></a></p>
-<h3 id="M-前往第n行：nG-：n"><a href="#M-前往第n行：nG-：n" class="headerlink" title="[M]前往第n行：nG``：n"></a>[M]前往第n行：<code>nG``：n</code></h3><p>不多解释了，打打就知道<br><a name="IdGn8"></a></p>
-<h3 id="M-移动一个单词：w-e"><a href="#M-移动一个单词：w-e" class="headerlink" title="[M]移动一个单词：w``e"></a>[M]移动一个单词：<code>w``e</code></h3><p><code>w</code>：移动到下一个单词的首字符<br><code>e</code>：移动到这个单词的味字符<br><a name="yXqxz"></a></p>
-<h3 id="M-移动到上个单词：b"><a href="#M-移动到上个单词：b" class="headerlink" title="[M]移动到上个单词：b"></a>[M]移动到上个单词：<code>b</code></h3><p><code>b</code>：向前移动<br><code>nb</code>：向前移动n个<br><a name="KGKA1"></a></p>
-<h3 id="M-移动到上个单词的末尾：ge"><a href="#M-移动到上个单词的末尾：ge" class="headerlink" title="[M]移动到上个单词的末尾：ge"></a>[M]移动到上个单词的末尾：<code>ge</code></h3><p><code>ge</code>:移动到上个单词的末尾<br><a name="BUeIJ"></a></p>
-<h3 id="M-移动到这一行的首尾：-0"><a href="#M-移动到这一行的首尾：-0" class="headerlink" title="[M]移动到这一行的首尾：$``0``_``^"></a>[M]移动到这一行的首尾：<code>$``0``_``^</code></h3><p><code>$</code>：尾<br><code>0</code>：第0列<br><code>_``^</code>：非空0列<br><a name="DaS4I"></a></p>
-<h3 id="M-b-f移动一页，-y-e移动一行视线"><a href="#M-b-f移动一页，-y-e移动一行视线" class="headerlink" title="[M]^b,^f移动一页，^y,^e移动一行视线"></a>[M]^b,^f移动一页，^y,^e移动一行视线</h3><p><a name="JOVp3"></a></p>
-<h3 id="E-删除字符：x-X"><a href="#E-删除字符：x-X" class="headerlink" title="[E]删除字符：x``X"></a>[E]删除字符：<code>x``X</code></h3><p><code>x</code>：删除当前字符<br><code>X</code>：删除上一个<br><a name="BxOLm"></a></p>
-<h3 id="E-删除单词：dw"><a href="#E-删除单词：dw" class="headerlink" title="[E]删除单词：dw"></a>[E]删除单词：<code>dw</code></h3><p><code>dw</code>：<br><code>dW</code>：<br><a name="WfmIn"></a></p>
-<h3 id="E-删除当前行：dd"><a href="#E-删除当前行：dd" class="headerlink" title="[E]删除当前行：dd"></a>[E]删除当前行：<code>dd</code></h3><p><a name="tfHmT"></a></p>
-<h3 id="E-插入模式：i-a"><a href="#E-插入模式：i-a" class="headerlink" title="[E]插入模式：i``a"></a>[E]插入模式：<code>i``a</code></h3><p><code>i</code>：在之前插入<br><code>a</code>：在之后插入<br><a name="XlrZq"></a></p>
-<h3 id="E-在行首或行尾插入：I-A"><a href="#E-在行首或行尾插入：I-A" class="headerlink" title="[E]在行首或行尾插入：I``A"></a>[E]在行首或行尾插入：<code>I``A</code></h3><p><a name="vhvoo"></a></p>
-<h3 id="E-在当前行上或下插入一行：o-O"><a href="#E-在当前行上或下插入一行：o-O" class="headerlink" title="[E]在当前行上或下插入一行：o``O"></a>[E]在当前行上或下插入一行：<code>o``O</code></h3><p><a name="hK5CE"></a></p>
-<h3 id="E-改变大小写："><a href="#E-改变大小写：" class="headerlink" title="[E]改变大小写：~"></a>[E]改变大小写：<code>~</code></h3><p><a name="OTAns"></a></p>
-<h3 id="F-移动到指定字符：f-lt-target-gt"><a href="#F-移动到指定字符：f-lt-target-gt" class="headerlink" title="[F]移动到指定字符：f<target>"></a>[F]移动到指定字符：<code>f&lt;target&gt;</code></h3><p><a name="ugljW"></a></p>
-<h3 id="E-撤销、重做：u-C-r"><a href="#E-撤销、重做：u-C-r" class="headerlink" title="[E]撤销、重做：u``^C+r"></a>[E]撤销、重做：<code>u``^C+r</code></h3><p><code>u</code>：撤销<br><code>^C+r</code>：重做<br><a name="UQVdV"></a></p>
-<h3 id="E-全局替換：gg-s-x2F-torch-x2F-toch-x2F-g"><a href="#E-全局替換：gg-s-x2F-torch-x2F-toch-x2F-g" class="headerlink" title="[E]全局替換：gg,:%s/torch/toch/g"></a>[E]全局替換：gg,:%s/torch/toch/g</h3><p><a name="vdw6P"></a></p>
-<h3 id="E-ciw：在單詞内部改；di-去掉括号里的内容；da-：去掉包含括号的"><a href="#E-ciw：在單詞内部改；di-去掉括号里的内容；da-：去掉包含括号的" class="headerlink" title="[E]ciw：在單詞内部改；di(:去掉括号里的内容；da(：去掉包含括号的"></a>[E]ciw：在單詞内部改；di(:去掉括号里的内容；da(：去掉包含括号的</h3><p><a name="GrnuF"></a></p>
-<h2 id="四、vim一些模式"><a href="#四、vim一些模式" class="headerlink" title="四、vim一些模式"></a>四、vim一些模式</h2><p><a name="yl15h"></a></p>
-<h3 id="重复n次操作：n-lt-action-gt"><a href="#重复n次操作：n-lt-action-gt" class="headerlink" title="重复n次操作：n<action>"></a>重复n次操作：<code>n&lt;action&gt;</code></h3><p>Vim 中几乎所有操作都可以通过一个 n 前缀来重复 n 次<br><a name="sEevu"></a></p>
-<h3 id="操作任意范围："><a href="#操作任意范围：" class="headerlink" title="操作任意范围： "></a>操作任意范围：<code> </code></h3><p>举例<br><a name="y15rE"></a></p>
-<h3 id="两个字母重复：dd-cc-yy-guu"><a href="#两个字母重复：dd-cc-yy-guu" class="headerlink" title="两个字母重复：dd``cc``yy``guu"></a>两个字母重复：<code>dd``cc``yy``guu</code></h3><p><code>dd</code>：删除整行<br><code>cc</code>：删除整行，编辑模式<br><code>yy</code>：复制整行<br><code>guu</code>：整行小写<br><code>gUU</code>：整行大写<br><a name="zPwau"></a></p>
-<h3 id="重复上次操作："><a href="#重复上次操作：" class="headerlink" title="重复上次操作：.``,``;"></a>重复上次操作：<code>.``,``;</code></h3><p><code>.</code>：比如<code>A123&lt;ESC&gt;</code>就可以重复操作<br><code>,``;</code>：重复查找操作<br><a name="S2Sru"></a></p>
-<h2 id="五、进阶"><a href="#五、进阶" class="headerlink" title="五、进阶"></a>五、进阶</h2><p><a name="BOBew"></a></p>
-<h3 id="E-替换一个字符：r"><a href="#E-替换一个字符：r" class="headerlink" title="[E]:替换一个字符：r"></a>[E]:替换一个字符：<code>r</code></h3><p><code>r</code>：换掉一个字符<br><a name="xkxB3"></a></p>
-<h3 id="E-替换连续多个字符：R"><a href="#E-替换连续多个字符：R" class="headerlink" title="[E]替换连续多个字符：R"></a>[E]替换连续多个字符：<code>R</code></h3><p><code>R</code>：按住R就相当于进入了替代模式<br><a name="eZG8Q"></a></p>
-<h3 id="E-更改一个范围的内容：c"><a href="#E-更改一个范围的内容：c" class="headerlink" title="[E]更改一个范围的内容：c"></a>[E]更改一个范围的内容：<code>c</code></h3><p><a name="zctMO"></a></p>
-<h3 id="E-删除一个字符，并进入编辑模式：s"><a href="#E-删除一个字符，并进入编辑模式：s" class="headerlink" title="[E]删除一个字符，并进入编辑模式：s"></a>[E]删除一个字符，并进入编辑模式：<code>s</code></h3><p><a name="Eecqc"></a></p>
-<h3 id="E-删除整行，并进入编辑模式：S-cc"><a href="#E-删除整行，并进入编辑模式：S-cc" class="headerlink" title="[E]删除整行，并进入编辑模式：S``cc"></a>[E]删除整行，并进入编辑模式：<code>S``cc</code></h3><p><a name="UhGgk"></a></p>
-<h3 id="E-从当前位置开始，删除整行右侧：D"><a href="#E-从当前位置开始，删除整行右侧：D" class="headerlink" title="[E]从当前位置开始，删除整行右侧：D"></a>[E]从当前位置开始，删除整行右侧：<code>D</code></h3><p><a name="mTt9n"></a></p>
-<h3 id="E-从当前位置删除整行，并进入编辑模式：C"><a href="#E-从当前位置删除整行，并进入编辑模式：C" class="headerlink" title="[E]从当前位置删除整行，并进入编辑模式：C"></a>[E]从当前位置删除整行，并进入编辑模式：<code>C</code></h3><p><a name="vQ0qm"></a></p>
-<h3 id="V-可视模式下，选择内容：v-V-C-v"><a href="#V-可视模式下，选择内容：v-V-C-v" class="headerlink" title="[V]可视模式下，选择内容：v``V``^C+v"></a>[V]可视模式下，选择内容：<code>v``V``^C+v</code></h3><p><code>v</code>：从当前选择<br><code>V</code>：选择行<br><code>^C+V</code>：选择块<br>使用贴士：</p>
-<ul>
-<li><code>V</code>选择整行，<code>j</code>进行向下移动，<code>y</code>复制，<code>p</code>粘贴<br><a name="XPAlH"></a></li>
-</ul>
-<h3 id="E-复制下一个单词：yw"><a href="#E-复制下一个单词：yw" class="headerlink" title="[E]复制下一个单词：yw"></a>[E]复制下一个单词：<code>yw</code></h3><p><code>yw</code>复制下一个单词，<code>p</code>粘贴<br><code>y``c``d</code>都可以跟作用范围<br><code>y$</code>：复制到最后一个<br><code>yh</code>：复制前面一个字符<br><code>yy</code>：复制一整行<br><code>dd</code>：删除一整行<br><a name="ghFYH"></a></p>
-<h3 id="E-复制接下来几行：yy-2yy"><a href="#E-复制接下来几行：yy-2yy" class="headerlink" title="[E]复制接下来几行：yy``2yy"></a>[E]复制接下来几行：<code>yy``2yy</code></h3><p><a name="wSVWT"></a></p>
-<h3 id="E-粘贴到上一行、下一行：p-P"><a href="#E-粘贴到上一行、下一行：p-P" class="headerlink" title="[E]粘贴到上一行、下一行：p``P"></a>[E]粘贴到上一行、下一行：<code>p``P</code></h3><p><code>dd</code>+<code>p</code>：删除，加入到缓冲区，put放置<br><a name="ApR8p"></a></p>
-<h3 id="当前行置顶，zt-zz-zb"><a href="#当前行置顶，zt-zz-zb" class="headerlink" title="当前行置顶，zt``zz``zb"></a>当前行置顶，<code>zt``zz``zb</code></h3><p><a name="iYG9p"></a></p>
-<h3 id="缩进：-lt-gt"><a href="#缩进：-lt-gt" class="headerlink" title="缩进：<``>"></a>缩进：<code>&lt;``&gt;</code></h3>]]></content>
+<p>和其他大多数的编程语言一样，bash也支持if, case, while 和 for 这些控制流关键字。同样地， bash 也支持函数，它可以接受参数并基于参数进行操作。下面这个函数是一个例子，它会创建一个文件夹并使用cd进入该文件夹。</p>
+<pre class=" language-bash"><code class="language-bash">vim mcd.sh
+mcd <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">mkdir</span> -p <span class="token string">"<span class="token variable">$1</span>"</span>
+    <span class="token function">cd</span> <span class="token string">"<span class="token variable">$1</span>"</span>
+<span class="token punctuation">}</span>
+:q<span class="token operator">!</span>退出
+</code></pre>
+<p>$0 - 脚本名<br>$1 到 $9 - 脚本的参数。 $1 是第一个参数，依此类推。<br>$@ - 所有参数<br>$# - 参数个数<br>$? - 前一个命令的返回值<br>$$ - 当前脚本的进程识别码<br>!! - 完整的上一条命令，包括参数。常见应用：当你因为权限不足执行命令失败时，可以使用 sudo !!再尝试一次。<br>$_ - 上一条命令的最后一个参数。如果你正在使用的是交互式 shell，你可以通过按下 Esc 之后键入 . 来获取这个值。</p>
+]]></content>
       <categories>
         <category>基础语法</category>
       </categories>
       <tags>
         <tag>语法</tag>
-        <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git</title>
-    <url>/2024/07/04/git/</url>
-    <content><![CDATA[<p><a name="ubm5W"></a></p>
-<h2 id="一、Git的数据模型"><a href="#一、Git的数据模型" class="headerlink" title="一、Git的数据模型"></a>一、Git的数据模型</h2><p><a name="PLXpU"></a></p>
-<h3 id="快照"><a href="#快照" class="headerlink" title="快照"></a>快照</h3><p>把目录称之为“树”，文件叫做Blob对象<br><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1693898808150-2cdb9aab-0e42-41c1-9f42-c7376c6d857d.png#averageHue=%23f3f3f3&amp;clientId=ub47429f8-47a0-4&amp;from=paste&amp;height=175&amp;id=u3603191d&amp;originHeight=219&amp;originWidth=725&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=17592&amp;status=done&amp;style=none&amp;taskId=uf853008c-bfa2-4fea-8af4-2708d39a1a9&amp;title=&amp;width=580" alt="image.png"><br><code>folder-tree</code><br><a name="Lvda4"></a></p>
-<h3 id="历史记录建模：关联快照"><a href="#历史记录建模：关联快照" class="headerlink" title="历史记录建模：关联快照"></a>历史记录建模：关联快照</h3><p>有向无环图<br><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1693899282047-416b5a81-8e61-4537-b818-cfa2e3d3a4d8.png#averageHue=%23f7f7f7&amp;clientId=ub47429f8-47a0-4&amp;from=paste&amp;height=109&amp;id=u7138cbd6&amp;originHeight=136&amp;originWidth=725&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=4095&amp;status=done&amp;style=none&amp;taskId=u0bac6b82-36ac-4ed6-b77b-512f9466806&amp;title=&amp;width=580" alt="image.png"><br><a name="xxfK9"></a></p>
-<h3 id="数据模型及伪代码表示"><a href="#数据模型及伪代码表示" class="headerlink" title="数据模型及伪代码表示"></a>数据模型及伪代码表示</h3><pre class=" language-python"><code class="language-python">type blob <span class="token operator">=</span> array<span class="token operator">&lt;</span>byte<span class="token operator">></span> 一个file就是一堆字节流
-type tree <span class="token operator">=</span> map<span class="token operator">&lt;</span>string<span class="token punctuation">,</span> tree<span class="token operator">|</span> blob<span class="token operator">></span>  tree映射的就是文件
-type commit <span class="token operator">=</span> struct<span class="token punctuation">{</span>
-    parent array<span class="token operator">&lt;</span>commit<span class="token operator">></span>
-    auther
-    message<span class="token punctuation">:</span> string
-    snapshot<span class="token punctuation">:</span> tree
-<span class="token punctuation">}</span> 每一次的快照称作commit<span class="token punctuation">,</span>记录
-</code></pre>
-<p><a name="K4knU"></a></p>
-<h3 id="对象和内存寻址"><a href="#对象和内存寻址" class="headerlink" title="对象和内存寻址"></a>对象和内存寻址</h3><p>哈希函数：把一堆数据转变成一个短的字符<br>Git的对象：上面已经说了三种<br>object表</p>
-<pre class=" language-python"><code class="language-python">objects <span class="token operator">=</span> map<span class="token operator">&lt;</span>string<span class="token punctuation">,</span> object<span class="token operator">></span>
-
-<span class="token keyword">def</span> <span class="token function">store</span><span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    id <span class="token operator">=</span> sha1<span class="token punctuation">(</span>object<span class="token punctuation">)</span>
-    objects<span class="token punctuation">[</span>id<span class="token punctuation">]</span> <span class="token operator">=</span> object
-
-<span class="token keyword">def</span> <span class="token function">load</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">return</span> objects<span class="token punctuation">[</span>id<span class="token punctuation">]</span>
-</code></pre>
-<p><a name="yUjiw"></a></p>
-<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>维护一组引用<br>Git 的解决方法是给这些哈希值赋予人类可读的名字，也就是引用（references）。引用是指向提交的指针。与对象不同的是，它是可变的（引用可以被更新，指向新的提交）。例如，master 引用通常会指向主分支的最新一次提交。	<br><a name="enrki"></a></p>
-<h2 id="二、Git的命令行接口"><a href="#二、Git的命令行接口" class="headerlink" title="二、Git的命令行接口"></a>二、Git的命令行接口</h2><p><a name="ZYDKW"></a></p>
-<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>-<code>git diff &lt;filename&gt;</code>：显示与暂存区的文件差异<br>-<code>git add -A</code>：添加所有的修改文件到暂存区、<br>-<code>git commit</code>：提交文件，<code>^X+Y+</code>enter`退出</p>
-<p><a name="praCx"></a></p>
-<h3 id="分支和合并"><a href="#分支和合并" class="headerlink" title="分支和合并"></a>分支和合并</h3><p>-<code>git branch &lt;name&gt;</code>：创建分支<br>-<code>git checkout &lt;name&gt;</code>：切换分支<br>-<code>git checkout -b &lt;name&gt;</code>：创建分支并切换到分支<br><a name="ncnNf"></a></p>
-<h3 id="远端操作"><a href="#远端操作" class="headerlink" title="远端操作"></a>远端操作</h3><p>-<code>git remote</code>：列出远端<br>-<code>git clone</code>：克隆仓库<br>-<code>git remote add name usl</code>：添加新的远程<br>-<code>git push &lt;remote&gt; &lt;local branch&gt;:&lt;remote branch&gt;</code>：将对象传送至远端并更新远端引用</p>
-<p><a name="YJQte"></a></p>
-<h2 id="三、gitignore-怎么写"><a href="#三、gitignore-怎么写" class="headerlink" title="三、gitignore 怎么写"></a>三、gitignore 怎么写</h2><p><a name="ksVUT"></a></p>
-<h3 id="3-1-一个文件或者文件夹"><a href="#3-1-一个文件或者文件夹" class="headerlink" title="3.1 一个文件或者文件夹"></a>3.1 一个文件或者文件夹</h3><p><a name="KnpLm"></a></p>
-<h3 id="3-2-特定的文件或者文件夹"><a href="#3-2-特定的文件或者文件夹" class="headerlink" title="3.2 特定的文件或者文件夹"></a>3.2 特定的文件或者文件夹</h3><p><code>img*</code><br><code>*.md</code><br># 忽略所有 .md 文件<br>.md</p>
-<h1 id="不忽略-README-md-文件-README-md"><a href="#不忽略-README-md-文件-README-md" class="headerlink" title="不忽略 README.md 文件!README.md"></a>不忽略 README.md 文件<br>!README.md</h1>]]></content>
-      <categories>
-        <category>基础语法</category>
-      </categories>
-      <tags>
-        <tag>语法</tag>
-        <tag>Git</tag>
+        <tag>Shell</tag>
       </tags>
   </entry>
   <entry>
@@ -352,31 +274,109 @@ hello2
       </tags>
   </entry>
   <entry>
-    <title>Shell第二节</title>
-    <url>/2024/07/04/shell-di-er-jie/</url>
-    <content><![CDATA[<h2 id="shell脚本"><a href="#shell脚本" class="headerlink" title="shell脚本"></a>shell脚本</h2><h3 id="一、变量赋值的方式"><a href="#一、变量赋值的方式" class="headerlink" title="一、变量赋值的方式"></a>一、变量赋值的方式</h3><p><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1683719775509-be219b23-d595-4bd7-ae4f-2b1be5a4625c.png#averageHue=%232e323a&amp;clientId=ub1622ae7-0a2c-4&amp;from=paste&amp;height=325&amp;id=u42f5e231&amp;originHeight=406&amp;originWidth=614&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=48346&amp;status=done&amp;style=none&amp;taskId=ud6ec8172-3d48-4257-8393-2c200e85df9&amp;title=&amp;width=491.2" alt="image.png"></p>
+    <title>Vim</title>
+    <url>/2024/07/03/vim/</url>
+    <content><![CDATA[<p><a name="ZiI1U"></a></p>
+<h2 id="批量修改：选中修改行-：s-old-new-g"><a href="#批量修改：选中修改行-：s-old-new-g" class="headerlink" title="批量修改：选中修改行+：s/old/new/g"></a>批量修改：<code>选中修改行</code>+<code>：s/old/new/g</code></h2><p><a name="fnHzu"></a></p>
+<h2 id="回退到上一次修改的位置：-96-96-96-2"><a href="#回退到上一次修改的位置：-96-96-96-2" class="headerlink" title="回退到上一次修改的位置：```*2"></a>回退到上一次修改的位置：```*2</h2><p><a name="VwGCk"></a></p>
+<h2 id="在行后添加分号：A-；"><a href="#在行后添加分号：A-；" class="headerlink" title="在行后添加分号：A+；"></a>在行后添加分号：<code>A</code>+<code>；</code></h2><p><a name="wDXai"></a></p>
+<h2 id="插入头文件再返回：gg-O"><a href="#插入头文件再返回：gg-O" class="headerlink" title="插入头文件再返回：gg+O"></a>插入头文件再返回：<code>gg</code>+<code>O</code></h2><p><a name="p0Nnx"></a></p>
+<h2 id="修改if中的内容：ciw-co-quot-da-quot"><a href="#修改if中的内容：ciw-co-quot-da-quot" class="headerlink" title="修改if中的内容：ciw``co&quot;``da&quot;"></a>修改if中的内容：<code>ciw``co"``da"</code></h2><p><a name="q8Ghj"></a></p>
+<h2 id="复制全文：yae"><a href="#复制全文：yae" class="headerlink" title="复制全文：yae"></a>复制全文：<code>yae</code></h2><p><a name="I7GEU"></a></p>
+<h2 id="修改变量名：-选中所有，ciw修改，-重复操作的宏"><a href="#修改变量名：-选中所有，ciw修改，-重复操作的宏" class="headerlink" title="修改变量名：*选中所有，ciw修改，.重复操作的宏"></a>修改变量名：<code>*</code>选中所有，<code>ciw</code>修改，<code>.</code>重复操作的宏</h2><p><a name="euDlJ"></a></p>
+<h2 id="进入一次normal模式：-o"><a href="#进入一次normal模式：-o" class="headerlink" title="进入一次normal模式：^o"></a>进入一次normal模式：<code>^o</code></h2><p><a name="QvOLG"></a></p>
+<h2 id="匹配修改：：s-touch-toch-g"><a href="#匹配修改：：s-touch-toch-g" class="headerlink" title="匹配修改：：s/touch/toch/g"></a>匹配修改：<code>：s/touch/toch/g</code></h2><p><a name="Kxgxe"></a></p>
+<h2 id="匹配到行首："><a href="#匹配到行首：" class="headerlink" title="匹配到行首：^"></a>匹配到行首：^</h2><p><a name="dKVX5"></a></p>
+<h2 id="快速跳转：17gg"><a href="#快速跳转：17gg" class="headerlink" title="快速跳转：17gg"></a>快速跳转：17<code>gg</code></h2><p><a name="DkCrb"></a></p>
+<h2 id="缩进：-gt"><a href="#缩进：-gt" class="headerlink" title="缩进：>"></a>缩进：<code>&gt;</code></h2><p><a name="R7u5n"></a></p>
+<h2 id="一、vscode快捷键"><a href="#一、vscode快捷键" class="headerlink" title="一、vscode快捷键"></a>一、vscode快捷键</h2><p>^C+B:<br>^C+P<br>^C+Shift+P<br>^C+1<br>^C+,<br><a name="cbVVG"></a></p>
+<h2 id="二、术语"><a href="#二、术语" class="headerlink" title="二、术语"></a>二、术语</h2><hr>
 <ul>
-<li>$表示后面的为变量</li>
-<li>“”可以为变量赋值</li>
-<li>‘’无法为变量赋值</li>
+<li>模式：n,i,v</li>
+<li>操作：d,c,y,f+作用范围</li>
+<li>范围：<br><a name="jUR5r"></a></li>
 </ul>
-<p>和其他大多数的编程语言一样，bash也支持if, case, while 和 for 这些控制流关键字。同样地， bash 也支持函数，它可以接受参数并基于参数进行操作。下面这个函数是一个例子，它会创建一个文件夹并使用cd进入该文件夹。</p>
-<pre class=" language-bash"><code class="language-bash">vim mcd.sh
-mcd <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">mkdir</span> -p <span class="token string">"<span class="token variable">$1</span>"</span>
-    <span class="token function">cd</span> <span class="token string">"<span class="token variable">$1</span>"</span>
-<span class="token punctuation">}</span>
-:q<span class="token operator">!</span>退出
-</code></pre>
-<p>$0 - 脚本名<br>$1 到 $9 - 脚本的参数。 $1 是第一个参数，依此类推。<br>$@ - 所有参数<br>$# - 参数个数<br>$? - 前一个命令的返回值<br>$$ - 当前脚本的进程识别码<br>!! - 完整的上一条命令，包括参数。常见应用：当你因为权限不足执行命令失败时，可以使用 sudo !!再尝试一次。<br>$_ - 上一条命令的最后一个参数。如果你正在使用的是交互式 shell，你可以通过按下 Esc 之后键入 . 来获取这个值。</p>
-]]></content>
+<h2 id="三、入门"><a href="#三、入门" class="headerlink" title="三、入门"></a>三、入门</h2><ul>
+<li>标准模式：<code>：</code>加一些东西，可以执行命令</li>
+<li>插入模式：<code>i</code>进行插入模式，也就是编辑模式，按<code>ESC</code>退出<br><a name="occjt"></a></li>
+</ul>
+<h3 id="执行命令：：conmand"><a href="#执行命令：：conmand" class="headerlink" title="执行命令：：conmand"></a>执行命令：<code>：conmand</code></h3><p><a name="DI7Vm"></a></p>
+<h3 id="退出Vim-q-ZZ"><a href="#退出Vim-q-ZZ" class="headerlink" title="退出Vim::q/ZZ"></a>退出Vim:<code>:q/ZZ</code></h3><ul>
+<li><code>:q</code>:退出，不做任何改动</li>
+<li><code>:q!</code>：退出，丢弃改动</li>
+<li><code>：wq</code>：保存并退出</li>
+<li><code>ZZ</code>：等于上面的保存并退出<br><a name="ieBYu"></a></li>
+</ul>
+<h3 id="保存文件：：w"><a href="#保存文件：：w" class="headerlink" title="保存文件：：w"></a>保存文件：<code>：w</code></h3><p><code>:w</code>：保存<br><code>w&lt;filename&gt;</code>：保存到新文件<br><a name="MoOgX"></a></p>
+<h3 id="M-基本移动：h-j-k-l"><a href="#M-基本移动：h-j-k-l" class="headerlink" title="[M]基本移动：h,j,k,l"></a>[M]基本移动：<code>h,j,k,l</code></h3><p>分别对应<code>左下上右</code><br><a name="biVD1"></a></p>
+<h3 id="M-前往第一行-x2F-最后一行：gg-G"><a href="#M-前往第一行-x2F-最后一行：gg-G" class="headerlink" title="[M]前往第一行/最后一行：gg``G"></a>[M]前往第一行/最后一行：<code>gg``G</code></h3><p><code>gg</code>：前往第一行<br><code>G</code>：前往最后一行<br><a name="sj3vQ"></a></p>
+<h3 id="M-前往第n行：nG-：n"><a href="#M-前往第n行：nG-：n" class="headerlink" title="[M]前往第n行：nG``：n"></a>[M]前往第n行：<code>nG``：n</code></h3><p>不多解释了，打打就知道<br><a name="IdGn8"></a></p>
+<h3 id="M-移动一个单词：w-e"><a href="#M-移动一个单词：w-e" class="headerlink" title="[M]移动一个单词：w``e"></a>[M]移动一个单词：<code>w``e</code></h3><p><code>w</code>：移动到下一个单词的首字符<br><code>e</code>：移动到这个单词的味字符<br><a name="yXqxz"></a></p>
+<h3 id="M-移动到上个单词：b"><a href="#M-移动到上个单词：b" class="headerlink" title="[M]移动到上个单词：b"></a>[M]移动到上个单词：<code>b</code></h3><p><code>b</code>：向前移动<br><code>nb</code>：向前移动n个<br><a name="KGKA1"></a></p>
+<h3 id="M-移动到上个单词的末尾：ge"><a href="#M-移动到上个单词的末尾：ge" class="headerlink" title="[M]移动到上个单词的末尾：ge"></a>[M]移动到上个单词的末尾：<code>ge</code></h3><p><code>ge</code>:移动到上个单词的末尾<br><a name="BUeIJ"></a></p>
+<h3 id="M-移动到这一行的首尾：-0"><a href="#M-移动到这一行的首尾：-0" class="headerlink" title="[M]移动到这一行的首尾：$``0``_``^"></a>[M]移动到这一行的首尾：<code>$``0``_``^</code></h3><p><code>$</code>：尾<br><code>0</code>：第0列<br><code>_``^</code>：非空0列<br><a name="DaS4I"></a></p>
+<h3 id="M-b-f移动一页，-y-e移动一行视线"><a href="#M-b-f移动一页，-y-e移动一行视线" class="headerlink" title="[M]^b,^f移动一页，^y,^e移动一行视线"></a>[M]^b,^f移动一页，^y,^e移动一行视线</h3><p><a name="JOVp3"></a></p>
+<h3 id="E-删除字符：x-X"><a href="#E-删除字符：x-X" class="headerlink" title="[E]删除字符：x``X"></a>[E]删除字符：<code>x``X</code></h3><p><code>x</code>：删除当前字符<br><code>X</code>：删除上一个<br><a name="BxOLm"></a></p>
+<h3 id="E-删除单词：dw"><a href="#E-删除单词：dw" class="headerlink" title="[E]删除单词：dw"></a>[E]删除单词：<code>dw</code></h3><p><code>dw</code>：<br><code>dW</code>：<br><a name="WfmIn"></a></p>
+<h3 id="E-删除当前行：dd"><a href="#E-删除当前行：dd" class="headerlink" title="[E]删除当前行：dd"></a>[E]删除当前行：<code>dd</code></h3><p><a name="tfHmT"></a></p>
+<h3 id="E-插入模式：i-a"><a href="#E-插入模式：i-a" class="headerlink" title="[E]插入模式：i``a"></a>[E]插入模式：<code>i``a</code></h3><p><code>i</code>：在之前插入<br><code>a</code>：在之后插入<br><a name="XlrZq"></a></p>
+<h3 id="E-在行首或行尾插入：I-A"><a href="#E-在行首或行尾插入：I-A" class="headerlink" title="[E]在行首或行尾插入：I``A"></a>[E]在行首或行尾插入：<code>I``A</code></h3><p><a name="vhvoo"></a></p>
+<h3 id="E-在当前行上或下插入一行：o-O"><a href="#E-在当前行上或下插入一行：o-O" class="headerlink" title="[E]在当前行上或下插入一行：o``O"></a>[E]在当前行上或下插入一行：<code>o``O</code></h3><p><a name="hK5CE"></a></p>
+<h3 id="E-改变大小写："><a href="#E-改变大小写：" class="headerlink" title="[E]改变大小写：~"></a>[E]改变大小写：<code>~</code></h3><p><a name="OTAns"></a></p>
+<h3 id="F-移动到指定字符：f-lt-target-gt"><a href="#F-移动到指定字符：f-lt-target-gt" class="headerlink" title="[F]移动到指定字符：f<target>"></a>[F]移动到指定字符：<code>f&lt;target&gt;</code></h3><p><a name="ugljW"></a></p>
+<h3 id="E-撤销、重做：u-C-r"><a href="#E-撤销、重做：u-C-r" class="headerlink" title="[E]撤销、重做：u``^C+r"></a>[E]撤销、重做：<code>u``^C+r</code></h3><p><code>u</code>：撤销<br><code>^C+r</code>：重做<br><a name="UQVdV"></a></p>
+<h3 id="E-全局替換：gg-s-x2F-torch-x2F-toch-x2F-g"><a href="#E-全局替換：gg-s-x2F-torch-x2F-toch-x2F-g" class="headerlink" title="[E]全局替換：gg,:%s/torch/toch/g"></a>[E]全局替換：gg,:%s/torch/toch/g</h3><p><a name="vdw6P"></a></p>
+<h3 id="E-ciw：在單詞内部改；di-去掉括号里的内容；da-：去掉包含括号的"><a href="#E-ciw：在單詞内部改；di-去掉括号里的内容；da-：去掉包含括号的" class="headerlink" title="[E]ciw：在單詞内部改；di(:去掉括号里的内容；da(：去掉包含括号的"></a>[E]ciw：在單詞内部改；di(:去掉括号里的内容；da(：去掉包含括号的</h3><p><a name="GrnuF"></a></p>
+<h2 id="四、vim一些模式"><a href="#四、vim一些模式" class="headerlink" title="四、vim一些模式"></a>四、vim一些模式</h2><p><a name="yl15h"></a></p>
+<h3 id="重复n次操作：n-lt-action-gt"><a href="#重复n次操作：n-lt-action-gt" class="headerlink" title="重复n次操作：n<action>"></a>重复n次操作：<code>n&lt;action&gt;</code></h3><p>Vim 中几乎所有操作都可以通过一个 n 前缀来重复 n 次<br><a name="sEevu"></a></p>
+<h3 id="操作任意范围："><a href="#操作任意范围：" class="headerlink" title="操作任意范围： "></a>操作任意范围：<code> </code></h3><p>举例<br><a name="y15rE"></a></p>
+<h3 id="两个字母重复：dd-cc-yy-guu"><a href="#两个字母重复：dd-cc-yy-guu" class="headerlink" title="两个字母重复：dd``cc``yy``guu"></a>两个字母重复：<code>dd``cc``yy``guu</code></h3><p><code>dd</code>：删除整行<br><code>cc</code>：删除整行，编辑模式<br><code>yy</code>：复制整行<br><code>guu</code>：整行小写<br><code>gUU</code>：整行大写<br><a name="zPwau"></a></p>
+<h3 id="重复上次操作："><a href="#重复上次操作：" class="headerlink" title="重复上次操作：.``,``;"></a>重复上次操作：<code>.``,``;</code></h3><p><code>.</code>：比如<code>A123&lt;ESC&gt;</code>就可以重复操作<br><code>,``;</code>：重复查找操作<br><a name="S2Sru"></a></p>
+<h2 id="五、进阶"><a href="#五、进阶" class="headerlink" title="五、进阶"></a>五、进阶</h2><p><a name="BOBew"></a></p>
+<h3 id="E-替换一个字符：r"><a href="#E-替换一个字符：r" class="headerlink" title="[E]:替换一个字符：r"></a>[E]:替换一个字符：<code>r</code></h3><p><code>r</code>：换掉一个字符<br><a name="xkxB3"></a></p>
+<h3 id="E-替换连续多个字符：R"><a href="#E-替换连续多个字符：R" class="headerlink" title="[E]替换连续多个字符：R"></a>[E]替换连续多个字符：<code>R</code></h3><p><code>R</code>：按住R就相当于进入了替代模式<br><a name="eZG8Q"></a></p>
+<h3 id="E-更改一个范围的内容：c"><a href="#E-更改一个范围的内容：c" class="headerlink" title="[E]更改一个范围的内容：c"></a>[E]更改一个范围的内容：<code>c</code></h3><p><a name="zctMO"></a></p>
+<h3 id="E-删除一个字符，并进入编辑模式：s"><a href="#E-删除一个字符，并进入编辑模式：s" class="headerlink" title="[E]删除一个字符，并进入编辑模式：s"></a>[E]删除一个字符，并进入编辑模式：<code>s</code></h3><p><a name="Eecqc"></a></p>
+<h3 id="E-删除整行，并进入编辑模式：S-cc"><a href="#E-删除整行，并进入编辑模式：S-cc" class="headerlink" title="[E]删除整行，并进入编辑模式：S``cc"></a>[E]删除整行，并进入编辑模式：<code>S``cc</code></h3><p><a name="UhGgk"></a></p>
+<h3 id="E-从当前位置开始，删除整行右侧：D"><a href="#E-从当前位置开始，删除整行右侧：D" class="headerlink" title="[E]从当前位置开始，删除整行右侧：D"></a>[E]从当前位置开始，删除整行右侧：<code>D</code></h3><p><a name="mTt9n"></a></p>
+<h3 id="E-从当前位置删除整行，并进入编辑模式：C"><a href="#E-从当前位置删除整行，并进入编辑模式：C" class="headerlink" title="[E]从当前位置删除整行，并进入编辑模式：C"></a>[E]从当前位置删除整行，并进入编辑模式：<code>C</code></h3><p><a name="vQ0qm"></a></p>
+<h3 id="V-可视模式下，选择内容：v-V-C-v"><a href="#V-可视模式下，选择内容：v-V-C-v" class="headerlink" title="[V]可视模式下，选择内容：v``V``^C+v"></a>[V]可视模式下，选择内容：<code>v``V``^C+v</code></h3><p><code>v</code>：从当前选择<br><code>V</code>：选择行<br><code>^C+V</code>：选择块<br>使用贴士：</p>
+<ul>
+<li><code>V</code>选择整行，<code>j</code>进行向下移动，<code>y</code>复制，<code>p</code>粘贴<br><a name="XPAlH"></a></li>
+</ul>
+<h3 id="E-复制下一个单词：yw"><a href="#E-复制下一个单词：yw" class="headerlink" title="[E]复制下一个单词：yw"></a>[E]复制下一个单词：<code>yw</code></h3><p><code>yw</code>复制下一个单词，<code>p</code>粘贴<br><code>y``c``d</code>都可以跟作用范围<br><code>y$</code>：复制到最后一个<br><code>yh</code>：复制前面一个字符<br><code>yy</code>：复制一整行<br><code>dd</code>：删除一整行<br><a name="ghFYH"></a></p>
+<h3 id="E-复制接下来几行：yy-2yy"><a href="#E-复制接下来几行：yy-2yy" class="headerlink" title="[E]复制接下来几行：yy``2yy"></a>[E]复制接下来几行：<code>yy``2yy</code></h3><p><a name="wSVWT"></a></p>
+<h3 id="E-粘贴到上一行、下一行：p-P"><a href="#E-粘贴到上一行、下一行：p-P" class="headerlink" title="[E]粘贴到上一行、下一行：p``P"></a>[E]粘贴到上一行、下一行：<code>p``P</code></h3><p><code>dd</code>+<code>p</code>：删除，加入到缓冲区，put放置<br><a name="ApR8p"></a></p>
+<h3 id="当前行置顶，zt-zz-zb"><a href="#当前行置顶，zt-zz-zb" class="headerlink" title="当前行置顶，zt``zz``zb"></a>当前行置顶，<code>zt``zz``zb</code></h3><p><a name="iYG9p"></a></p>
+<h3 id="缩进：-lt-gt"><a href="#缩进：-lt-gt" class="headerlink" title="缩进：<``>"></a>缩进：<code>&lt;``&gt;</code></h3>]]></content>
       <categories>
         <category>基础语法</category>
       </categories>
       <tags>
         <tag>语法</tag>
-        <tag>Shell</tag>
+        <tag>Vim</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/06/26/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
   </entry>
   <entry>
     <title>Paddle</title>
