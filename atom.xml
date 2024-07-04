@@ -6,7 +6,7 @@
   <link href="http://550-ml.github.io/atom.xml" rel="self"/>
   
   <link href="http://550-ml.github.io/"/>
-  <updated>2024-07-03T12:21:49.565Z</updated>
+  <updated>2024-07-04T05:12:25.930Z</updated>
   <id>http://550-ml.github.io/</id>
   
   <author>
@@ -15,6 +15,144 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git</title>
+    <link href="http://550-ml.github.io/2024/07/04/git/"/>
+    <id>http://550-ml.github.io/2024/07/04/git/</id>
+    <published>2024-07-04T06:31:39.000Z</published>
+    <updated>2024-07-04T05:12:25.930Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a name=&quot;ubm5W&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;一、Git的数据模型&quot;&gt;&lt;a href=&quot;#一、Git的数据模型&quot; class=&quot;headerlink&quot; title=&quot;一、Git的数据模型&quot;&gt;&lt;/a&gt;一、Git的数据模型&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="基础语法" scheme="http://550-ml.github.io/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+    
+    <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+    <category term="Git" scheme="http://550-ml.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Shell</title>
+    <link href="http://550-ml.github.io/2024/07/04/shell/"/>
+    <id>http://550-ml.github.io/2024/07/04/shell/</id>
+    <published>2024-07-04T06:31:39.000Z</published>
+    <updated>2024-07-04T05:16:45.788Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a name=&quot;AiypF&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;安装shell&quot;&gt;&lt;a href=&quot;#安装shell&quot; class=&quot;headerlink&quot; title=&quot;安装shell&quot;&gt;&lt;/a&gt;安装shell&lt;/h3&gt;&lt;p&gt;windows</summary>
+        
+      
+    
+    
+    
+    <category term="基础语法" scheme="http://550-ml.github.io/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+    
+    <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+    <category term="Shell" scheme="http://550-ml.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Tmux</title>
+    <link href="http://550-ml.github.io/2024/07/04/tmux/"/>
+    <id>http://550-ml.github.io/2024/07/04/tmux/</id>
+    <published>2024-07-04T06:31:39.000Z</published>
+    <updated>2024-07-04T05:17:35.002Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a name=&quot;GaeOp&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;一、会话操作：&quot;&gt;&lt;a href=&quot;#一、会话操作：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="基础语法" scheme="http://550-ml.github.io/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+    
+    <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+    <category term="Tmux" scheme="http://550-ml.github.io/tags/Tmux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Shell第二节</title>
+    <link href="http://550-ml.github.io/2024/07/04/shell-di-er-jie/"/>
+    <id>http://550-ml.github.io/2024/07/04/shell-di-er-jie/</id>
+    <published>2024-07-04T06:31:39.000Z</published>
+    <updated>2024-07-04T05:17:08.336Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;shell脚本&quot;&gt;&lt;a href=&quot;#shell脚本&quot; class=&quot;headerlink&quot; title=&quot;shell脚本&quot;&gt;&lt;/a&gt;shell脚本&lt;/h2&gt;&lt;h3 id=&quot;一、变量赋值的方式&quot;&gt;&lt;a href=&quot;#一、变量赋值的方式&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="基础语法" scheme="http://550-ml.github.io/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+    
+    <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+    <category term="Shell" scheme="http://550-ml.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Paddle</title>
+    <link href="http://550-ml.github.io/2024/07/04/paddle/"/>
+    <id>http://550-ml.github.io/2024/07/04/paddle/</id>
+    <published>2024-07-04T06:31:39.000Z</published>
+    <updated>2024-07-04T05:15:40.291Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="基础语法" scheme="http://550-ml.github.io/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+    
+    <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+    <category term="Paddle" scheme="http://550-ml.github.io/tags/Paddle/"/>
+    
+  </entry>
   
   <entry>
     <title>MarkDown</title>
