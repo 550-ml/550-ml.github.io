@@ -1,8 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2023/06/26/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>模板</title>
+    <url>/2023/06/26/hexo-github-bo-ke-da-jian/</url>
+    <content><![CDATA[<p><a name="uNA7B"></a></p>
+<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>略，等我想写再写吧<br><a name="HQvUC"></a></p>
+<h2 id="二、定制搭建过程"><a href="#二、定制搭建过程" class="headerlink" title="二、定制搭建过程"></a>二、定制搭建过程</h2><p><a name="TtafO"></a></p>
+<h3 id="1-Hexo本身文件配置"><a href="#1-Hexo本身文件配置" class="headerlink" title="1. Hexo本身文件配置"></a>1. Hexo本身文件配置</h3><p><a name="caZdc"></a></p>
+<h4 id="1-1-Hexo基本配置"><a href="#1-1-Hexo基本配置" class="headerlink" title="1.1 Hexo基本配置"></a>1.1 Hexo基本配置</h4><p><a name="Xs1KB"></a></p>
+<h5 id="1-1-1-网址"><a href="#1-1-1-网址" class="headerlink" title="1.1.1 网址"></a>1.1.1 网址</h5><p><a href="https://hexo.io/zh-cn/docs/permalinks">永久链接</a>看这个可以学会改参数<br><a name="CSd5T"></a></p>
+<h5 id="1-1-2-Front-matter"><a href="#1-1-2-Front-matter" class="headerlink" title="1.1.2 Front-matter"></a>1.1.2 Front-matter</h5><p>Front-matter 是md文件最上方以 —分隔的区域，用于指定个别文件的变量，举例来说：</p>
+<pre><code>title: Hexo+Github博客搭建记录
+date: 2019-08-10 21:44:44
+</code></pre>
+<p>参数描述</p>
+<ul>
+<li>layout布局</li>
+<li>title标题</li>
+</ul>
+<p>date建立日期updated更新日期comments开启文章的评论功能tags标签（不适用于分页）categories分类（不适用于分页）permalink覆盖文章网址<br><a name="fmv1m"></a></p>
+<h3 id="2-Theme"><a href="#2-Theme" class="headerlink" title="2.Theme"></a>2.Theme</h3><p><a name="PuHMZ"></a></p>
+<h5 id="2-1-切换主题"><a href="#2-1-切换主题" class="headerlink" title="2.1 切换主题"></a>2.1 切换主题</h5><blockquote>
+<p>首先需要明白什么是站点配置文件，什么是主题配置文件，站点配置文件就是根目录下的配置文件，主图配置文件就是主题的文件` </p>
+</blockquote>
+<p><a name="E7VcE"></a></p>
+<h5 id="2-2-tags页面"><a href="#2-2-tags页面" class="headerlink" title="2.2 tags页面"></a>2.2 tags页面</h5><p>在<code> git bath here</code>用以下命令创建tags</p>
+<pre><code>hexo new page "tags"
+</code></pre>
+<p>编辑刚刚创建的<code> hexo new page "tags"</code>页面<br> ···</p>
+<pre><code>啊啊啊
+</code></pre>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Git</title>
-    <url>/2024/07/04/git/</url>
+    <url>/2024/07/04/gramma/git/</url>
     <content><![CDATA[<p><a name="ubm5W"></a></p>
 <h2 id="一、Git的数据模型"><a href="#一、Git的数据模型" class="headerlink" title="一、Git的数据模型"></a>一、Git的数据模型</h2><p><a name="PLXpU"></a></p>
 <h3 id="快照"><a href="#快照" class="headerlink" title="快照"></a>快照</h3><p>把目录称之为“树”，文件叫做Blob对象<br><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1693898808150-2cdb9aab-0e42-41c1-9f42-c7376c6d857d.png#averageHue=%23f3f3f3&amp;clientId=ub47429f8-47a0-4&amp;from=paste&amp;height=175&amp;id=u3603191d&amp;originHeight=219&amp;originWidth=725&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=17592&amp;status=done&amp;style=none&amp;taskId=uf853008c-bfa2-4fea-8af4-2708d39a1a9&amp;title=&amp;width=580" alt="image.png"><br><code>folder-tree</code><br><a name="Lvda4"></a></p>
@@ -48,134 +104,8 @@ type commit <span class="token operator">=</span> struct<span class="token punct
       </tags>
   </entry>
   <entry>
-    <title>模板</title>
-    <url>/2023/06/26/hexo-github-bo-ke-da-jian/</url>
-    <content><![CDATA[<p><a name="uNA7B"></a></p>
-<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>略，等我想写再写吧<br><a name="HQvUC"></a></p>
-<h2 id="二、定制搭建过程"><a href="#二、定制搭建过程" class="headerlink" title="二、定制搭建过程"></a>二、定制搭建过程</h2><p><a name="TtafO"></a></p>
-<h3 id="1-Hexo本身文件配置"><a href="#1-Hexo本身文件配置" class="headerlink" title="1. Hexo本身文件配置"></a>1. Hexo本身文件配置</h3><p><a name="caZdc"></a></p>
-<h4 id="1-1-Hexo基本配置"><a href="#1-1-Hexo基本配置" class="headerlink" title="1.1 Hexo基本配置"></a>1.1 Hexo基本配置</h4><p><a name="Xs1KB"></a></p>
-<h5 id="1-1-1-网址"><a href="#1-1-1-网址" class="headerlink" title="1.1.1 网址"></a>1.1.1 网址</h5><p><a href="https://hexo.io/zh-cn/docs/permalinks">永久链接</a>看这个可以学会改参数<br><a name="CSd5T"></a></p>
-<h5 id="1-1-2-Front-matter"><a href="#1-1-2-Front-matter" class="headerlink" title="1.1.2 Front-matter"></a>1.1.2 Front-matter</h5><p>Front-matter 是md文件最上方以 —分隔的区域，用于指定个别文件的变量，举例来说：</p>
-<pre><code>title: Hexo+Github博客搭建记录
-date: 2019-08-10 21:44:44
-</code></pre>
-<p>参数描述</p>
-<ul>
-<li>layout布局</li>
-<li>title标题</li>
-</ul>
-<p>date建立日期updated更新日期comments开启文章的评论功能tags标签（不适用于分页）categories分类（不适用于分页）permalink覆盖文章网址<br><a name="fmv1m"></a></p>
-<h3 id="2-Theme"><a href="#2-Theme" class="headerlink" title="2.Theme"></a>2.Theme</h3><p><a name="PuHMZ"></a></p>
-<h5 id="2-1-切换主题"><a href="#2-1-切换主题" class="headerlink" title="2.1 切换主题"></a>2.1 切换主题</h5><blockquote>
-<p>首先需要明白什么是站点配置文件，什么是主题配置文件，站点配置文件就是根目录下的配置文件，主图配置文件就是主题的文件` </p>
-</blockquote>
-<p><a name="E7VcE"></a></p>
-<h5 id="2-2-tags页面"><a href="#2-2-tags页面" class="headerlink" title="2.2 tags页面"></a>2.2 tags页面</h5><p>在<code> git bath here</code>用以下命令创建tags</p>
-<pre><code>hexo new page "tags"
-</code></pre>
-<p>编辑刚刚创建的<code> hexo new page "tags"</code>页面<br> ···</p>
-<pre><code>啊啊啊
-</code></pre>
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Shell第二节</title>
-    <url>/2024/07/04/shell-di-er-jie/</url>
-    <content><![CDATA[<h2 id="shell脚本"><a href="#shell脚本" class="headerlink" title="shell脚本"></a>shell脚本</h2><h3 id="一、变量赋值的方式"><a href="#一、变量赋值的方式" class="headerlink" title="一、变量赋值的方式"></a>一、变量赋值的方式</h3><p><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1683719775509-be219b23-d595-4bd7-ae4f-2b1be5a4625c.png#averageHue=%232e323a&amp;clientId=ub1622ae7-0a2c-4&amp;from=paste&amp;height=325&amp;id=u42f5e231&amp;originHeight=406&amp;originWidth=614&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=48346&amp;status=done&amp;style=none&amp;taskId=ud6ec8172-3d48-4257-8393-2c200e85df9&amp;title=&amp;width=491.2" alt="image.png"></p>
-<ul>
-<li>$表示后面的为变量</li>
-<li>“”可以为变量赋值</li>
-<li>‘’无法为变量赋值</li>
-</ul>
-<p>和其他大多数的编程语言一样，bash也支持if, case, while 和 for 这些控制流关键字。同样地， bash 也支持函数，它可以接受参数并基于参数进行操作。下面这个函数是一个例子，它会创建一个文件夹并使用cd进入该文件夹。</p>
-<pre class=" language-bash"><code class="language-bash">vim mcd.sh
-mcd <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">mkdir</span> -p <span class="token string">"<span class="token variable">$1</span>"</span>
-    <span class="token function">cd</span> <span class="token string">"<span class="token variable">$1</span>"</span>
-<span class="token punctuation">}</span>
-:q<span class="token operator">!</span>退出
-</code></pre>
-<p>$0 - 脚本名<br>$1 到 $9 - 脚本的参数。 $1 是第一个参数，依此类推。<br>$@ - 所有参数<br>$# - 参数个数<br>$? - 前一个命令的返回值<br>$$ - 当前脚本的进程识别码<br>!! - 完整的上一条命令，包括参数。常见应用：当你因为权限不足执行命令失败时，可以使用 sudo !!再尝试一次。<br>$_ - 上一条命令的最后一个参数。如果你正在使用的是交互式 shell，你可以通过按下 Esc 之后键入 . 来获取这个值。</p>
-]]></content>
-      <categories>
-        <category>基础语法</category>
-      </categories>
-      <tags>
-        <tag>语法</tag>
-        <tag>Shell</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Shell</title>
-    <url>/2024/07/04/shell/</url>
-    <content><![CDATA[<p><a name="AiypF"></a></p>
-<h3 id="安装shell"><a href="#安装shell" class="headerlink" title="安装shell"></a>安装shell</h3><p>windows 的powershell并不好，在这里要安装相应的环境，搜索ubuntu+windows终端进行安装<br>之后在按照语法学习。<br><a name="UwHMD"></a></p>
-<h3 id="使用shell"><a href="#使用shell" class="headerlink" title="使用shell"></a>使用shell</h3><p><a name="QPBfY"></a></p>
-<h4 id="torch-创建文件"><a href="#torch-创建文件" class="headerlink" title="torch 创建文件"></a>torch 创建文件</h4><ul>
-<li><code>torch+sleep.c创建文件</code><br><a name="eudNV"></a></li>
-</ul>
-<h4 id="mv-重命名文件"><a href="#mv-重命名文件" class="headerlink" title="mv 重命名文件"></a>mv 重命名文件</h4><ul>
-<li><code>mv file1 file2</code>重命名<br><a name="ysq8T"></a></li>
-</ul>
-<h4 id="date"><a href="#date" class="headerlink" title="date"></a>date</h4><pre><code>PS C:\Users\24612&gt; date
-
-2023年5月8日 19:58:54
-</code></pre>
-<p><a name="StJRU"></a></p>
-<h4 id="echo"><a href="#echo" class="headerlink" title="echo"></a>echo</h4><p>可以打印后面的变量</p>
-<pre><code>echo hello
-</code></pre>
-<p>打印字符串</p>
-<pre><code>echo "hello world"
-echo hello\ world
-</code></pre>
-<p>echo怎么知道的：环境变量</p>
-<pre><code>gcm echo/which echo
-</code></pre>
-<p><a name="yAozZ"></a></p>
-<h4 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h4><p>当前工作路径<br><a name="aD6QK"></a></p>
-<h4 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h4><p>更改路径<br>··<br>cd .. 向前访问<br>在这个阶段，还有几个趁手的命令是您需要掌握的，例如 mv（用于重命名或移动文件）、 cp（拷贝文件）以及 mkdir（新建文件夹）。<br><a name="gYa3M"></a></p>
-<h4 id="ls-Get-ChildItem"><a href="#ls-Get-ChildItem" class="headerlink" title="ls Get-ChildItem"></a>ls Get-ChildItem</h4><p>列出当前目录下文件<br>Get-ChildItem</p>
-<pre class=" language-bash"><code class="language-bash">目录: C:\
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----         2023/2/21     12:34                LenovoSoftstore
-d-----         2023/1/29      7:50                PerfLogs
-d-r---          2023/5/5     23:04                Program Files
-d-r---         2023/4/18     15:48                Program Files <span class="token punctuation">(</span>x86<span class="token punctuation">)</span>
-d-r---         2023/1/28     17:04                Users
-d-----         2023/4/12     17:19                Windows
-</code></pre>
-<p>Mode 中的 d 和 a 字母表示目录和存档。你会发现 r 表示只读，h 表示隐藏，l 表示链接，s 表示系统。<br>Get-ChildItem -Path C:\record<br>以下命令列出目录 C:\record 中的所有文件和目录。 -Path 参数用于指定路径。<br>等价ls-l</p>
-<pre class=" language-bash"><code class="language-bash">Get-ChildItem <span class="token operator">|</span> Format-Table Mode, @<span class="token punctuation">{</span>N<span class="token operator">=</span><span class="token string">'Owner'</span><span class="token punctuation">;</span>E<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span>Get-Acl <span class="token variable">$_</span>.FullName<span class="token punctuation">)</span>.Owner<span class="token punctuation">}</span><span class="token punctuation">}</span>, Length, LastWriteTime, @<span class="token punctuation">{</span>N<span class="token operator">=</span><span class="token string">'Name'</span><span class="token punctuation">;</span>E<span class="token operator">=</span><span class="token punctuation">{</span>if<span class="token punctuation">(</span><span class="token variable">$_</span>.Target<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token variable">$_</span>.Name+<span class="token string">' -> '</span>+<span class="token variable">$_</span>.Target<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><span class="token variable">$_</span>.Name<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
-</code></pre>
-<p><a name="ZHlXA"></a></p>
-<h4 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h4><p><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1683550217647-6a253633-cf5b-4665-a8e4-c516a8ba334d.png#averageHue=%231f2220&amp;clientId=u68e2ffc3-bee3-4&amp;from=paste&amp;height=54&amp;id=u44b37a27&amp;originHeight=68&amp;originWidth=321&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=22832&amp;status=done&amp;style=none&amp;taskId=u031acf98-9697-4ce2-9cb0-aade565cb8d&amp;title=&amp;width=256.8" alt="image.png"><br><a name="dEM5w"></a></p>
-<h4 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h4><p><a name="IWljZ"></a></p>
-<h4 id="man-获取帮助"><a href="#man-获取帮助" class="headerlink" title="man 获取帮助"></a>man 获取帮助</h4><p>“ctrl+ l”清空<br><a name="t385a"></a></p>
-<h4 id="lt-gt-输入输出重新定向"><a href="#lt-gt-输入输出重新定向" class="headerlink" title="<>输入输出重新定向"></a>&lt;&gt;输入输出重新定向</h4><p>这里就要将一个例子<br>cd E: #跳转到E盘<br>echo hello &gt; hello.txt # 定向输出流<br>car hello.txt # cat会输出文件内容<br><a name="c0eVw"></a></p>
-<h4 id="gt-gt-代表追加"><a href="#gt-gt-代表追加" class="headerlink" title=">>代表追加"></a>&gt;&gt;代表追加</h4><p><a name="Eu1if"></a></p>
-<h4 id="Tail-n输出几行"><a href="#Tail-n输出几行" class="headerlink" title="Tail -n输出几行"></a>Tail -n输出几行</h4><pre class=" language-bash"><code class="language-bash">PS E:\MIT<span class="token operator">></span>  <span class="token function">cat</span> .\hello.txt -Tail 1
-hello2
-</code></pre>
-]]></content>
-      <categories>
-        <category>基础语法</category>
-      </categories>
-      <tags>
-        <tag>语法</tag>
-        <tag>Shell</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MarkDown</title>
-    <url>/2024/07/03/markdown/</url>
+    <url>/2024/07/03/gramma/markdown/</url>
     <content><![CDATA[<p><a name="ixfyf"></a></p>
 <h2 id="0-写markdown要用半角标点"><a href="#0-写markdown要用半角标点" class="headerlink" title="0.写markdown要用半角标点"></a>0.写markdown要用半角标点</h2><p><a name="S2Otl"></a></p>
 <h2 id="1-标题-注意：标点符号后面要加空格-space就是标题"><a href="#1-标题-注意：标点符号后面要加空格-space就是标题" class="headerlink" title="1.标题 注意：标点符号后面要加空格 # + space就是标题"></a>1.标题 注意：标点符号后面要加空格 # + space就是标题</h2><pre><code># 一级标题
@@ -252,8 +182,72 @@ hello2
       </tags>
   </entry>
   <entry>
+    <title>Shell</title>
+    <url>/2024/07/04/gramma/shell/</url>
+    <content><![CDATA[<p><a name="AiypF"></a></p>
+<h3 id="安装shell"><a href="#安装shell" class="headerlink" title="安装shell"></a>安装shell</h3><p>windows 的powershell并不好，在这里要安装相应的环境，搜索ubuntu+windows终端进行安装<br>之后在按照语法学习。<br><a name="UwHMD"></a></p>
+<h3 id="使用shell"><a href="#使用shell" class="headerlink" title="使用shell"></a>使用shell</h3><p><a name="QPBfY"></a></p>
+<h4 id="torch-创建文件"><a href="#torch-创建文件" class="headerlink" title="torch 创建文件"></a>torch 创建文件</h4><ul>
+<li><code>torch+sleep.c创建文件</code><br><a name="eudNV"></a></li>
+</ul>
+<h4 id="mv-重命名文件"><a href="#mv-重命名文件" class="headerlink" title="mv 重命名文件"></a>mv 重命名文件</h4><ul>
+<li><code>mv file1 file2</code>重命名<br><a name="ysq8T"></a></li>
+</ul>
+<h4 id="date"><a href="#date" class="headerlink" title="date"></a>date</h4><pre><code>PS C:\Users\24612&gt; date
+
+2023年5月8日 19:58:54
+</code></pre>
+<p><a name="StJRU"></a></p>
+<h4 id="echo"><a href="#echo" class="headerlink" title="echo"></a>echo</h4><p>可以打印后面的变量</p>
+<pre><code>echo hello
+</code></pre>
+<p>打印字符串</p>
+<pre><code>echo "hello world"
+echo hello\ world
+</code></pre>
+<p>echo怎么知道的：环境变量</p>
+<pre><code>gcm echo/which echo
+</code></pre>
+<p><a name="yAozZ"></a></p>
+<h4 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h4><p>当前工作路径<br><a name="aD6QK"></a></p>
+<h4 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h4><p>更改路径<br>··<br>cd .. 向前访问<br>在这个阶段，还有几个趁手的命令是您需要掌握的，例如 mv（用于重命名或移动文件）、 cp（拷贝文件）以及 mkdir（新建文件夹）。<br><a name="gYa3M"></a></p>
+<h4 id="ls-Get-ChildItem"><a href="#ls-Get-ChildItem" class="headerlink" title="ls Get-ChildItem"></a>ls Get-ChildItem</h4><p>列出当前目录下文件<br>Get-ChildItem</p>
+<pre class=" language-bash"><code class="language-bash">目录: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         2023/2/21     12:34                LenovoSoftstore
+d-----         2023/1/29      7:50                PerfLogs
+d-r---          2023/5/5     23:04                Program Files
+d-r---         2023/4/18     15:48                Program Files <span class="token punctuation">(</span>x86<span class="token punctuation">)</span>
+d-r---         2023/1/28     17:04                Users
+d-----         2023/4/12     17:19                Windows
+</code></pre>
+<p>Mode 中的 d 和 a 字母表示目录和存档。你会发现 r 表示只读，h 表示隐藏，l 表示链接，s 表示系统。<br>Get-ChildItem -Path C:\record<br>以下命令列出目录 C:\record 中的所有文件和目录。 -Path 参数用于指定路径。<br>等价ls-l</p>
+<pre class=" language-bash"><code class="language-bash">Get-ChildItem <span class="token operator">|</span> Format-Table Mode, @<span class="token punctuation">{</span>N<span class="token operator">=</span><span class="token string">'Owner'</span><span class="token punctuation">;</span>E<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span>Get-Acl <span class="token variable">$_</span>.FullName<span class="token punctuation">)</span>.Owner<span class="token punctuation">}</span><span class="token punctuation">}</span>, Length, LastWriteTime, @<span class="token punctuation">{</span>N<span class="token operator">=</span><span class="token string">'Name'</span><span class="token punctuation">;</span>E<span class="token operator">=</span><span class="token punctuation">{</span>if<span class="token punctuation">(</span><span class="token variable">$_</span>.Target<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token variable">$_</span>.Name+<span class="token string">' -> '</span>+<span class="token variable">$_</span>.Target<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><span class="token variable">$_</span>.Name<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+</code></pre>
+<p><a name="ZHlXA"></a></p>
+<h4 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h4><p><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1683550217647-6a253633-cf5b-4665-a8e4-c516a8ba334d.png#averageHue=%231f2220&amp;clientId=u68e2ffc3-bee3-4&amp;from=paste&amp;height=54&amp;id=u44b37a27&amp;originHeight=68&amp;originWidth=321&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=22832&amp;status=done&amp;style=none&amp;taskId=u031acf98-9697-4ce2-9cb0-aade565cb8d&amp;title=&amp;width=256.8" alt="image.png"><br><a name="dEM5w"></a></p>
+<h4 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h4><p><a name="IWljZ"></a></p>
+<h4 id="man-获取帮助"><a href="#man-获取帮助" class="headerlink" title="man 获取帮助"></a>man 获取帮助</h4><p>“ctrl+ l”清空<br><a name="t385a"></a></p>
+<h4 id="lt-gt-输入输出重新定向"><a href="#lt-gt-输入输出重新定向" class="headerlink" title="<>输入输出重新定向"></a>&lt;&gt;输入输出重新定向</h4><p>这里就要将一个例子<br>cd E: #跳转到E盘<br>echo hello &gt; hello.txt # 定向输出流<br>car hello.txt # cat会输出文件内容<br><a name="c0eVw"></a></p>
+<h4 id="gt-gt-代表追加"><a href="#gt-gt-代表追加" class="headerlink" title=">>代表追加"></a>&gt;&gt;代表追加</h4><p><a name="Eu1if"></a></p>
+<h4 id="Tail-n输出几行"><a href="#Tail-n输出几行" class="headerlink" title="Tail -n输出几行"></a>Tail -n输出几行</h4><pre class=" language-bash"><code class="language-bash">PS E:\MIT<span class="token operator">></span>  <span class="token function">cat</span> .\hello.txt -Tail 1
+hello2
+</code></pre>
+]]></content>
+      <categories>
+        <category>基础语法</category>
+      </categories>
+      <tags>
+        <tag>语法</tag>
+        <tag>Shell</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Tmux</title>
-    <url>/2024/07/04/tmux/</url>
+    <url>/2024/07/04/gramma/tmux/</url>
     <content><![CDATA[<p><a name="GaeOp"></a></p>
 <h3 id="一、会话操作："><a href="#一、会话操作：" class="headerlink" title="一、会话操作："></a>一、会话操作：</h3><p><strong>启动会话</strong>：<code>tmux new -s &lt;name&gt;</code><br><strong>查看会话</strong>：<code>tmux ls</code><br><strong>分离会话</strong>：<code>tmux detach</code><br><strong>恢复会话</strong>：<code>tmux attach -t &lt;name&gt;</code><br><strong>重命名</strong>：<code>tmux rename-session -t &lt;ole name&gt; &lt;new name&gt;</code><br><strong>关闭会话</strong>：<code>tmux kill-session -t &lt;name&gt;</code><br><strong>关闭所有会话</strong>：<code>tmux kill-server</code><br><a name="BBbjd"></a></p>
 <h3 id="二、快捷键"><a href="#二、快捷键" class="headerlink" title="二、快捷键"></a>二、快捷键</h3><p>前导键：<code>^b</code></p>
@@ -274,8 +268,35 @@ hello2
       </tags>
   </entry>
   <entry>
+    <title>Shell第二节</title>
+    <url>/2024/07/04/gramma/shell-di-er-jie/</url>
+    <content><![CDATA[<h2 id="shell脚本"><a href="#shell脚本" class="headerlink" title="shell脚本"></a>shell脚本</h2><h3 id="一、变量赋值的方式"><a href="#一、变量赋值的方式" class="headerlink" title="一、变量赋值的方式"></a>一、变量赋值的方式</h3><p><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1683719775509-be219b23-d595-4bd7-ae4f-2b1be5a4625c.png#averageHue=%232e323a&amp;clientId=ub1622ae7-0a2c-4&amp;from=paste&amp;height=325&amp;id=u42f5e231&amp;originHeight=406&amp;originWidth=614&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=48346&amp;status=done&amp;style=none&amp;taskId=ud6ec8172-3d48-4257-8393-2c200e85df9&amp;title=&amp;width=491.2" alt="image.png"></p>
+<ul>
+<li>$表示后面的为变量</li>
+<li>“”可以为变量赋值</li>
+<li>‘’无法为变量赋值</li>
+</ul>
+<p>和其他大多数的编程语言一样，bash也支持if, case, while 和 for 这些控制流关键字。同样地， bash 也支持函数，它可以接受参数并基于参数进行操作。下面这个函数是一个例子，它会创建一个文件夹并使用cd进入该文件夹。</p>
+<pre class=" language-bash"><code class="language-bash">vim mcd.sh
+mcd <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">mkdir</span> -p <span class="token string">"<span class="token variable">$1</span>"</span>
+    <span class="token function">cd</span> <span class="token string">"<span class="token variable">$1</span>"</span>
+<span class="token punctuation">}</span>
+:q<span class="token operator">!</span>退出
+</code></pre>
+<p>$0 - 脚本名<br>$1 到 $9 - 脚本的参数。 $1 是第一个参数，依此类推。<br>$@ - 所有参数<br>$# - 参数个数<br>$? - 前一个命令的返回值<br>$$ - 当前脚本的进程识别码<br>!! - 完整的上一条命令，包括参数。常见应用：当你因为权限不足执行命令失败时，可以使用 sudo !!再尝试一次。<br>$_ - 上一条命令的最后一个参数。如果你正在使用的是交互式 shell，你可以通过按下 Esc 之后键入 . 来获取这个值。</p>
+]]></content>
+      <categories>
+        <category>基础语法</category>
+      </categories>
+      <tags>
+        <tag>语法</tag>
+        <tag>Shell</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vim</title>
-    <url>/2024/07/03/vim/</url>
+    <url>/2024/07/03/gramma/vim/</url>
     <content><![CDATA[<p><a name="ZiI1U"></a></p>
 <h2 id="批量修改：选中修改行-：s-old-new-g"><a href="#批量修改：选中修改行-：s-old-new-g" class="headerlink" title="批量修改：选中修改行+：s/old/new/g"></a>批量修改：<code>选中修改行</code>+<code>：s/old/new/g</code></h2><p><a name="fnHzu"></a></p>
 <h2 id="回退到上一次修改的位置：-96-96-96-2"><a href="#回退到上一次修改的位置：-96-96-96-2" class="headerlink" title="回退到上一次修改的位置：```*2"></a>回退到上一次修改的位置：```*2</h2><p><a name="VwGCk"></a></p>
@@ -358,29 +379,8 @@ hello2
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/06/26/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2024/07/15/jin-zhi-zhuan-huan/</url>
+    <title>算法-进制转换</title>
+    <url>/2024/07/15/leetcode/base/jin-zhi-zhuan-huan/</url>
     <content><![CDATA[<h1 id="一、库函数"><a href="#一、库函数" class="headerlink" title="一、库函数"></a>一、库函数</h1><p>十进制转换为其他进制</p>
 <ul>
 <li><code>bin</code>:二进制</li>
@@ -402,12 +402,19 @@ number <span class="token operator">=</span> <span class="token number">123</spa
 seven_base <span class="token operator">=</span> to_base7<span class="token punctuation">(</span>number<span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>seven_base<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="/test.png" alt="test image"></p>
+<p><img src="/pic/LeetCode/Base/test.png" alt="test image"></p>
 ]]></content>
+      <categories>
+        <category>基础算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>基础算法</tag>
+      </tags>
   </entry>
   <entry>
     <title>Paddle</title>
-    <url>/2024/07/04/paddle/</url>
+    <url>/2024/07/04/gramma/paddle/</url>
     <content><![CDATA[<p><a href="https://www.paddlepaddle.org.cn/documentation/docs/zh/guides/index_cn.html">https://www.paddlepaddle.org.cn/documentation/doc	s/zh/guides/index_cn.html</a><br><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1685963705849-de625f1e-1865-40c1-a640-04a2b4a8e502.png#averageHue=%23ededed&amp;clientId=u47272688-ad74-4&amp;from=paste&amp;height=495&amp;id=u2bbf22d4&amp;originHeight=619&amp;originWidth=1125&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=212296&amp;status=done&amp;style=none&amp;taskId=ub52c1274-71fd-4db9-a043-8144e87cdf4&amp;title=&amp;width=900" alt="image.png"><br><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1685964808012-b8082bca-354b-431d-b695-40dcb3ff556d.png#averageHue=%23fefefe&amp;clientId=u47272688-ad74-4&amp;from=paste&amp;height=350&amp;id=u4fd69a59&amp;originHeight=437&amp;originWidth=793&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=59012&amp;status=done&amp;style=none&amp;taskId=u7aadcf5c-caa9-43fd-be65-aad073ae983&amp;title=&amp;width=634.4" alt="image.png"><br><a name="LPofn"></a></p>
 <h2 id="一、编程"><a href="#一、编程" class="headerlink" title="一、编程"></a>一、编程</h2><p><a name="M47Uv"></a></p>
 <h3 id="1-paddle-io"><a href="#1-paddle-io" class="headerlink" title="1.paddle.io"></a>1.paddle.io</h3><p><a name="aOnqW"></a></p>

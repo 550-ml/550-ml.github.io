@@ -4,9 +4,21 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Tmux, Python,机器学习，深度学习，人工智能">
-    <meta name="description" content="
-一、会话操作：启动会话：tmux new -s &amp;lt;name&amp;gt;查看会话：tmux ls分离会话：tmux detach恢复会话：tmux attach -t &amp;lt;name&amp;gt;重命名：tmux rename-session">
+    <meta name="keywords" content="算法-进制转换, Python,机器学习，深度学习，人工智能">
+    <meta name="description" content="一、库函数十进制转换为其他进制
+
+bin:二进制
+oct:八进制
+hex:十六进制
+
+其他进制转换为十进制
+
+int:十进制
+
+任意进制转换
+def to_base7(number):
+    if number &amp;lt; 7:
+     ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +30,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Tmux | WT de Blog</title>
+    <title>算法-进制转换 | WT de Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -53,9 +65,9 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="WT de Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="WT de Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -316,12 +328,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Tmux</h1>
+                    <h1 class="description center-align post-title">算法-进制转换</h1>
                 </div>
             </div>
         </div>
@@ -345,12 +357,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                                <span class="chip bg-color">语法</span>
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
                             </a>
                         
-                            <a href="/tags/Tmux/">
-                                <span class="chip bg-color">Tmux</span>
+                            <a href="/tags/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">基础算法</span>
                             </a>
                         
                     </div>
@@ -361,8 +373,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-category">
-                                基础语法
+                            <a href="/categories/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/" class="post-category">
+                                基础算法
                             </a>
                         
                     </div>
@@ -374,21 +386,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-07-04
+                    2024-07-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-07-04
+                    2024-07-24
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    94
+                    72
                 </div>
                 
 
@@ -415,16 +427,28 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a name="GaeOp"></a></p>
-<h3 id="一、会话操作："><a href="#一、会话操作：" class="headerlink" title="一、会话操作："></a>一、会话操作：</h3><p><strong>启动会话</strong>：<code>tmux new -s &lt;name&gt;</code><br><strong>查看会话</strong>：<code>tmux ls</code><br><strong>分离会话</strong>：<code>tmux detach</code><br><strong>恢复会话</strong>：<code>tmux attach -t &lt;name&gt;</code><br><strong>重命名</strong>：<code>tmux rename-session -t &lt;ole name&gt; &lt;new name&gt;</code><br><strong>关闭会话</strong>：<code>tmux kill-session -t &lt;name&gt;</code><br><strong>关闭所有会话</strong>：<code>tmux kill-server</code><br><a name="BBbjd"></a></p>
-<h3 id="二、快捷键"><a href="#二、快捷键" class="headerlink" title="二、快捷键"></a>二、快捷键</h3><p>前导键：<code>^b</code></p>
+                <h1 id="一、库函数"><a href="#一、库函数" class="headerlink" title="一、库函数"></a>一、库函数</h1><p>十进制转换为其他进制</p>
 <ul>
-<li><code>s</code>列出会话</li>
-<li><code>$</code>：重命名</li>
-<li><code>d</code>：断开</li>
-<li><code>^z</code>：挂起</li>
+<li><code>bin</code>:二进制</li>
+<li><code>oct</code>:八进制</li>
+<li><code>hex</code>:十六进制</li>
 </ul>
-<p><img src="https://cdn.nlark.com/yuque/0/2024/png/34430616/1706683690097-81a187c2-29de-4b2c-91eb-dded6f74962a.png#averageHue=%23fdfcfa&amp;clientId=u04ac9345-4680-4&amp;from=paste&amp;height=478&amp;id=u4b52abbe&amp;originHeight=598&amp;originWidth=815&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=142070&amp;status=done&amp;style=none&amp;taskId=u23b74d58-0d2a-402f-95df-fbc3617acb0&amp;title=&amp;width=652" alt="image.png"></p>
+<p>其他进制转换为十进制</p>
+<ul>
+<li><code>int</code>:十进制</li>
+</ul>
+<p>任意进制转换</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">to_base7</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> number <span class="token operator">&lt;</span> <span class="token number">7</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> str<span class="token punctuation">(</span>number<span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> to_base7<span class="token punctuation">(</span>number <span class="token operator">//</span> <span class="token number">7</span><span class="token punctuation">)</span> <span class="token operator">+</span> to_base7<span class="token punctuation">(</span>number <span class="token operator">%</span> <span class="token number">7</span><span class="token punctuation">)</span>
+
+number <span class="token operator">=</span> <span class="token number">123</span>
+seven_base <span class="token operator">=</span> to_base7<span class="token punctuation">(</span>number<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>seven_base<span class="token punctuation">)</span>
+</code></pre>
+<p><img src="/pic/LeetCode/Base/test.png" alt="test image"></p>
 
                 
             </div>
@@ -451,7 +475,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://550-ml.github.io/2024/07/04/tmux/">http://550-ml.github.io/2024/07/04/tmux/</a>
+                    <a href="http://550-ml.github.io/2024/07/15/leetcode/base/jin-zhi-zhuan-huan/">http://550-ml.github.io/2024/07/15/leetcode/base/jin-zhi-zhuan-huan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -489,12 +513,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                                    <span class="chip bg-color">语法</span>
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
                                 </a>
                             
-                                <a href="/tags/Tmux/">
-                                    <span class="chip bg-color">Tmux</span>
+                                <a href="/tags/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">基础算法</span>
                                 </a>
                             
                         </div>
@@ -573,17 +597,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2024/07/04/shell/">
+                <a href="/2024/07/15/leetcode/base/jin-zhi-zhuan-huan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Shell">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="算法-进制转换">
                         
-                        <span class="card-title">Shell</span>
+                        <span class="card-title">算法-进制转换</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -593,30 +618,31 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-07-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-07-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-category">
-                                    基础语法
+                            <a href="/categories/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/" class="post-category">
+                                    基础算法
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                        <span class="chip bg-color">语法</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
-                    <a href="/tags/Shell/">
-                        <span class="chip bg-color">Shell</span>
+                    <a href="/tags/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">基础算法</span>
                     </a>
                     
                 </div>
@@ -630,13 +656,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/07/04/paddle/">
+                <a href="/2024/07/04/gramma/git/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Paddle">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Git">
                         
-                        <span class="card-title">Paddle</span>
+                        <span class="card-title">Git</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -668,8 +694,8 @@
                         <span class="chip bg-color">语法</span>
                     </a>
                     
-                    <a href="/tags/Paddle/">
-                        <span class="chip bg-color">Paddle</span>
+                    <a href="/tags/Git/">
+                        <span class="chip bg-color">Git</span>
                     </a>
                     
                 </div>

@@ -4,15 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Vim, Python,机器学习，深度学习，人工智能">
+    <meta name="keywords" content="Shell, Python,机器学习，深度学习，人工智能">
     <meta name="description" content="
-批量修改：选中修改行+：s/old/new/g
-回退到上一次修改的位置：```*2
-在行后添加分号：A+；
-插入头文件再返回：gg+O
-修改if中的内容：ciw``co&#34;``da&#34;
-复制全文：yae
-修改变量名：*选中所有，ciw修改，.">
+安装shellwindows 的powershell并不好，在这里要安装相应的环境，搜索ubuntu+windows终端进行安装之后在按照语法学习。
+使用shell
+torch 创建文件
+torch+sleep.c创建文件
+
+mv 重命名">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +23,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Vim | WT de Blog</title>
+    <title>Shell | WT de Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -59,9 +58,9 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="WT de Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="WT de Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -322,12 +321,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Vim</h1>
+                    <h1 class="description center-align post-title">Shell</h1>
                 </div>
             </div>
         </div>
@@ -355,8 +354,8 @@
                                 <span class="chip bg-color">语法</span>
                             </a>
                         
-                            <a href="/tags/Vim/">
-                                <span class="chip bg-color">Vim</span>
+                            <a href="/tags/Shell/">
+                                <span class="chip bg-color">Shell</span>
                             </a>
                         
                     </div>
@@ -380,28 +379,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-07-03
+                    2024-07-04
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-07-03
+                    2024-07-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    931
+                    428
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -421,79 +420,59 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a name="ZiI1U"></a></p>
-<h2 id="批量修改：选中修改行-：s-old-new-g"><a href="#批量修改：选中修改行-：s-old-new-g" class="headerlink" title="批量修改：选中修改行+：s/old/new/g"></a>批量修改：<code>选中修改行</code>+<code>：s/old/new/g</code></h2><p><a name="fnHzu"></a></p>
-<h2 id="回退到上一次修改的位置：-96-96-96-2"><a href="#回退到上一次修改的位置：-96-96-96-2" class="headerlink" title="回退到上一次修改的位置：```*2"></a>回退到上一次修改的位置：```*2</h2><p><a name="VwGCk"></a></p>
-<h2 id="在行后添加分号：A-；"><a href="#在行后添加分号：A-；" class="headerlink" title="在行后添加分号：A+；"></a>在行后添加分号：<code>A</code>+<code>；</code></h2><p><a name="wDXai"></a></p>
-<h2 id="插入头文件再返回：gg-O"><a href="#插入头文件再返回：gg-O" class="headerlink" title="插入头文件再返回：gg+O"></a>插入头文件再返回：<code>gg</code>+<code>O</code></h2><p><a name="p0Nnx"></a></p>
-<h2 id="修改if中的内容：ciw-co-quot-da-quot"><a href="#修改if中的内容：ciw-co-quot-da-quot" class="headerlink" title="修改if中的内容：ciw``co&quot;``da&quot;"></a>修改if中的内容：<code>ciw``co"``da"</code></h2><p><a name="q8Ghj"></a></p>
-<h2 id="复制全文：yae"><a href="#复制全文：yae" class="headerlink" title="复制全文：yae"></a>复制全文：<code>yae</code></h2><p><a name="I7GEU"></a></p>
-<h2 id="修改变量名：-选中所有，ciw修改，-重复操作的宏"><a href="#修改变量名：-选中所有，ciw修改，-重复操作的宏" class="headerlink" title="修改变量名：*选中所有，ciw修改，.重复操作的宏"></a>修改变量名：<code>*</code>选中所有，<code>ciw</code>修改，<code>.</code>重复操作的宏</h2><p><a name="euDlJ"></a></p>
-<h2 id="进入一次normal模式：-o"><a href="#进入一次normal模式：-o" class="headerlink" title="进入一次normal模式：^o"></a>进入一次normal模式：<code>^o</code></h2><p><a name="QvOLG"></a></p>
-<h2 id="匹配修改：：s-touch-toch-g"><a href="#匹配修改：：s-touch-toch-g" class="headerlink" title="匹配修改：：s/touch/toch/g"></a>匹配修改：<code>：s/touch/toch/g</code></h2><p><a name="Kxgxe"></a></p>
-<h2 id="匹配到行首："><a href="#匹配到行首：" class="headerlink" title="匹配到行首：^"></a>匹配到行首：^</h2><p><a name="dKVX5"></a></p>
-<h2 id="快速跳转：17gg"><a href="#快速跳转：17gg" class="headerlink" title="快速跳转：17gg"></a>快速跳转：17<code>gg</code></h2><p><a name="DkCrb"></a></p>
-<h2 id="缩进：-gt"><a href="#缩进：-gt" class="headerlink" title="缩进：>"></a>缩进：<code>&gt;</code></h2><p><a name="R7u5n"></a></p>
-<h2 id="一、vscode快捷键"><a href="#一、vscode快捷键" class="headerlink" title="一、vscode快捷键"></a>一、vscode快捷键</h2><p>^C+B:<br>^C+P<br>^C+Shift+P<br>^C+1<br>^C+,<br><a name="cbVVG"></a></p>
-<h2 id="二、术语"><a href="#二、术语" class="headerlink" title="二、术语"></a>二、术语</h2><hr>
-<ul>
-<li>模式：n,i,v</li>
-<li>操作：d,c,y,f+作用范围</li>
-<li>范围：<br><a name="jUR5r"></a></li>
+                <p><a name="AiypF"></a></p>
+<h3 id="安装shell"><a href="#安装shell" class="headerlink" title="安装shell"></a>安装shell</h3><p>windows 的powershell并不好，在这里要安装相应的环境，搜索ubuntu+windows终端进行安装<br>之后在按照语法学习。<br><a name="UwHMD"></a></p>
+<h3 id="使用shell"><a href="#使用shell" class="headerlink" title="使用shell"></a>使用shell</h3><p><a name="QPBfY"></a></p>
+<h4 id="torch-创建文件"><a href="#torch-创建文件" class="headerlink" title="torch 创建文件"></a>torch 创建文件</h4><ul>
+<li><code>torch+sleep.c创建文件</code><br><a name="eudNV"></a></li>
 </ul>
-<h2 id="三、入门"><a href="#三、入门" class="headerlink" title="三、入门"></a>三、入门</h2><ul>
-<li>标准模式：<code>：</code>加一些东西，可以执行命令</li>
-<li>插入模式：<code>i</code>进行插入模式，也就是编辑模式，按<code>ESC</code>退出<br><a name="occjt"></a></li>
+<h4 id="mv-重命名文件"><a href="#mv-重命名文件" class="headerlink" title="mv 重命名文件"></a>mv 重命名文件</h4><ul>
+<li><code>mv file1 file2</code>重命名<br><a name="ysq8T"></a></li>
 </ul>
-<h3 id="执行命令：：conmand"><a href="#执行命令：：conmand" class="headerlink" title="执行命令：：conmand"></a>执行命令：<code>：conmand</code></h3><p><a name="DI7Vm"></a></p>
-<h3 id="退出Vim-q-ZZ"><a href="#退出Vim-q-ZZ" class="headerlink" title="退出Vim::q/ZZ"></a>退出Vim:<code>:q/ZZ</code></h3><ul>
-<li><code>:q</code>:退出，不做任何改动</li>
-<li><code>:q!</code>：退出，丢弃改动</li>
-<li><code>：wq</code>：保存并退出</li>
-<li><code>ZZ</code>：等于上面的保存并退出<br><a name="ieBYu"></a></li>
-</ul>
-<h3 id="保存文件：：w"><a href="#保存文件：：w" class="headerlink" title="保存文件：：w"></a>保存文件：<code>：w</code></h3><p><code>:w</code>：保存<br><code>w&lt;filename&gt;</code>：保存到新文件<br><a name="MoOgX"></a></p>
-<h3 id="M-基本移动：h-j-k-l"><a href="#M-基本移动：h-j-k-l" class="headerlink" title="[M]基本移动：h,j,k,l"></a>[M]基本移动：<code>h,j,k,l</code></h3><p>分别对应<code>左下上右</code><br><a name="biVD1"></a></p>
-<h3 id="M-前往第一行-x2F-最后一行：gg-G"><a href="#M-前往第一行-x2F-最后一行：gg-G" class="headerlink" title="[M]前往第一行/最后一行：gg``G"></a>[M]前往第一行/最后一行：<code>gg``G</code></h3><p><code>gg</code>：前往第一行<br><code>G</code>：前往最后一行<br><a name="sj3vQ"></a></p>
-<h3 id="M-前往第n行：nG-：n"><a href="#M-前往第n行：nG-：n" class="headerlink" title="[M]前往第n行：nG``：n"></a>[M]前往第n行：<code>nG``：n</code></h3><p>不多解释了，打打就知道<br><a name="IdGn8"></a></p>
-<h3 id="M-移动一个单词：w-e"><a href="#M-移动一个单词：w-e" class="headerlink" title="[M]移动一个单词：w``e"></a>[M]移动一个单词：<code>w``e</code></h3><p><code>w</code>：移动到下一个单词的首字符<br><code>e</code>：移动到这个单词的味字符<br><a name="yXqxz"></a></p>
-<h3 id="M-移动到上个单词：b"><a href="#M-移动到上个单词：b" class="headerlink" title="[M]移动到上个单词：b"></a>[M]移动到上个单词：<code>b</code></h3><p><code>b</code>：向前移动<br><code>nb</code>：向前移动n个<br><a name="KGKA1"></a></p>
-<h3 id="M-移动到上个单词的末尾：ge"><a href="#M-移动到上个单词的末尾：ge" class="headerlink" title="[M]移动到上个单词的末尾：ge"></a>[M]移动到上个单词的末尾：<code>ge</code></h3><p><code>ge</code>:移动到上个单词的末尾<br><a name="BUeIJ"></a></p>
-<h3 id="M-移动到这一行的首尾：-0"><a href="#M-移动到这一行的首尾：-0" class="headerlink" title="[M]移动到这一行的首尾：$``0``_``^"></a>[M]移动到这一行的首尾：<code>$``0``_``^</code></h3><p><code>$</code>：尾<br><code>0</code>：第0列<br><code>_``^</code>：非空0列<br><a name="DaS4I"></a></p>
-<h3 id="M-b-f移动一页，-y-e移动一行视线"><a href="#M-b-f移动一页，-y-e移动一行视线" class="headerlink" title="[M]^b,^f移动一页，^y,^e移动一行视线"></a>[M]^b,^f移动一页，^y,^e移动一行视线</h3><p><a name="JOVp3"></a></p>
-<h3 id="E-删除字符：x-X"><a href="#E-删除字符：x-X" class="headerlink" title="[E]删除字符：x``X"></a>[E]删除字符：<code>x``X</code></h3><p><code>x</code>：删除当前字符<br><code>X</code>：删除上一个<br><a name="BxOLm"></a></p>
-<h3 id="E-删除单词：dw"><a href="#E-删除单词：dw" class="headerlink" title="[E]删除单词：dw"></a>[E]删除单词：<code>dw</code></h3><p><code>dw</code>：<br><code>dW</code>：<br><a name="WfmIn"></a></p>
-<h3 id="E-删除当前行：dd"><a href="#E-删除当前行：dd" class="headerlink" title="[E]删除当前行：dd"></a>[E]删除当前行：<code>dd</code></h3><p><a name="tfHmT"></a></p>
-<h3 id="E-插入模式：i-a"><a href="#E-插入模式：i-a" class="headerlink" title="[E]插入模式：i``a"></a>[E]插入模式：<code>i``a</code></h3><p><code>i</code>：在之前插入<br><code>a</code>：在之后插入<br><a name="XlrZq"></a></p>
-<h3 id="E-在行首或行尾插入：I-A"><a href="#E-在行首或行尾插入：I-A" class="headerlink" title="[E]在行首或行尾插入：I``A"></a>[E]在行首或行尾插入：<code>I``A</code></h3><p><a name="vhvoo"></a></p>
-<h3 id="E-在当前行上或下插入一行：o-O"><a href="#E-在当前行上或下插入一行：o-O" class="headerlink" title="[E]在当前行上或下插入一行：o``O"></a>[E]在当前行上或下插入一行：<code>o``O</code></h3><p><a name="hK5CE"></a></p>
-<h3 id="E-改变大小写："><a href="#E-改变大小写：" class="headerlink" title="[E]改变大小写：~"></a>[E]改变大小写：<code>~</code></h3><p><a name="OTAns"></a></p>
-<h3 id="F-移动到指定字符：f-lt-target-gt"><a href="#F-移动到指定字符：f-lt-target-gt" class="headerlink" title="[F]移动到指定字符：f<target>"></a>[F]移动到指定字符：<code>f&lt;target&gt;</code></h3><p><a name="ugljW"></a></p>
-<h3 id="E-撤销、重做：u-C-r"><a href="#E-撤销、重做：u-C-r" class="headerlink" title="[E]撤销、重做：u``^C+r"></a>[E]撤销、重做：<code>u``^C+r</code></h3><p><code>u</code>：撤销<br><code>^C+r</code>：重做<br><a name="UQVdV"></a></p>
-<h3 id="E-全局替換：gg-s-x2F-torch-x2F-toch-x2F-g"><a href="#E-全局替換：gg-s-x2F-torch-x2F-toch-x2F-g" class="headerlink" title="[E]全局替換：gg,:%s/torch/toch/g"></a>[E]全局替換：gg,:%s/torch/toch/g</h3><p><a name="vdw6P"></a></p>
-<h3 id="E-ciw：在單詞内部改；di-去掉括号里的内容；da-：去掉包含括号的"><a href="#E-ciw：在單詞内部改；di-去掉括号里的内容；da-：去掉包含括号的" class="headerlink" title="[E]ciw：在單詞内部改；di(:去掉括号里的内容；da(：去掉包含括号的"></a>[E]ciw：在單詞内部改；di(:去掉括号里的内容；da(：去掉包含括号的</h3><p><a name="GrnuF"></a></p>
-<h2 id="四、vim一些模式"><a href="#四、vim一些模式" class="headerlink" title="四、vim一些模式"></a>四、vim一些模式</h2><p><a name="yl15h"></a></p>
-<h3 id="重复n次操作：n-lt-action-gt"><a href="#重复n次操作：n-lt-action-gt" class="headerlink" title="重复n次操作：n<action>"></a>重复n次操作：<code>n&lt;action&gt;</code></h3><p>Vim 中几乎所有操作都可以通过一个 n 前缀来重复 n 次<br><a name="sEevu"></a></p>
-<h3 id="操作任意范围："><a href="#操作任意范围：" class="headerlink" title="操作任意范围： "></a>操作任意范围：<code> </code></h3><p>举例<br><a name="y15rE"></a></p>
-<h3 id="两个字母重复：dd-cc-yy-guu"><a href="#两个字母重复：dd-cc-yy-guu" class="headerlink" title="两个字母重复：dd``cc``yy``guu"></a>两个字母重复：<code>dd``cc``yy``guu</code></h3><p><code>dd</code>：删除整行<br><code>cc</code>：删除整行，编辑模式<br><code>yy</code>：复制整行<br><code>guu</code>：整行小写<br><code>gUU</code>：整行大写<br><a name="zPwau"></a></p>
-<h3 id="重复上次操作："><a href="#重复上次操作：" class="headerlink" title="重复上次操作：.``,``;"></a>重复上次操作：<code>.``,``;</code></h3><p><code>.</code>：比如<code>A123&lt;ESC&gt;</code>就可以重复操作<br><code>,``;</code>：重复查找操作<br><a name="S2Sru"></a></p>
-<h2 id="五、进阶"><a href="#五、进阶" class="headerlink" title="五、进阶"></a>五、进阶</h2><p><a name="BOBew"></a></p>
-<h3 id="E-替换一个字符：r"><a href="#E-替换一个字符：r" class="headerlink" title="[E]:替换一个字符：r"></a>[E]:替换一个字符：<code>r</code></h3><p><code>r</code>：换掉一个字符<br><a name="xkxB3"></a></p>
-<h3 id="E-替换连续多个字符：R"><a href="#E-替换连续多个字符：R" class="headerlink" title="[E]替换连续多个字符：R"></a>[E]替换连续多个字符：<code>R</code></h3><p><code>R</code>：按住R就相当于进入了替代模式<br><a name="eZG8Q"></a></p>
-<h3 id="E-更改一个范围的内容：c"><a href="#E-更改一个范围的内容：c" class="headerlink" title="[E]更改一个范围的内容：c"></a>[E]更改一个范围的内容：<code>c</code></h3><p><a name="zctMO"></a></p>
-<h3 id="E-删除一个字符，并进入编辑模式：s"><a href="#E-删除一个字符，并进入编辑模式：s" class="headerlink" title="[E]删除一个字符，并进入编辑模式：s"></a>[E]删除一个字符，并进入编辑模式：<code>s</code></h3><p><a name="Eecqc"></a></p>
-<h3 id="E-删除整行，并进入编辑模式：S-cc"><a href="#E-删除整行，并进入编辑模式：S-cc" class="headerlink" title="[E]删除整行，并进入编辑模式：S``cc"></a>[E]删除整行，并进入编辑模式：<code>S``cc</code></h3><p><a name="UhGgk"></a></p>
-<h3 id="E-从当前位置开始，删除整行右侧：D"><a href="#E-从当前位置开始，删除整行右侧：D" class="headerlink" title="[E]从当前位置开始，删除整行右侧：D"></a>[E]从当前位置开始，删除整行右侧：<code>D</code></h3><p><a name="mTt9n"></a></p>
-<h3 id="E-从当前位置删除整行，并进入编辑模式：C"><a href="#E-从当前位置删除整行，并进入编辑模式：C" class="headerlink" title="[E]从当前位置删除整行，并进入编辑模式：C"></a>[E]从当前位置删除整行，并进入编辑模式：<code>C</code></h3><p><a name="vQ0qm"></a></p>
-<h3 id="V-可视模式下，选择内容：v-V-C-v"><a href="#V-可视模式下，选择内容：v-V-C-v" class="headerlink" title="[V]可视模式下，选择内容：v``V``^C+v"></a>[V]可视模式下，选择内容：<code>v``V``^C+v</code></h3><p><code>v</code>：从当前选择<br><code>V</code>：选择行<br><code>^C+V</code>：选择块<br>使用贴士：</p>
-<ul>
-<li><code>V</code>选择整行，<code>j</code>进行向下移动，<code>y</code>复制，<code>p</code>粘贴<br><a name="XPAlH"></a></li>
-</ul>
-<h3 id="E-复制下一个单词：yw"><a href="#E-复制下一个单词：yw" class="headerlink" title="[E]复制下一个单词：yw"></a>[E]复制下一个单词：<code>yw</code></h3><p><code>yw</code>复制下一个单词，<code>p</code>粘贴<br><code>y``c``d</code>都可以跟作用范围<br><code>y$</code>：复制到最后一个<br><code>yh</code>：复制前面一个字符<br><code>yy</code>：复制一整行<br><code>dd</code>：删除一整行<br><a name="ghFYH"></a></p>
-<h3 id="E-复制接下来几行：yy-2yy"><a href="#E-复制接下来几行：yy-2yy" class="headerlink" title="[E]复制接下来几行：yy``2yy"></a>[E]复制接下来几行：<code>yy``2yy</code></h3><p><a name="wSVWT"></a></p>
-<h3 id="E-粘贴到上一行、下一行：p-P"><a href="#E-粘贴到上一行、下一行：p-P" class="headerlink" title="[E]粘贴到上一行、下一行：p``P"></a>[E]粘贴到上一行、下一行：<code>p``P</code></h3><p><code>dd</code>+<code>p</code>：删除，加入到缓冲区，put放置<br><a name="ApR8p"></a></p>
-<h3 id="当前行置顶，zt-zz-zb"><a href="#当前行置顶，zt-zz-zb" class="headerlink" title="当前行置顶，zt``zz``zb"></a>当前行置顶，<code>zt``zz``zb</code></h3><p><a name="iYG9p"></a></p>
-<h3 id="缩进：-lt-gt"><a href="#缩进：-lt-gt" class="headerlink" title="缩进：<``>"></a>缩进：<code>&lt;``&gt;</code></h3>
+<h4 id="date"><a href="#date" class="headerlink" title="date"></a>date</h4><pre><code>PS C:\Users\24612&gt; date
+
+2023年5月8日 19:58:54
+</code></pre>
+<p><a name="StJRU"></a></p>
+<h4 id="echo"><a href="#echo" class="headerlink" title="echo"></a>echo</h4><p>可以打印后面的变量</p>
+<pre><code>echo hello
+</code></pre>
+<p>打印字符串</p>
+<pre><code>echo "hello world"
+echo hello\ world
+</code></pre>
+<p>echo怎么知道的：环境变量</p>
+<pre><code>gcm echo/which echo
+</code></pre>
+<p><a name="yAozZ"></a></p>
+<h4 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h4><p>当前工作路径<br><a name="aD6QK"></a></p>
+<h4 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h4><p>更改路径<br>··<br>cd .. 向前访问<br>在这个阶段，还有几个趁手的命令是您需要掌握的，例如 mv（用于重命名或移动文件）、 cp（拷贝文件）以及 mkdir（新建文件夹）。<br><a name="gYa3M"></a></p>
+<h4 id="ls-Get-ChildItem"><a href="#ls-Get-ChildItem" class="headerlink" title="ls Get-ChildItem"></a>ls Get-ChildItem</h4><p>列出当前目录下文件<br>Get-ChildItem</p>
+<pre class=" language-bash"><code class="language-bash">目录: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         2023/2/21     12:34                LenovoSoftstore
+d-----         2023/1/29      7:50                PerfLogs
+d-r---          2023/5/5     23:04                Program Files
+d-r---         2023/4/18     15:48                Program Files <span class="token punctuation">(</span>x86<span class="token punctuation">)</span>
+d-r---         2023/1/28     17:04                Users
+d-----         2023/4/12     17:19                Windows
+</code></pre>
+<p>Mode 中的 d 和 a 字母表示目录和存档。你会发现 r 表示只读，h 表示隐藏，l 表示链接，s 表示系统。<br>Get-ChildItem -Path C:\record<br>以下命令列出目录 C:\record 中的所有文件和目录。 -Path 参数用于指定路径。<br>等价ls-l</p>
+<pre class=" language-bash"><code class="language-bash">Get-ChildItem <span class="token operator">|</span> Format-Table Mode, @<span class="token punctuation">{</span>N<span class="token operator">=</span><span class="token string">'Owner'</span><span class="token punctuation">;</span>E<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span>Get-Acl <span class="token variable">$_</span>.FullName<span class="token punctuation">)</span>.Owner<span class="token punctuation">}</span><span class="token punctuation">}</span>, Length, LastWriteTime, @<span class="token punctuation">{</span>N<span class="token operator">=</span><span class="token string">'Name'</span><span class="token punctuation">;</span>E<span class="token operator">=</span><span class="token punctuation">{</span>if<span class="token punctuation">(</span><span class="token variable">$_</span>.Target<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token variable">$_</span>.Name+<span class="token string">' -> '</span>+<span class="token variable">$_</span>.Target<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><span class="token variable">$_</span>.Name<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+</code></pre>
+<p><a name="ZHlXA"></a></p>
+<h4 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h4><p><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1683550217647-6a253633-cf5b-4665-a8e4-c516a8ba334d.png#averageHue=%231f2220&amp;clientId=u68e2ffc3-bee3-4&amp;from=paste&amp;height=54&amp;id=u44b37a27&amp;originHeight=68&amp;originWidth=321&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=22832&amp;status=done&amp;style=none&amp;taskId=u031acf98-9697-4ce2-9cb0-aade565cb8d&amp;title=&amp;width=256.8" alt="image.png"><br><a name="dEM5w"></a></p>
+<h4 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h4><p><a name="IWljZ"></a></p>
+<h4 id="man-获取帮助"><a href="#man-获取帮助" class="headerlink" title="man 获取帮助"></a>man 获取帮助</h4><p>“ctrl+ l”清空<br><a name="t385a"></a></p>
+<h4 id="lt-gt-输入输出重新定向"><a href="#lt-gt-输入输出重新定向" class="headerlink" title="<>输入输出重新定向"></a>&lt;&gt;输入输出重新定向</h4><p>这里就要将一个例子<br>cd E: #跳转到E盘<br>echo hello &gt; hello.txt # 定向输出流<br>car hello.txt # cat会输出文件内容<br><a name="c0eVw"></a></p>
+<h4 id="gt-gt-代表追加"><a href="#gt-gt-代表追加" class="headerlink" title=">>代表追加"></a>&gt;&gt;代表追加</h4><p><a name="Eu1if"></a></p>
+<h4 id="Tail-n输出几行"><a href="#Tail-n输出几行" class="headerlink" title="Tail -n输出几行"></a>Tail -n输出几行</h4><pre class=" language-bash"><code class="language-bash">PS E:\MIT<span class="token operator">></span>  <span class="token function">cat</span> .\hello.txt -Tail 1
+hello2
+</code></pre>
+
                 
             </div>
             <hr/>
@@ -519,7 +498,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://550-ml.github.io/2024/07/03/vim/">http://550-ml.github.io/2024/07/03/vim/</a>
+                    <a href="http://550-ml.github.io/2024/07/04/gramma/shell/">http://550-ml.github.io/2024/07/04/gramma/shell/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -561,8 +540,8 @@
                                     <span class="chip bg-color">语法</span>
                                 </a>
                             
-                                <a href="/tags/Vim/">
-                                    <span class="chip bg-color">Vim</span>
+                                <a href="/tags/Shell/">
+                                    <span class="chip bg-color">Shell</span>
                                 </a>
                             
                         </div>
@@ -645,13 +624,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/07/03/markdown/">
+                <a href="/2024/07/04/gramma/git/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="MarkDown">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Git">
                         
-                        <span class="card-title">MarkDown</span>
+                        <span class="card-title">Git</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -662,7 +641,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-07-03
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-07-04
                         </span>
                         <span class="publish-author">
                             
@@ -683,8 +662,8 @@
                         <span class="chip bg-color">语法</span>
                     </a>
                     
-                    <a href="/tags/MarkDown/">
-                        <span class="chip bg-color">MarkDown</span>
+                    <a href="/tags/Git/">
+                        <span class="chip bg-color">Git</span>
                     </a>
                     
                 </div>
@@ -698,13 +677,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/06/26/hexo-github-bo-ke-da-jian/">
+                <a href="/2024/07/04/gramma/tmux/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="模板">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Tmux">
                         
-                        <span class="card-title">模板</span>
+                        <span class="card-title">Tmux</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -715,19 +694,31 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-07-04
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%B5%8B%E8%AF%95/" class="post-category">
-                                    测试
+                            <a href="/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-category">
+                                    基础语法
                                 </a>
                             
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%AF%AD%E6%B3%95/">
+                        <span class="chip bg-color">语法</span>
+                    </a>
+                    
+                    <a href="/tags/Tmux/">
+                        <span class="chip bg-color">Tmux</span>
+                    </a>
+                    
                 </div>
                 
             </div>

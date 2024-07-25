@@ -4,14 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Shell第二节, Python,机器学习，深度学习，人工智能">
-    <meta name="description" content="shell脚本一、变量赋值的方式
-
-$表示后面的为变量
-“”可以为变量赋值
-‘’无法为变量赋值
-
-和其他大多数的编程语言一样，bash也支持if, case, while 和 for 这些控制流关键字。同样地， bash 也支持函数，它可以">
+    <meta name="keywords" content="Tmux, Python,机器学习，深度学习，人工智能">
+    <meta name="description" content="
+一、会话操作：启动会话：tmux new -s &amp;lt;name&amp;gt;查看会话：tmux ls分离会话：tmux detach恢复会话：tmux attach -t &amp;lt;name&amp;gt;重命名：tmux rename-session">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +18,7 @@ $表示后面的为变量
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Shell第二节 | WT de Blog</title>
+    <title>Tmux | WT de Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -58,9 +53,9 @@ $表示后面的为变量
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="WT de Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="WT de Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -321,12 +316,12 @@ $表示后面的为变量
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Shell第二节</h1>
+                    <h1 class="description center-align post-title">Tmux</h1>
                 </div>
             </div>
         </div>
@@ -354,8 +349,8 @@ $表示后面的为变量
                                 <span class="chip bg-color">语法</span>
                             </a>
                         
-                            <a href="/tags/Shell/">
-                                <span class="chip bg-color">Shell</span>
+                            <a href="/tags/Tmux/">
+                                <span class="chip bg-color">Tmux</span>
                             </a>
                         
                     </div>
@@ -393,7 +388,7 @@ $表示后面的为变量
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    264
+                    94
                 </div>
                 
 
@@ -420,21 +415,16 @@ $表示后面的为变量
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="shell脚本"><a href="#shell脚本" class="headerlink" title="shell脚本"></a>shell脚本</h2><h3 id="一、变量赋值的方式"><a href="#一、变量赋值的方式" class="headerlink" title="一、变量赋值的方式"></a>一、变量赋值的方式</h3><p><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1683719775509-be219b23-d595-4bd7-ae4f-2b1be5a4625c.png#averageHue=%232e323a&amp;clientId=ub1622ae7-0a2c-4&amp;from=paste&amp;height=325&amp;id=u42f5e231&amp;originHeight=406&amp;originWidth=614&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=48346&amp;status=done&amp;style=none&amp;taskId=ud6ec8172-3d48-4257-8393-2c200e85df9&amp;title=&amp;width=491.2" alt="image.png"></p>
+                <p><a name="GaeOp"></a></p>
+<h3 id="一、会话操作："><a href="#一、会话操作：" class="headerlink" title="一、会话操作："></a>一、会话操作：</h3><p><strong>启动会话</strong>：<code>tmux new -s &lt;name&gt;</code><br><strong>查看会话</strong>：<code>tmux ls</code><br><strong>分离会话</strong>：<code>tmux detach</code><br><strong>恢复会话</strong>：<code>tmux attach -t &lt;name&gt;</code><br><strong>重命名</strong>：<code>tmux rename-session -t &lt;ole name&gt; &lt;new name&gt;</code><br><strong>关闭会话</strong>：<code>tmux kill-session -t &lt;name&gt;</code><br><strong>关闭所有会话</strong>：<code>tmux kill-server</code><br><a name="BBbjd"></a></p>
+<h3 id="二、快捷键"><a href="#二、快捷键" class="headerlink" title="二、快捷键"></a>二、快捷键</h3><p>前导键：<code>^b</code></p>
 <ul>
-<li>$表示后面的为变量</li>
-<li>“”可以为变量赋值</li>
-<li>‘’无法为变量赋值</li>
+<li><code>s</code>列出会话</li>
+<li><code>$</code>：重命名</li>
+<li><code>d</code>：断开</li>
+<li><code>^z</code>：挂起</li>
 </ul>
-<p>和其他大多数的编程语言一样，bash也支持if, case, while 和 for 这些控制流关键字。同样地， bash 也支持函数，它可以接受参数并基于参数进行操作。下面这个函数是一个例子，它会创建一个文件夹并使用cd进入该文件夹。</p>
-<pre class=" language-bash"><code class="language-bash">vim mcd.sh
-mcd <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">mkdir</span> -p <span class="token string">"<span class="token variable">$1</span>"</span>
-    <span class="token function">cd</span> <span class="token string">"<span class="token variable">$1</span>"</span>
-<span class="token punctuation">}</span>
-:q<span class="token operator">!</span>退出
-</code></pre>
-<p>$0 - 脚本名<br>$1 到 $9 - 脚本的参数。 $1 是第一个参数，依此类推。<br>$@ - 所有参数<br>$# - 参数个数<br>$? - 前一个命令的返回值<br>$$ - 当前脚本的进程识别码<br>!! - 完整的上一条命令，包括参数。常见应用：当你因为权限不足执行命令失败时，可以使用 sudo !!再尝试一次。<br>$_ - 上一条命令的最后一个参数。如果你正在使用的是交互式 shell，你可以通过按下 Esc 之后键入 . 来获取这个值。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/png/34430616/1706683690097-81a187c2-29de-4b2c-91eb-dded6f74962a.png#averageHue=%23fdfcfa&amp;clientId=u04ac9345-4680-4&amp;from=paste&amp;height=478&amp;id=u4b52abbe&amp;originHeight=598&amp;originWidth=815&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=142070&amp;status=done&amp;style=none&amp;taskId=u23b74d58-0d2a-402f-95df-fbc3617acb0&amp;title=&amp;width=652" alt="image.png"></p>
 
                 
             </div>
@@ -461,7 +451,7 @@ mcd <span class="token punctuation">(</span><span class="token punctuation">)</s
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://550-ml.github.io/2024/07/04/shell-di-er-jie/">http://550-ml.github.io/2024/07/04/shell-di-er-jie/</a>
+                    <a href="http://550-ml.github.io/2024/07/04/gramma/tmux/">http://550-ml.github.io/2024/07/04/gramma/tmux/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -503,8 +493,8 @@ mcd <span class="token punctuation">(</span><span class="token punctuation">)</s
                                     <span class="chip bg-color">语法</span>
                                 </a>
                             
-                                <a href="/tags/Shell/">
-                                    <span class="chip bg-color">Shell</span>
+                                <a href="/tags/Tmux/">
+                                    <span class="chip bg-color">Tmux</span>
                                 </a>
                             
                         </div>
@@ -587,13 +577,13 @@ mcd <span class="token punctuation">(</span><span class="token punctuation">)</s
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/07/04/git/">
+                <a href="/2024/07/04/gramma/shell/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Git">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Shell">
                         
-                        <span class="card-title">Git</span>
+                        <span class="card-title">Shell</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -625,8 +615,8 @@ mcd <span class="token punctuation">(</span><span class="token punctuation">)</s
                         <span class="chip bg-color">语法</span>
                     </a>
                     
-                    <a href="/tags/Git/">
-                        <span class="chip bg-color">Git</span>
+                    <a href="/tags/Shell/">
+                        <span class="chip bg-color">Shell</span>
                     </a>
                     
                 </div>
@@ -640,13 +630,13 @@ mcd <span class="token punctuation">(</span><span class="token punctuation">)</s
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/07/04/shell/">
+                <a href="/2024/07/04/gramma/shell-di-er-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Shell">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Shell第二节">
                         
-                        <span class="card-title">Shell</span>
+                        <span class="card-title">Shell第二节</span>
                     </div>
                 </a>
                 <div class="card-content article-content">

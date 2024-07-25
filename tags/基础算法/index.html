@@ -4,13 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Git, Python,机器学习，深度学习，人工智能">
-    <meta name="description" content="
-一、Git的数据模型
-快照把目录称之为“树”，文件叫做Blob对象folder-tree
-历史记录建模：关联快照有向无环图
-数据模型及伪代码表示type blob = array&amp;lt;byte&gt; 一个file就是一堆字节流
-type t">
+    <meta name="keywords" content="标签: 基础算法, Python,机器学习，深度学习，人工智能">
+    <meta name="description" content="心有所想，无问东西">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +17,7 @@ type t">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Git | WT de Blog</title>
+    <title>标签: 基础算法 | WT de Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -57,9 +52,9 @@ type t">
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="WT de Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="WT de Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -316,491 +311,199 @@ type t">
 
 </header>
 
-    
-
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">Git</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<main class="post-container content">
-
-    
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
     <div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
-<div id="artDetail">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                WT の Blog
+                
+            </div>
+
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="/libs/typed/typed.js"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: [ 
+                            
+                                "从来没有真正的绝境, 只有心灵的迷途",
+                            
+                                "Never really desperate, only the lost of the soul",
+                            
+                        ],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getMinutes() + '.jpg)');
+                </script>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+</script>
+<script>
+    
+      var bannerUrl = "/medias/featureimages/" + Math.floor(Math.random() * 24) + '.jpg';
+    
+    $('.bg-cover.about-cover').css('background-image', 'url(' + bannerUrl + ')');
+
+</script>
+
+
+    </div>
+</div>
+
+<main class="content">
+
+    
+
+<div id="tags" class="container chip-container">
     <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
-                <div class="col s7">
-                    
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                                <span class="chip bg-color">语法</span>
-                            </a>
-                        
-                            <a href="/tags/Git/">
-                                <span class="chip bg-color">Git</span>
-                            </a>
-                        
-                    </div>
-                    
-                </div>
-                <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-category">
-                                基础语法
-                            </a>
-                        
-                    </div>
-                    
-                </div>
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
             </div>
-
-            <div class="post-info">
+            <div class="tag-chips">
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-07-04
-                </div>
                 
-
+                <a href="/tags/%E8%AF%AD%E6%B3%95/" title="语法: 7">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="语法" style="background-color: #F9EBEA;">语法
+                        <span class="tag-length">7</span>
+                    </span>
+                </a>
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-07-04
-                </div>
                 
-
+                <a href="/tags/Git/" title="Git: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Git" style="background-color: #F5EEF8;">Git
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
-                <div class="info-break-policy">
-                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    446
-                </div>
                 
-
+                <a href="/tags/MarkDown/" title="MarkDown: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="MarkDown" style="background-color: #D5F5E3;">MarkDown
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
-                <div class="info-break-policy">
-                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
-                </div>
                 
-
+                <a href="/tags/Shell/" title="Shell: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Shell" style="background-color: #E8F8F5;">Shell
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
                 
-                    <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                        <span id="busuanzi_value_page_pv"></span>
-                    </div>
-				
+                
+                <a href="/tags/Tmux/" title="Tmux: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Tmux" style="background-color: #FEF9E7;">Tmux
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Vim/" title="Vim: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Vim" style="background-color: #F8F9F9;">Vim
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E7%AE%97%E6%B3%95/" title="算法: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="算法" style="background-color: #82E0AA;">算法
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/" title="基础算法: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="基础算法" style="background-color: #D7BDE2;">基础算法
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Paddle/" title="Paddle: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Paddle" style="background-color: #A3E4D7;">Paddle
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
-        <hr class="clearfix">
-
-        
-
-        
-
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <p><a name="ubm5W"></a></p>
-<h2 id="一、Git的数据模型"><a href="#一、Git的数据模型" class="headerlink" title="一、Git的数据模型"></a>一、Git的数据模型</h2><p><a name="PLXpU"></a></p>
-<h3 id="快照"><a href="#快照" class="headerlink" title="快照"></a>快照</h3><p>把目录称之为“树”，文件叫做Blob对象<br><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1693898808150-2cdb9aab-0e42-41c1-9f42-c7376c6d857d.png#averageHue=%23f3f3f3&amp;clientId=ub47429f8-47a0-4&amp;from=paste&amp;height=175&amp;id=u3603191d&amp;originHeight=219&amp;originWidth=725&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=17592&amp;status=done&amp;style=none&amp;taskId=uf853008c-bfa2-4fea-8af4-2708d39a1a9&amp;title=&amp;width=580" alt="image.png"><br><code>folder-tree</code><br><a name="Lvda4"></a></p>
-<h3 id="历史记录建模：关联快照"><a href="#历史记录建模：关联快照" class="headerlink" title="历史记录建模：关联快照"></a>历史记录建模：关联快照</h3><p>有向无环图<br><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1693899282047-416b5a81-8e61-4537-b818-cfa2e3d3a4d8.png#averageHue=%23f7f7f7&amp;clientId=ub47429f8-47a0-4&amp;from=paste&amp;height=109&amp;id=u7138cbd6&amp;originHeight=136&amp;originWidth=725&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=4095&amp;status=done&amp;style=none&amp;taskId=u0bac6b82-36ac-4ed6-b77b-512f9466806&amp;title=&amp;width=580" alt="image.png"><br><a name="xxfK9"></a></p>
-<h3 id="数据模型及伪代码表示"><a href="#数据模型及伪代码表示" class="headerlink" title="数据模型及伪代码表示"></a>数据模型及伪代码表示</h3><pre class=" language-python"><code class="language-python">type blob <span class="token operator">=</span> array<span class="token operator">&lt;</span>byte<span class="token operator">></span> 一个file就是一堆字节流
-type tree <span class="token operator">=</span> map<span class="token operator">&lt;</span>string<span class="token punctuation">,</span> tree<span class="token operator">|</span> blob<span class="token operator">></span>  tree映射的就是文件
-type commit <span class="token operator">=</span> struct<span class="token punctuation">{</span>
-    parent array<span class="token operator">&lt;</span>commit<span class="token operator">></span>
-    auther
-    message<span class="token punctuation">:</span> string
-    snapshot<span class="token punctuation">:</span> tree
-<span class="token punctuation">}</span> 每一次的快照称作commit<span class="token punctuation">,</span>记录
-</code></pre>
-<p><a name="K4knU"></a></p>
-<h3 id="对象和内存寻址"><a href="#对象和内存寻址" class="headerlink" title="对象和内存寻址"></a>对象和内存寻址</h3><p>哈希函数：把一堆数据转变成一个短的字符<br>Git的对象：上面已经说了三种<br>object表</p>
-<pre class=" language-python"><code class="language-python">objects <span class="token operator">=</span> map<span class="token operator">&lt;</span>string<span class="token punctuation">,</span> object<span class="token operator">></span>
-
-<span class="token keyword">def</span> <span class="token function">store</span><span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    id <span class="token operator">=</span> sha1<span class="token punctuation">(</span>object<span class="token punctuation">)</span>
-    objects<span class="token punctuation">[</span>id<span class="token punctuation">]</span> <span class="token operator">=</span> object
-
-<span class="token keyword">def</span> <span class="token function">load</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">return</span> objects<span class="token punctuation">[</span>id<span class="token punctuation">]</span>
-</code></pre>
-<p><a name="yUjiw"></a></p>
-<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>维护一组引用<br>Git 的解决方法是给这些哈希值赋予人类可读的名字，也就是引用（references）。引用是指向提交的指针。与对象不同的是，它是可变的（引用可以被更新，指向新的提交）。例如，master 引用通常会指向主分支的最新一次提交。	<br><a name="enrki"></a></p>
-<h2 id="二、Git的命令行接口"><a href="#二、Git的命令行接口" class="headerlink" title="二、Git的命令行接口"></a>二、Git的命令行接口</h2><p><a name="ZYDKW"></a></p>
-<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>-<code>git diff &lt;filename&gt;</code>：显示与暂存区的文件差异<br>-<code>git add -A</code>：添加所有的修改文件到暂存区、<br>-<code>git commit</code>：提交文件，<code>^X+Y+</code>enter`退出</p>
-<p><a name="praCx"></a></p>
-<h3 id="分支和合并"><a href="#分支和合并" class="headerlink" title="分支和合并"></a>分支和合并</h3><p>-<code>git branch &lt;name&gt;</code>：创建分支<br>-<code>git checkout &lt;name&gt;</code>：切换分支<br>-<code>git checkout -b &lt;name&gt;</code>：创建分支并切换到分支<br><a name="ncnNf"></a></p>
-<h3 id="远端操作"><a href="#远端操作" class="headerlink" title="远端操作"></a>远端操作</h3><p>-<code>git remote</code>：列出远端<br>-<code>git clone</code>：克隆仓库<br>-<code>git remote add name usl</code>：添加新的远程<br>-<code>git push &lt;remote&gt; &lt;local branch&gt;:&lt;remote branch&gt;</code>：将对象传送至远端并更新远端引用</p>
-<p><a name="YJQte"></a></p>
-<h2 id="三、gitignore-怎么写"><a href="#三、gitignore-怎么写" class="headerlink" title="三、gitignore 怎么写"></a>三、gitignore 怎么写</h2><p><a name="ksVUT"></a></p>
-<h3 id="3-1-一个文件或者文件夹"><a href="#3-1-一个文件或者文件夹" class="headerlink" title="3.1 一个文件或者文件夹"></a>3.1 一个文件或者文件夹</h3><p><a name="KnpLm"></a></p>
-<h3 id="3-2-特定的文件或者文件夹"><a href="#3-2-特定的文件或者文件夹" class="headerlink" title="3.2 特定的文件或者文件夹"></a>3.2 特定的文件或者文件夹</h3><p><code>img*</code><br><code>*.md</code><br># 忽略所有 .md 文件<br>.md</p>
-<h1 id="不忽略-README-md-文件-README-md"><a href="#不忽略-README-md-文件-README-md" class="headerlink" title="不忽略 README.md 文件!README.md"></a>不忽略 README.md 文件<br>!README.md</h1>
-                
-            </div>
-            <hr/>
-
-            
-
-    <div class="reprint" id="reprint-statement">
-        
-            <div class="reprint__author">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-user">
-                        文章作者:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">WT</a>
-                </span>
-            </div>
-            <div class="reprint__type">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-link">
-                        文章链接:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="http://550-ml.github.io/2024/07/04/git/">http://550-ml.github.io/2024/07/04/git/</a>
-                </span>
-            </div>
-            <div class="reprint__notice">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-copyright">
-                        版权声明:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    本博客所有文章除特別声明外，均采用
-                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    许可协议。转载请注明来源
-                    <a href="/about" target="_blank">WT</a>
-                    !
-                </span>
-            </div>
-        
     </div>
+</div>
 
-    <script async defer>
-      document.addEventListener("copy", function (e) {
-        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
-        M.toast({html: toastHTML})
-      });
+    
 
-      function navToReprintStatement() {
-        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
-      }
-    </script>
-
-
-
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="算法, 基础算法" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2024/07/15/leetcode/base/jin-zhi-zhuan-huan/">
+                        <div class="card-image tag-image">
                             
-                                <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                                    <span class="chip bg-color">语法</span>
-                                </a>
                             
-                                <a href="/tags/Git/">
-                                    <span class="chip bg-color">Git</span>
-                                </a>
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="算法-进制转换">
                             
+                            <span class="card-title">算法-进制转换</span>
                         </div>
-                    
-                </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
-<div id="article-share">
-
-    
-    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/libs/share/js/social-share.min.js"></script>
-    
-
-    
-
-</div>
-
-                </div>
-            </div>
-            
-                <div id="reward">
-    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
-
-    <!-- Modal Structure -->
-    <div id="rewardModal" class="modal">
-        <div class="modal-content">
-            <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">你的赏识是我前进的动力</h4>
-            <div class="reward-content">
-                <div class="reward-tabs">
-                    <ul class="tabs row">
-                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
-                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
-                    </ul>
-                    <div id="alipay">
-                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
-                    </div>
-                    <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    $(function () {
-        $('.tabs').tabs();
-    });
-</script>
-
-            
-        </div>
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
-            <div class="card">
-                <a href="/2024/07/15/jin-zhi-zhuan-huan/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-07-15
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            WT
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2024/07/04/shell-di-er-jie/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Shell第二节">
-                        
-                        <span class="card-title">Shell第二节</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-07-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-07-15
                             </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-category">
-                                    基础语法
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/" class="post-category">
+                                基础算法
                                 </a>
-                            
-                            
-                        </span>
+                                
+                                
+                            </span>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                        <span class="chip bg-color">语法</span>
-                    </a>
-                    
-                    <a href="/tags/Shell/">
-                        <span class="chip bg-color">Shell</span>
-                    </a>
-                    
-                </div>
-                
             </div>
+            
         </div>
-        
-    </div>
-</article>
-
-</div>
-
-
-
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
-
-
-
-<!-- 代码语言 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
-
-
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
-    
-
+    </article>
 </main>
 
 

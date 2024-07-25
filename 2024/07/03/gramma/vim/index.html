@@ -4,14 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="模板, Python,机器学习，深度学习，人工智能">
+    <meta name="keywords" content="Vim, Python,机器学习，深度学习，人工智能">
     <meta name="description" content="
-一、前言略，等我想写再写吧
-二、定制搭建过程
-1. Hexo本身文件配置
-1.1 Hexo基本配置
-1.1.1 网址永久链接看这个可以学会改参数
-1.1.2 Front-matterFront-matter 是md文件最上方以 —分隔的区">
+批量修改：选中修改行+：s/old/new/g
+回退到上一次修改的位置：```*2
+在行后添加分号：A+；
+插入头文件再返回：gg+O
+修改if中的内容：ciw``co&#34;``da&#34;
+复制全文：yae
+修改变量名：*选中所有，ciw修改，.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +24,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>模板 | WT de Blog</title>
+    <title>Vim | WT de Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -321,12 +322,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">模板</h1>
+                    <h1 class="description center-align post-title">Vim</h1>
                 </div>
             </div>
         </div>
@@ -348,9 +349,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%AF%AD%E6%B3%95/">
+                                <span class="chip bg-color">语法</span>
+                            </a>
+                        
+                            <a href="/tags/Vim/">
+                                <span class="chip bg-color">Vim</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -358,8 +367,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%B5%8B%E8%AF%95/" class="post-category">
-                                测试
+                            <a href="/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-category">
+                                基础语法
                             </a>
                         
                     </div>
@@ -371,28 +380,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-06-26
+                    2024-07-03
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-07-24
+                    2024-07-03
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    252
+                    931
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -412,34 +421,79 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a name="uNA7B"></a></p>
-<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>略，等我想写再写吧<br><a name="HQvUC"></a></p>
-<h2 id="二、定制搭建过程"><a href="#二、定制搭建过程" class="headerlink" title="二、定制搭建过程"></a>二、定制搭建过程</h2><p><a name="TtafO"></a></p>
-<h3 id="1-Hexo本身文件配置"><a href="#1-Hexo本身文件配置" class="headerlink" title="1. Hexo本身文件配置"></a>1. Hexo本身文件配置</h3><p><a name="caZdc"></a></p>
-<h4 id="1-1-Hexo基本配置"><a href="#1-1-Hexo基本配置" class="headerlink" title="1.1 Hexo基本配置"></a>1.1 Hexo基本配置</h4><p><a name="Xs1KB"></a></p>
-<h5 id="1-1-1-网址"><a href="#1-1-1-网址" class="headerlink" title="1.1.1 网址"></a>1.1.1 网址</h5><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/permalinks">永久链接</a>看这个可以学会改参数<br><a name="CSd5T"></a></p>
-<h5 id="1-1-2-Front-matter"><a href="#1-1-2-Front-matter" class="headerlink" title="1.1.2 Front-matter"></a>1.1.2 Front-matter</h5><p>Front-matter 是md文件最上方以 —分隔的区域，用于指定个别文件的变量，举例来说：</p>
-<pre><code>title: Hexo+Github博客搭建记录
-date: 2019-08-10 21:44:44
-</code></pre>
-<p>参数描述</p>
+                <p><a name="ZiI1U"></a></p>
+<h2 id="批量修改：选中修改行-：s-old-new-g"><a href="#批量修改：选中修改行-：s-old-new-g" class="headerlink" title="批量修改：选中修改行+：s/old/new/g"></a>批量修改：<code>选中修改行</code>+<code>：s/old/new/g</code></h2><p><a name="fnHzu"></a></p>
+<h2 id="回退到上一次修改的位置：-96-96-96-2"><a href="#回退到上一次修改的位置：-96-96-96-2" class="headerlink" title="回退到上一次修改的位置：```*2"></a>回退到上一次修改的位置：```*2</h2><p><a name="VwGCk"></a></p>
+<h2 id="在行后添加分号：A-；"><a href="#在行后添加分号：A-；" class="headerlink" title="在行后添加分号：A+；"></a>在行后添加分号：<code>A</code>+<code>；</code></h2><p><a name="wDXai"></a></p>
+<h2 id="插入头文件再返回：gg-O"><a href="#插入头文件再返回：gg-O" class="headerlink" title="插入头文件再返回：gg+O"></a>插入头文件再返回：<code>gg</code>+<code>O</code></h2><p><a name="p0Nnx"></a></p>
+<h2 id="修改if中的内容：ciw-co-quot-da-quot"><a href="#修改if中的内容：ciw-co-quot-da-quot" class="headerlink" title="修改if中的内容：ciw``co&quot;``da&quot;"></a>修改if中的内容：<code>ciw``co"``da"</code></h2><p><a name="q8Ghj"></a></p>
+<h2 id="复制全文：yae"><a href="#复制全文：yae" class="headerlink" title="复制全文：yae"></a>复制全文：<code>yae</code></h2><p><a name="I7GEU"></a></p>
+<h2 id="修改变量名：-选中所有，ciw修改，-重复操作的宏"><a href="#修改变量名：-选中所有，ciw修改，-重复操作的宏" class="headerlink" title="修改变量名：*选中所有，ciw修改，.重复操作的宏"></a>修改变量名：<code>*</code>选中所有，<code>ciw</code>修改，<code>.</code>重复操作的宏</h2><p><a name="euDlJ"></a></p>
+<h2 id="进入一次normal模式：-o"><a href="#进入一次normal模式：-o" class="headerlink" title="进入一次normal模式：^o"></a>进入一次normal模式：<code>^o</code></h2><p><a name="QvOLG"></a></p>
+<h2 id="匹配修改：：s-touch-toch-g"><a href="#匹配修改：：s-touch-toch-g" class="headerlink" title="匹配修改：：s/touch/toch/g"></a>匹配修改：<code>：s/touch/toch/g</code></h2><p><a name="Kxgxe"></a></p>
+<h2 id="匹配到行首："><a href="#匹配到行首：" class="headerlink" title="匹配到行首：^"></a>匹配到行首：^</h2><p><a name="dKVX5"></a></p>
+<h2 id="快速跳转：17gg"><a href="#快速跳转：17gg" class="headerlink" title="快速跳转：17gg"></a>快速跳转：17<code>gg</code></h2><p><a name="DkCrb"></a></p>
+<h2 id="缩进：-gt"><a href="#缩进：-gt" class="headerlink" title="缩进：>"></a>缩进：<code>&gt;</code></h2><p><a name="R7u5n"></a></p>
+<h2 id="一、vscode快捷键"><a href="#一、vscode快捷键" class="headerlink" title="一、vscode快捷键"></a>一、vscode快捷键</h2><p>^C+B:<br>^C+P<br>^C+Shift+P<br>^C+1<br>^C+,<br><a name="cbVVG"></a></p>
+<h2 id="二、术语"><a href="#二、术语" class="headerlink" title="二、术语"></a>二、术语</h2><hr>
 <ul>
-<li>layout布局</li>
-<li>title标题</li>
+<li>模式：n,i,v</li>
+<li>操作：d,c,y,f+作用范围</li>
+<li>范围：<br><a name="jUR5r"></a></li>
 </ul>
-<p>date建立日期updated更新日期comments开启文章的评论功能tags标签（不适用于分页）categories分类（不适用于分页）permalink覆盖文章网址<br><a name="fmv1m"></a></p>
-<h3 id="2-Theme"><a href="#2-Theme" class="headerlink" title="2.Theme"></a>2.Theme</h3><p><a name="PuHMZ"></a></p>
-<h5 id="2-1-切换主题"><a href="#2-1-切换主题" class="headerlink" title="2.1 切换主题"></a>2.1 切换主题</h5><blockquote>
-<p>首先需要明白什么是站点配置文件，什么是主题配置文件，站点配置文件就是根目录下的配置文件，主图配置文件就是主题的文件` </p>
-</blockquote>
-<p><a name="E7VcE"></a></p>
-<h5 id="2-2-tags页面"><a href="#2-2-tags页面" class="headerlink" title="2.2 tags页面"></a>2.2 tags页面</h5><p>在<code> git bath here</code>用以下命令创建tags</p>
-<pre><code>hexo new page "tags"
-</code></pre>
-<p>编辑刚刚创建的<code> hexo new page "tags"</code>页面<br> ···</p>
-<pre><code>啊啊啊
-</code></pre>
-
+<h2 id="三、入门"><a href="#三、入门" class="headerlink" title="三、入门"></a>三、入门</h2><ul>
+<li>标准模式：<code>：</code>加一些东西，可以执行命令</li>
+<li>插入模式：<code>i</code>进行插入模式，也就是编辑模式，按<code>ESC</code>退出<br><a name="occjt"></a></li>
+</ul>
+<h3 id="执行命令：：conmand"><a href="#执行命令：：conmand" class="headerlink" title="执行命令：：conmand"></a>执行命令：<code>：conmand</code></h3><p><a name="DI7Vm"></a></p>
+<h3 id="退出Vim-q-ZZ"><a href="#退出Vim-q-ZZ" class="headerlink" title="退出Vim::q/ZZ"></a>退出Vim:<code>:q/ZZ</code></h3><ul>
+<li><code>:q</code>:退出，不做任何改动</li>
+<li><code>:q!</code>：退出，丢弃改动</li>
+<li><code>：wq</code>：保存并退出</li>
+<li><code>ZZ</code>：等于上面的保存并退出<br><a name="ieBYu"></a></li>
+</ul>
+<h3 id="保存文件：：w"><a href="#保存文件：：w" class="headerlink" title="保存文件：：w"></a>保存文件：<code>：w</code></h3><p><code>:w</code>：保存<br><code>w&lt;filename&gt;</code>：保存到新文件<br><a name="MoOgX"></a></p>
+<h3 id="M-基本移动：h-j-k-l"><a href="#M-基本移动：h-j-k-l" class="headerlink" title="[M]基本移动：h,j,k,l"></a>[M]基本移动：<code>h,j,k,l</code></h3><p>分别对应<code>左下上右</code><br><a name="biVD1"></a></p>
+<h3 id="M-前往第一行-x2F-最后一行：gg-G"><a href="#M-前往第一行-x2F-最后一行：gg-G" class="headerlink" title="[M]前往第一行/最后一行：gg``G"></a>[M]前往第一行/最后一行：<code>gg``G</code></h3><p><code>gg</code>：前往第一行<br><code>G</code>：前往最后一行<br><a name="sj3vQ"></a></p>
+<h3 id="M-前往第n行：nG-：n"><a href="#M-前往第n行：nG-：n" class="headerlink" title="[M]前往第n行：nG``：n"></a>[M]前往第n行：<code>nG``：n</code></h3><p>不多解释了，打打就知道<br><a name="IdGn8"></a></p>
+<h3 id="M-移动一个单词：w-e"><a href="#M-移动一个单词：w-e" class="headerlink" title="[M]移动一个单词：w``e"></a>[M]移动一个单词：<code>w``e</code></h3><p><code>w</code>：移动到下一个单词的首字符<br><code>e</code>：移动到这个单词的味字符<br><a name="yXqxz"></a></p>
+<h3 id="M-移动到上个单词：b"><a href="#M-移动到上个单词：b" class="headerlink" title="[M]移动到上个单词：b"></a>[M]移动到上个单词：<code>b</code></h3><p><code>b</code>：向前移动<br><code>nb</code>：向前移动n个<br><a name="KGKA1"></a></p>
+<h3 id="M-移动到上个单词的末尾：ge"><a href="#M-移动到上个单词的末尾：ge" class="headerlink" title="[M]移动到上个单词的末尾：ge"></a>[M]移动到上个单词的末尾：<code>ge</code></h3><p><code>ge</code>:移动到上个单词的末尾<br><a name="BUeIJ"></a></p>
+<h3 id="M-移动到这一行的首尾：-0"><a href="#M-移动到这一行的首尾：-0" class="headerlink" title="[M]移动到这一行的首尾：$``0``_``^"></a>[M]移动到这一行的首尾：<code>$``0``_``^</code></h3><p><code>$</code>：尾<br><code>0</code>：第0列<br><code>_``^</code>：非空0列<br><a name="DaS4I"></a></p>
+<h3 id="M-b-f移动一页，-y-e移动一行视线"><a href="#M-b-f移动一页，-y-e移动一行视线" class="headerlink" title="[M]^b,^f移动一页，^y,^e移动一行视线"></a>[M]^b,^f移动一页，^y,^e移动一行视线</h3><p><a name="JOVp3"></a></p>
+<h3 id="E-删除字符：x-X"><a href="#E-删除字符：x-X" class="headerlink" title="[E]删除字符：x``X"></a>[E]删除字符：<code>x``X</code></h3><p><code>x</code>：删除当前字符<br><code>X</code>：删除上一个<br><a name="BxOLm"></a></p>
+<h3 id="E-删除单词：dw"><a href="#E-删除单词：dw" class="headerlink" title="[E]删除单词：dw"></a>[E]删除单词：<code>dw</code></h3><p><code>dw</code>：<br><code>dW</code>：<br><a name="WfmIn"></a></p>
+<h3 id="E-删除当前行：dd"><a href="#E-删除当前行：dd" class="headerlink" title="[E]删除当前行：dd"></a>[E]删除当前行：<code>dd</code></h3><p><a name="tfHmT"></a></p>
+<h3 id="E-插入模式：i-a"><a href="#E-插入模式：i-a" class="headerlink" title="[E]插入模式：i``a"></a>[E]插入模式：<code>i``a</code></h3><p><code>i</code>：在之前插入<br><code>a</code>：在之后插入<br><a name="XlrZq"></a></p>
+<h3 id="E-在行首或行尾插入：I-A"><a href="#E-在行首或行尾插入：I-A" class="headerlink" title="[E]在行首或行尾插入：I``A"></a>[E]在行首或行尾插入：<code>I``A</code></h3><p><a name="vhvoo"></a></p>
+<h3 id="E-在当前行上或下插入一行：o-O"><a href="#E-在当前行上或下插入一行：o-O" class="headerlink" title="[E]在当前行上或下插入一行：o``O"></a>[E]在当前行上或下插入一行：<code>o``O</code></h3><p><a name="hK5CE"></a></p>
+<h3 id="E-改变大小写："><a href="#E-改变大小写：" class="headerlink" title="[E]改变大小写：~"></a>[E]改变大小写：<code>~</code></h3><p><a name="OTAns"></a></p>
+<h3 id="F-移动到指定字符：f-lt-target-gt"><a href="#F-移动到指定字符：f-lt-target-gt" class="headerlink" title="[F]移动到指定字符：f<target>"></a>[F]移动到指定字符：<code>f&lt;target&gt;</code></h3><p><a name="ugljW"></a></p>
+<h3 id="E-撤销、重做：u-C-r"><a href="#E-撤销、重做：u-C-r" class="headerlink" title="[E]撤销、重做：u``^C+r"></a>[E]撤销、重做：<code>u``^C+r</code></h3><p><code>u</code>：撤销<br><code>^C+r</code>：重做<br><a name="UQVdV"></a></p>
+<h3 id="E-全局替換：gg-s-x2F-torch-x2F-toch-x2F-g"><a href="#E-全局替換：gg-s-x2F-torch-x2F-toch-x2F-g" class="headerlink" title="[E]全局替換：gg,:%s/torch/toch/g"></a>[E]全局替換：gg,:%s/torch/toch/g</h3><p><a name="vdw6P"></a></p>
+<h3 id="E-ciw：在單詞内部改；di-去掉括号里的内容；da-：去掉包含括号的"><a href="#E-ciw：在單詞内部改；di-去掉括号里的内容；da-：去掉包含括号的" class="headerlink" title="[E]ciw：在單詞内部改；di(:去掉括号里的内容；da(：去掉包含括号的"></a>[E]ciw：在單詞内部改；di(:去掉括号里的内容；da(：去掉包含括号的</h3><p><a name="GrnuF"></a></p>
+<h2 id="四、vim一些模式"><a href="#四、vim一些模式" class="headerlink" title="四、vim一些模式"></a>四、vim一些模式</h2><p><a name="yl15h"></a></p>
+<h3 id="重复n次操作：n-lt-action-gt"><a href="#重复n次操作：n-lt-action-gt" class="headerlink" title="重复n次操作：n<action>"></a>重复n次操作：<code>n&lt;action&gt;</code></h3><p>Vim 中几乎所有操作都可以通过一个 n 前缀来重复 n 次<br><a name="sEevu"></a></p>
+<h3 id="操作任意范围："><a href="#操作任意范围：" class="headerlink" title="操作任意范围： "></a>操作任意范围：<code> </code></h3><p>举例<br><a name="y15rE"></a></p>
+<h3 id="两个字母重复：dd-cc-yy-guu"><a href="#两个字母重复：dd-cc-yy-guu" class="headerlink" title="两个字母重复：dd``cc``yy``guu"></a>两个字母重复：<code>dd``cc``yy``guu</code></h3><p><code>dd</code>：删除整行<br><code>cc</code>：删除整行，编辑模式<br><code>yy</code>：复制整行<br><code>guu</code>：整行小写<br><code>gUU</code>：整行大写<br><a name="zPwau"></a></p>
+<h3 id="重复上次操作："><a href="#重复上次操作：" class="headerlink" title="重复上次操作：.``,``;"></a>重复上次操作：<code>.``,``;</code></h3><p><code>.</code>：比如<code>A123&lt;ESC&gt;</code>就可以重复操作<br><code>,``;</code>：重复查找操作<br><a name="S2Sru"></a></p>
+<h2 id="五、进阶"><a href="#五、进阶" class="headerlink" title="五、进阶"></a>五、进阶</h2><p><a name="BOBew"></a></p>
+<h3 id="E-替换一个字符：r"><a href="#E-替换一个字符：r" class="headerlink" title="[E]:替换一个字符：r"></a>[E]:替换一个字符：<code>r</code></h3><p><code>r</code>：换掉一个字符<br><a name="xkxB3"></a></p>
+<h3 id="E-替换连续多个字符：R"><a href="#E-替换连续多个字符：R" class="headerlink" title="[E]替换连续多个字符：R"></a>[E]替换连续多个字符：<code>R</code></h3><p><code>R</code>：按住R就相当于进入了替代模式<br><a name="eZG8Q"></a></p>
+<h3 id="E-更改一个范围的内容：c"><a href="#E-更改一个范围的内容：c" class="headerlink" title="[E]更改一个范围的内容：c"></a>[E]更改一个范围的内容：<code>c</code></h3><p><a name="zctMO"></a></p>
+<h3 id="E-删除一个字符，并进入编辑模式：s"><a href="#E-删除一个字符，并进入编辑模式：s" class="headerlink" title="[E]删除一个字符，并进入编辑模式：s"></a>[E]删除一个字符，并进入编辑模式：<code>s</code></h3><p><a name="Eecqc"></a></p>
+<h3 id="E-删除整行，并进入编辑模式：S-cc"><a href="#E-删除整行，并进入编辑模式：S-cc" class="headerlink" title="[E]删除整行，并进入编辑模式：S``cc"></a>[E]删除整行，并进入编辑模式：<code>S``cc</code></h3><p><a name="UhGgk"></a></p>
+<h3 id="E-从当前位置开始，删除整行右侧：D"><a href="#E-从当前位置开始，删除整行右侧：D" class="headerlink" title="[E]从当前位置开始，删除整行右侧：D"></a>[E]从当前位置开始，删除整行右侧：<code>D</code></h3><p><a name="mTt9n"></a></p>
+<h3 id="E-从当前位置删除整行，并进入编辑模式：C"><a href="#E-从当前位置删除整行，并进入编辑模式：C" class="headerlink" title="[E]从当前位置删除整行，并进入编辑模式：C"></a>[E]从当前位置删除整行，并进入编辑模式：<code>C</code></h3><p><a name="vQ0qm"></a></p>
+<h3 id="V-可视模式下，选择内容：v-V-C-v"><a href="#V-可视模式下，选择内容：v-V-C-v" class="headerlink" title="[V]可视模式下，选择内容：v``V``^C+v"></a>[V]可视模式下，选择内容：<code>v``V``^C+v</code></h3><p><code>v</code>：从当前选择<br><code>V</code>：选择行<br><code>^C+V</code>：选择块<br>使用贴士：</p>
+<ul>
+<li><code>V</code>选择整行，<code>j</code>进行向下移动，<code>y</code>复制，<code>p</code>粘贴<br><a name="XPAlH"></a></li>
+</ul>
+<h3 id="E-复制下一个单词：yw"><a href="#E-复制下一个单词：yw" class="headerlink" title="[E]复制下一个单词：yw"></a>[E]复制下一个单词：<code>yw</code></h3><p><code>yw</code>复制下一个单词，<code>p</code>粘贴<br><code>y``c``d</code>都可以跟作用范围<br><code>y$</code>：复制到最后一个<br><code>yh</code>：复制前面一个字符<br><code>yy</code>：复制一整行<br><code>dd</code>：删除一整行<br><a name="ghFYH"></a></p>
+<h3 id="E-复制接下来几行：yy-2yy"><a href="#E-复制接下来几行：yy-2yy" class="headerlink" title="[E]复制接下来几行：yy``2yy"></a>[E]复制接下来几行：<code>yy``2yy</code></h3><p><a name="wSVWT"></a></p>
+<h3 id="E-粘贴到上一行、下一行：p-P"><a href="#E-粘贴到上一行、下一行：p-P" class="headerlink" title="[E]粘贴到上一行、下一行：p``P"></a>[E]粘贴到上一行、下一行：<code>p``P</code></h3><p><code>dd</code>+<code>p</code>：删除，加入到缓冲区，put放置<br><a name="ApR8p"></a></p>
+<h3 id="当前行置顶，zt-zz-zb"><a href="#当前行置顶，zt-zz-zb" class="headerlink" title="当前行置顶，zt``zz``zb"></a>当前行置顶，<code>zt``zz``zb</code></h3><p><a name="iYG9p"></a></p>
+<h3 id="缩进：-lt-gt"><a href="#缩进：-lt-gt" class="headerlink" title="缩进：<``>"></a>缩进：<code>&lt;``&gt;</code></h3>
                 
             </div>
             <hr/>
@@ -465,7 +519,7 @@ date: 2019-08-10 21:44:44
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://550-ml.github.io/2023/06/26/hexo-github-bo-ke-da-jian/">http://550-ml.github.io/2023/06/26/hexo-github-bo-ke-da-jian/</a>
+                    <a href="http://550-ml.github.io/2024/07/03/gramma/vim/">http://550-ml.github.io/2024/07/03/gramma/vim/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -502,7 +556,15 @@ date: 2019-08-10 21:44:44
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E8%AF%AD%E6%B3%95/">
+                                    <span class="chip bg-color">语法</span>
+                                </a>
+                            
+                                <a href="/tags/Vim/">
+                                    <span class="chip bg-color">Vim</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -583,13 +645,13 @@ date: 2019-08-10 21:44:44
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/06/26/hello-world/">
+                <a href="/2024/07/03/gramma/markdown/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="MarkDown">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">MarkDown</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -600,19 +662,31 @@ date: 2019-08-10 21:44:44
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-26
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-07-03
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%B5%8B%E8%AF%95/" class="post-category">
-                                    测试
+                            <a href="/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-category">
+                                    基础语法
                                 </a>
                             
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%AF%AD%E6%B3%95/">
+                        <span class="chip bg-color">语法</span>
+                    </a>
+                    
+                    <a href="/tags/MarkDown/">
+                        <span class="chip bg-color">MarkDown</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -621,16 +695,16 @@ date: 2019-08-10 21:44:44
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/06/26/hexo-github-bo-ke-da-jian/">
+                <a href="/2023/06/26/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="模板">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">模板</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -655,7 +729,6 @@ date: 2019-08-10 21:44:44
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
