@@ -182,6 +182,55 @@ type commit <span class="token operator">=</span> struct<span class="token punct
       </tags>
   </entry>
   <entry>
+    <title>Shell第二节</title>
+    <url>/2024/07/04/gramma/shell-di-er-jie/</url>
+    <content><![CDATA[<h2 id="shell脚本"><a href="#shell脚本" class="headerlink" title="shell脚本"></a>shell脚本</h2><h3 id="一、变量赋值的方式"><a href="#一、变量赋值的方式" class="headerlink" title="一、变量赋值的方式"></a>一、变量赋值的方式</h3><p><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1683719775509-be219b23-d595-4bd7-ae4f-2b1be5a4625c.png#averageHue=%232e323a&amp;clientId=ub1622ae7-0a2c-4&amp;from=paste&amp;height=325&amp;id=u42f5e231&amp;originHeight=406&amp;originWidth=614&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=48346&amp;status=done&amp;style=none&amp;taskId=ud6ec8172-3d48-4257-8393-2c200e85df9&amp;title=&amp;width=491.2" alt="image.png"></p>
+<ul>
+<li>$表示后面的为变量</li>
+<li>“”可以为变量赋值</li>
+<li>‘’无法为变量赋值</li>
+</ul>
+<p>和其他大多数的编程语言一样，bash也支持if, case, while 和 for 这些控制流关键字。同样地， bash 也支持函数，它可以接受参数并基于参数进行操作。下面这个函数是一个例子，它会创建一个文件夹并使用cd进入该文件夹。</p>
+<pre class=" language-bash"><code class="language-bash">vim mcd.sh
+mcd <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">mkdir</span> -p <span class="token string">"<span class="token variable">$1</span>"</span>
+    <span class="token function">cd</span> <span class="token string">"<span class="token variable">$1</span>"</span>
+<span class="token punctuation">}</span>
+:q<span class="token operator">!</span>退出
+</code></pre>
+<p>$0 - 脚本名<br>$1 到 $9 - 脚本的参数。 $1 是第一个参数，依此类推。<br>$@ - 所有参数<br>$# - 参数个数<br>$? - 前一个命令的返回值<br>$$ - 当前脚本的进程识别码<br>!! - 完整的上一条命令，包括参数。常见应用：当你因为权限不足执行命令失败时，可以使用 sudo !!再尝试一次。<br>$_ - 上一条命令的最后一个参数。如果你正在使用的是交互式 shell，你可以通过按下 Esc 之后键入 . 来获取这个值。</p>
+]]></content>
+      <categories>
+        <category>基础语法</category>
+      </categories>
+      <tags>
+        <tag>语法</tag>
+        <tag>Shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tmux</title>
+    <url>/2024/07/04/gramma/tmux/</url>
+    <content><![CDATA[<p><a name="GaeOp"></a></p>
+<h3 id="一、会话操作："><a href="#一、会话操作：" class="headerlink" title="一、会话操作："></a>一、会话操作：</h3><p><strong>启动会话</strong>：<code>tmux new -s &lt;name&gt;</code><br><strong>查看会话</strong>：<code>tmux ls</code><br><strong>分离会话</strong>：<code>tmux detach</code><br><strong>恢复会话</strong>：<code>tmux attach -t &lt;name&gt;</code><br><strong>重命名</strong>：<code>tmux rename-session -t &lt;ole name&gt; &lt;new name&gt;</code><br><strong>关闭会话</strong>：<code>tmux kill-session -t &lt;name&gt;</code><br><strong>关闭所有会话</strong>：<code>tmux kill-server</code><br><a name="BBbjd"></a></p>
+<h3 id="二、快捷键"><a href="#二、快捷键" class="headerlink" title="二、快捷键"></a>二、快捷键</h3><p>前导键：<code>^b</code></p>
+<ul>
+<li><code>s</code>列出会话</li>
+<li><code>$</code>：重命名</li>
+<li><code>d</code>：断开</li>
+<li><code>^z</code>：挂起</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/png/34430616/1706683690097-81a187c2-29de-4b2c-91eb-dded6f74962a.png#averageHue=%23fdfcfa&amp;clientId=u04ac9345-4680-4&amp;from=paste&amp;height=478&amp;id=u4b52abbe&amp;originHeight=598&amp;originWidth=815&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=142070&amp;status=done&amp;style=none&amp;taskId=u23b74d58-0d2a-402f-95df-fbc3617acb0&amp;title=&amp;width=652" alt="image.png"></p>
+]]></content>
+      <categories>
+        <category>基础语法</category>
+      </categories>
+      <tags>
+        <tag>语法</tag>
+        <tag>Tmux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Shell</title>
     <url>/2024/07/04/gramma/shell/</url>
     <content><![CDATA[<p><a name="AiypF"></a></p>
@@ -236,55 +285,6 @@ d-----         2023/4/12     17:19                Windows
 <h4 id="Tail-n输出几行"><a href="#Tail-n输出几行" class="headerlink" title="Tail -n输出几行"></a>Tail -n输出几行</h4><pre class=" language-bash"><code class="language-bash">PS E:\MIT<span class="token operator">></span>  <span class="token function">cat</span> .\hello.txt -Tail 1
 hello2
 </code></pre>
-]]></content>
-      <categories>
-        <category>基础语法</category>
-      </categories>
-      <tags>
-        <tag>语法</tag>
-        <tag>Shell</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tmux</title>
-    <url>/2024/07/04/gramma/tmux/</url>
-    <content><![CDATA[<p><a name="GaeOp"></a></p>
-<h3 id="一、会话操作："><a href="#一、会话操作：" class="headerlink" title="一、会话操作："></a>一、会话操作：</h3><p><strong>启动会话</strong>：<code>tmux new -s &lt;name&gt;</code><br><strong>查看会话</strong>：<code>tmux ls</code><br><strong>分离会话</strong>：<code>tmux detach</code><br><strong>恢复会话</strong>：<code>tmux attach -t &lt;name&gt;</code><br><strong>重命名</strong>：<code>tmux rename-session -t &lt;ole name&gt; &lt;new name&gt;</code><br><strong>关闭会话</strong>：<code>tmux kill-session -t &lt;name&gt;</code><br><strong>关闭所有会话</strong>：<code>tmux kill-server</code><br><a name="BBbjd"></a></p>
-<h3 id="二、快捷键"><a href="#二、快捷键" class="headerlink" title="二、快捷键"></a>二、快捷键</h3><p>前导键：<code>^b</code></p>
-<ul>
-<li><code>s</code>列出会话</li>
-<li><code>$</code>：重命名</li>
-<li><code>d</code>：断开</li>
-<li><code>^z</code>：挂起</li>
-</ul>
-<p><img src="https://cdn.nlark.com/yuque/0/2024/png/34430616/1706683690097-81a187c2-29de-4b2c-91eb-dded6f74962a.png#averageHue=%23fdfcfa&amp;clientId=u04ac9345-4680-4&amp;from=paste&amp;height=478&amp;id=u4b52abbe&amp;originHeight=598&amp;originWidth=815&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=142070&amp;status=done&amp;style=none&amp;taskId=u23b74d58-0d2a-402f-95df-fbc3617acb0&amp;title=&amp;width=652" alt="image.png"></p>
-]]></content>
-      <categories>
-        <category>基础语法</category>
-      </categories>
-      <tags>
-        <tag>语法</tag>
-        <tag>Tmux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Shell第二节</title>
-    <url>/2024/07/04/gramma/shell-di-er-jie/</url>
-    <content><![CDATA[<h2 id="shell脚本"><a href="#shell脚本" class="headerlink" title="shell脚本"></a>shell脚本</h2><h3 id="一、变量赋值的方式"><a href="#一、变量赋值的方式" class="headerlink" title="一、变量赋值的方式"></a>一、变量赋值的方式</h3><p><img src="https://cdn.nlark.com/yuque/0/2023/png/34430616/1683719775509-be219b23-d595-4bd7-ae4f-2b1be5a4625c.png#averageHue=%232e323a&amp;clientId=ub1622ae7-0a2c-4&amp;from=paste&amp;height=325&amp;id=u42f5e231&amp;originHeight=406&amp;originWidth=614&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=48346&amp;status=done&amp;style=none&amp;taskId=ud6ec8172-3d48-4257-8393-2c200e85df9&amp;title=&amp;width=491.2" alt="image.png"></p>
-<ul>
-<li>$表示后面的为变量</li>
-<li>“”可以为变量赋值</li>
-<li>‘’无法为变量赋值</li>
-</ul>
-<p>和其他大多数的编程语言一样，bash也支持if, case, while 和 for 这些控制流关键字。同样地， bash 也支持函数，它可以接受参数并基于参数进行操作。下面这个函数是一个例子，它会创建一个文件夹并使用cd进入该文件夹。</p>
-<pre class=" language-bash"><code class="language-bash">vim mcd.sh
-mcd <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">mkdir</span> -p <span class="token string">"<span class="token variable">$1</span>"</span>
-    <span class="token function">cd</span> <span class="token string">"<span class="token variable">$1</span>"</span>
-<span class="token punctuation">}</span>
-:q<span class="token operator">!</span>退出
-</code></pre>
-<p>$0 - 脚本名<br>$1 到 $9 - 脚本的参数。 $1 是第一个参数，依此类推。<br>$@ - 所有参数<br>$# - 参数个数<br>$? - 前一个命令的返回值<br>$$ - 当前脚本的进程识别码<br>!! - 完整的上一条命令，包括参数。常见应用：当你因为权限不足执行命令失败时，可以使用 sudo !!再尝试一次。<br>$_ - 上一条命令的最后一个参数。如果你正在使用的是交互式 shell，你可以通过按下 Esc 之后键入 . 来获取这个值。</p>
 ]]></content>
       <categories>
         <category>基础语法</category>
