@@ -6,7 +6,7 @@
   <link href="http://550-ml.github.io/atom.xml" rel="self"/>
   
   <link href="http://550-ml.github.io/"/>
-  <updated>2024-07-26T08:18:17.541Z</updated>
+  <updated>2024-07-27T06:34:55.636Z</updated>
   <id>http://550-ml.github.io/</id>
   
   <author>
@@ -17,11 +17,45 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>算法-快速排序</title>
+    <title>算法-逆序对数量</title>
+    <link href="http://550-ml.github.io/2024/07/27/leetcode/base/02mergesort/02-ni-xu-dui/"/>
+    <id>http://550-ml.github.io/2024/07/27/leetcode/base/02mergesort/02-ni-xu-dui/</id>
+    <published>2024-07-27T06:31:39.000Z</published>
+    <updated>2024-07-27T06:34:55.636Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/pic/Leetcode/Base/02nixudui.png&quot; alt=&quot;题目&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;解题思路&quot;&gt;&lt;a href=&quot;#解题思路&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="基础算法" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="基础算法" scheme="http://550-ml.github.io/tags/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="排序" scheme="http://550-ml.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+    <category term="模板" scheme="http://550-ml.github.io/tags/%E6%A8%A1%E6%9D%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算法-归并排序</title>
     <link href="http://550-ml.github.io/2024/07/26/leetcode/base/02mergesort/01-gui-bing-pai-xu/"/>
     <id>http://550-ml.github.io/2024/07/26/leetcode/base/02mergesort/01-gui-bing-pai-xu/</id>
     <published>2024-07-26T06:31:39.000Z</published>
-    <updated>2024-07-26T08:18:17.541Z</updated>
+    <updated>2024-07-27T06:34:22.770Z</updated>
     
     
       
