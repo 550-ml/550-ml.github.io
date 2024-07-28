@@ -6,7 +6,7 @@
   <link href="http://550-ml.github.io/atom.xml" rel="self"/>
   
   <link href="http://550-ml.github.io/"/>
-  <updated>2024-07-27T06:34:55.636Z</updated>
+  <updated>2024-07-28T05:56:00.804Z</updated>
   <id>http://550-ml.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>算法-二分查找</title>
+    <link href="http://550-ml.github.io/2024/07/28/leetcode/base/03erfenchazhao/01-shu-de-fan-wei/"/>
+    <id>http://550-ml.github.io/2024/07/28/leetcode/base/03erfenchazhao/01-shu-de-fan-wei/</id>
+    <published>2024-07-28T06:31:39.000Z</published>
+    <updated>2024-07-28T05:56:00.804Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/pic/Leetcode/Base/03shudefanwei.png&quot; alt=&quot;题目&quot;&gt;&lt;br&gt;&lt;img src=&quot;/pic/Leetcode/Base/03shudefanwei01.png&quot; alt=&quot;解体公式&quot;&gt;&lt;br&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="基础算法" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="基础算法" scheme="http://550-ml.github.io/tags/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="排序" scheme="http://550-ml.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+    <category term="模板" scheme="http://550-ml.github.io/tags/%E6%A8%A1%E6%9D%BF/"/>
+    
+  </entry>
   
   <entry>
     <title>算法-逆序对数量</title>
