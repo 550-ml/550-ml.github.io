@@ -6,7 +6,7 @@
   <link href="http://550-ml.github.io/atom.xml" rel="self"/>
   
   <link href="http://550-ml.github.io/"/>
-  <updated>2024-07-28T05:56:00.804Z</updated>
+  <updated>2024-07-31T08:49:23.562Z</updated>
   <id>http://550-ml.github.io/</id>
   
   <author>
@@ -17,11 +17,45 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>算法-最长不重复子序列</title>
+    <link href="http://550-ml.github.io/2024/07/31/leetcode/base/06-shuang-zhi-zhen/01-zui-chang-bu-chong-fu-zi-xu-lie/"/>
+    <id>http://550-ml.github.io/2024/07/31/leetcode/base/06-shuang-zhi-zhen/01-zui-chang-bu-chong-fu-zi-xu-lie/</id>
+    <published>2024-07-31T06:31:39.000Z</published>
+    <updated>2024-07-31T08:49:23.562Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/pic/Leetcode/Base/06xixulie.png&quot; alt=&quot;题目&quot;&gt;&lt;br&gt;&lt;img src=&quot;/pic/Leetcode/Base/06example.png&quot; alt=&quot;example&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;解题思路&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="基础算法" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="基础算法" scheme="http://550-ml.github.io/tags/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="排序" scheme="http://550-ml.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+    <category term="模板" scheme="http://550-ml.github.io/tags/%E6%A8%A1%E6%9D%BF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>算法-二分查找</title>
     <link href="http://550-ml.github.io/2024/07/28/leetcode/base/03erfenchazhao/01-shu-de-fan-wei/"/>
     <id>http://550-ml.github.io/2024/07/28/leetcode/base/03erfenchazhao/01-shu-de-fan-wei/</id>
     <published>2024-07-28T06:31:39.000Z</published>
-    <updated>2024-07-28T05:56:00.804Z</updated>
+    <updated>2024-07-31T08:49:02.431Z</updated>
     
     
       
@@ -241,33 +275,6 @@
   </entry>
   
   <entry>
-    <title>Shell第二节</title>
-    <link href="http://550-ml.github.io/2024/07/04/gramma/shell-di-er-jie/"/>
-    <id>http://550-ml.github.io/2024/07/04/gramma/shell-di-er-jie/</id>
-    <published>2024-07-04T06:31:39.000Z</published>
-    <updated>2024-07-04T05:17:08.336Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;shell脚本&quot;&gt;&lt;a href=&quot;#shell脚本&quot; class=&quot;headerlink&quot; title=&quot;shell脚本&quot;&gt;&lt;/a&gt;shell脚本&lt;/h2&gt;&lt;h3 id=&quot;一、变量赋值的方式&quot;&gt;&lt;a href=&quot;#一、变量赋值的方式&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="基础语法" scheme="http://550-ml.github.io/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
-    
-    
-    <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
-    
-    <category term="Shell" scheme="http://550-ml.github.io/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Shell</title>
     <link href="http://550-ml.github.io/2024/07/04/gramma/shell/"/>
     <id>http://550-ml.github.io/2024/07/04/gramma/shell/</id>
@@ -320,6 +327,33 @@
     <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
     <category term="Tmux" scheme="http://550-ml.github.io/tags/Tmux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Shell第二节</title>
+    <link href="http://550-ml.github.io/2024/07/04/gramma/shell-di-er-jie/"/>
+    <id>http://550-ml.github.io/2024/07/04/gramma/shell-di-er-jie/</id>
+    <published>2024-07-04T06:31:39.000Z</published>
+    <updated>2024-07-04T05:17:08.336Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;shell脚本&quot;&gt;&lt;a href=&quot;#shell脚本&quot; class=&quot;headerlink&quot; title=&quot;shell脚本&quot;&gt;&lt;/a&gt;shell脚本&lt;/h2&gt;&lt;h3 id=&quot;一、变量赋值的方式&quot;&gt;&lt;a href=&quot;#一、变量赋值的方式&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="基础语法" scheme="http://550-ml.github.io/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+    
+    <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+    <category term="Shell" scheme="http://550-ml.github.io/tags/Shell/"/>
     
   </entry>
   
