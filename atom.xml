@@ -6,7 +6,7 @@
   <link href="http://550-ml.github.io/atom.xml" rel="self"/>
   
   <link href="http://550-ml.github.io/"/>
-  <updated>2024-08-07T09:50:11.932Z</updated>
+  <updated>2024-08-10T10:20:43.194Z</updated>
   <id>http://550-ml.github.io/</id>
   
   <author>
@@ -15,6 +15,97 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://550-ml.github.io/2024/08/10/leetcode/03search/01-er-cha-shu/04-er-cha-shu-zui-jin-gong-gong-zu-xian/"/>
+    <id>http://550-ml.github.io/2024/08/10/leetcode/03search/01-er-cha-shu/04-er-cha-shu-zui-jin-gong-gong-zu-xian/</id>
+    <published>2024-08-10T10:21:12.752Z</published>
+    <updated>2024-08-10T10:20:43.194Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;最近公共祖先&quot;&gt;&lt;a href=&quot;#最近公共祖先&quot; class=&quot;headerlink&quot; title=&quot;最近公共祖先&quot;&gt;&lt;/a&gt;最近公共祖先&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>算法-前序中序</title>
+    <link href="http://550-ml.github.io/2024/08/09/leetcode/03search/01-er-cha-shu/03-yan-zheng-er-cha-sou-suo-shu/"/>
+    <id>http://550-ml.github.io/2024/08/09/leetcode/03search/01-er-cha-shu/03-yan-zheng-er-cha-sou-suo-shu/</id>
+    <published>2024-08-09T06:31:39.000Z</published>
+    <updated>2024-08-09T10:20:20.996Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;验证二叉搜索树&quot;&gt;&lt;a href=&quot;#验证二叉搜索树&quot; class=&quot;headerlink&quot; title=&quot;验证二叉搜索树&quot;&gt;&lt;/a&gt;验证二叉搜索树&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="搜索和图论" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="二叉树" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="搜索和图论" scheme="http://550-ml.github.io/tags/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="二叉树" scheme="http://550-ml.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+    <category term="递归" scheme="http://550-ml.github.io/tags/%E9%80%92%E5%BD%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算法-灵活递归</title>
+    <link href="http://550-ml.github.io/2024/08/08/leetcode/03search/01-er-cha-shu/02-ling-huo-di-gui/"/>
+    <id>http://550-ml.github.io/2024/08/08/leetcode/03search/01-er-cha-shu/02-ling-huo-di-gui/</id>
+    <published>2024-08-08T06:31:39.000Z</published>
+    <updated>2024-08-08T10:38:29.441Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;灵活使用递归&quot;&gt;&lt;a href=&quot;#灵活使用递归&quot; class=&quot;headerlink&quot; title=&quot;灵活使用递归&quot;&gt;&lt;/a&gt;灵活使用递归&lt;/h1&gt;&lt;h2 id=&quot;一、第一题&quot;&gt;&lt;a href=&quot;#一、第一题&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="搜索和图论" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="二叉树" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="搜索和图论" scheme="http://550-ml.github.io/tags/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="二叉树" scheme="http://550-ml.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+    <category term="递归" scheme="http://550-ml.github.io/tags/%E9%80%92%E5%BD%92/"/>
+    
+  </entry>
   
   <entry>
     <title>算法-二叉树和递归</title>
@@ -546,81 +637,6 @@
     <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
     <category term="MarkDown" scheme="http://550-ml.github.io/tags/MarkDown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vim</title>
-    <link href="http://550-ml.github.io/2024/07/03/gramma/vim/"/>
-    <id>http://550-ml.github.io/2024/07/03/gramma/vim/</id>
-    <published>2024-07-03T06:31:39.000Z</published>
-    <updated>2024-07-03T12:20:44.256Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a name=&quot;ZiI1U&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;批量修改：选中修改行-：s-old-new-g&quot;&gt;&lt;a href=&quot;#批量修改：选中修改行-：s-old-new-g&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="基础语法" scheme="http://550-ml.github.io/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
-    
-    
-    <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
-    
-    <category term="Vim" scheme="http://550-ml.github.io/tags/Vim/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://550-ml.github.io/2023/06/26/hello-world/"/>
-    <id>http://550-ml.github.io/2023/06/26/hello-world/</id>
-    <published>2023-06-26T06:31:39.000Z</published>
-    <updated>2024-07-03T12:22:34.820Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="测试" scheme="http://550-ml.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>模板</title>
-    <link href="http://550-ml.github.io/2023/06/26/hexo-github-bo-ke-da-jian/"/>
-    <id>http://550-ml.github.io/2023/06/26/hexo-github-bo-ke-da-jian/</id>
-    <published>2023-06-26T06:31:39.000Z</published>
-    <updated>2024-07-24T02:14:00.258Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a name=&quot;uNA7B&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h2&gt;&lt;p&gt;略，等我想写再写吧&lt;br&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="测试" scheme="http://550-ml.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
-    
     
   </entry>
   
