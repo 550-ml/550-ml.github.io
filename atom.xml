@@ -6,7 +6,7 @@
   <link href="http://550-ml.github.io/atom.xml" rel="self"/>
   
   <link href="http://550-ml.github.io/"/>
-  <updated>2024-08-10T10:20:43.194Z</updated>
+  <updated>2024-08-12T09:54:59.532Z</updated>
   <id>http://550-ml.github.io/</id>
   
   <author>
@@ -17,11 +17,77 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://550-ml.github.io/2024/08/10/leetcode/03search/01-er-cha-shu/04-er-cha-shu-zui-jin-gong-gong-zu-xian/"/>
-    <id>http://550-ml.github.io/2024/08/10/leetcode/03search/01-er-cha-shu/04-er-cha-shu-zui-jin-gong-gong-zu-xian/</id>
-    <published>2024-08-10T10:21:12.752Z</published>
-    <updated>2024-08-10T10:20:43.194Z</updated>
+    <title>算法-树的BFS</title>
+    <link href="http://550-ml.github.io/2024/08/12/leetcode/03search/02bfs-dfs/01-shu-de-bfs/"/>
+    <id>http://550-ml.github.io/2024/08/12/leetcode/03search/02bfs-dfs/01-shu-de-bfs/</id>
+    <published>2024-08-12T06:31:39.000Z</published>
+    <updated>2024-08-12T09:54:59.532Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;树的BFS&quot;&gt;&lt;a href=&quot;#树的BFS&quot; class=&quot;headerlink&quot; title=&quot;树的BFS&quot;&gt;&lt;/a&gt;树的BFS&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="搜索和图论" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="BFS" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/BFS/"/>
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="搜索和图论" scheme="http://550-ml.github.io/tags/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="BFS" scheme="http://550-ml.github.io/tags/BFS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算法-图的BFS</title>
+    <link href="http://550-ml.github.io/2024/08/12/leetcode/03search/02bfs-dfs/02-tu-de-bfs/"/>
+    <id>http://550-ml.github.io/2024/08/12/leetcode/03search/02bfs-dfs/02-tu-de-bfs/</id>
+    <published>2024-08-12T06:31:39.000Z</published>
+    <updated>2024-08-12T09:55:17.321Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;图的BFS&quot;&gt;&lt;a href=&quot;#图的BFS&quot; class=&quot;headerlink&quot; title=&quot;图的BFS&quot;&gt;&lt;/a&gt;图的BFS&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="搜索和图论" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="BFS" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/BFS/"/>
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="搜索和图论" scheme="http://550-ml.github.io/tags/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="BFS" scheme="http://550-ml.github.io/tags/BFS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算法-二叉树公共祖先</title>
+    <link href="http://550-ml.github.io/2024/08/09/leetcode/03search/01-er-cha-shu/04-er-cha-shu-zui-jin-gong-gong-zu-xian/"/>
+    <id>http://550-ml.github.io/2024/08/09/leetcode/03search/01-er-cha-shu/04-er-cha-shu-zui-jin-gong-gong-zu-xian/</id>
+    <published>2024-08-09T06:31:39.000Z</published>
+    <updated>2024-08-11T07:56:41.324Z</updated>
     
     
       
@@ -34,6 +100,20 @@
     
     
     
+    <category term="算法" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="搜索和图论" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="二叉树" scheme="http://550-ml.github.io/categories/%E7%AE%97%E6%B3%95/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+    
+    <category term="算法" scheme="http://550-ml.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="搜索和图论" scheme="http://550-ml.github.io/tags/%E6%90%9C%E7%B4%A2%E5%92%8C%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="二叉树" scheme="http://550-ml.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+    <category term="递归" scheme="http://550-ml.github.io/tags/%E9%80%92%E5%BD%92/"/>
     
   </entry>
   
@@ -42,7 +122,7 @@
     <link href="http://550-ml.github.io/2024/08/09/leetcode/03search/01-er-cha-shu/03-yan-zheng-er-cha-sou-suo-shu/"/>
     <id>http://550-ml.github.io/2024/08/09/leetcode/03search/01-er-cha-shu/03-yan-zheng-er-cha-sou-suo-shu/</id>
     <published>2024-08-09T06:31:39.000Z</published>
-    <updated>2024-08-09T10:20:20.996Z</updated>
+    <updated>2024-08-11T07:56:44.539Z</updated>
     
     
       
@@ -77,7 +157,7 @@
     <link href="http://550-ml.github.io/2024/08/08/leetcode/03search/01-er-cha-shu/02-ling-huo-di-gui/"/>
     <id>http://550-ml.github.io/2024/08/08/leetcode/03search/01-er-cha-shu/02-ling-huo-di-gui/</id>
     <published>2024-08-08T06:31:39.000Z</published>
-    <updated>2024-08-08T10:38:29.441Z</updated>
+    <updated>2024-08-11T07:56:53.552Z</updated>
     
     
       
@@ -112,7 +192,7 @@
     <link href="http://550-ml.github.io/2024/08/07/leetcode/03search/01-er-cha-shu/01-er-cha-shu-di-gui/"/>
     <id>http://550-ml.github.io/2024/08/07/leetcode/03search/01-er-cha-shu/01-er-cha-shu-di-gui/</id>
     <published>2024-08-07T06:31:39.000Z</published>
-    <updated>2024-08-07T09:50:11.932Z</updated>
+    <updated>2024-08-11T07:56:57.061Z</updated>
     
     
       
@@ -530,34 +610,6 @@
   </entry>
   
   <entry>
-    <title>Shell</title>
-    <link href="http://550-ml.github.io/2024/07/04/gramma/shell/"/>
-    <id>http://550-ml.github.io/2024/07/04/gramma/shell/</id>
-    <published>2024-07-04T06:31:39.000Z</published>
-    <updated>2024-07-04T05:16:45.788Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a name=&quot;AiypF&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;安装shell&quot;&gt;&lt;a href=&quot;#安装shell&quot; class=&quot;headerlink&quot; title=&quot;安装shell&quot;&gt;&lt;/a&gt;安装shell&lt;/h3&gt;&lt;p&gt;windows</summary>
-        
-      
-    
-    
-    
-    <category term="基础语法" scheme="http://550-ml.github.io/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
-    
-    
-    <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
-    
-    <category term="Shell" scheme="http://550-ml.github.io/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Tmux</title>
     <link href="http://550-ml.github.io/2024/07/04/gramma/tmux/"/>
     <id>http://550-ml.github.io/2024/07/04/gramma/tmux/</id>
@@ -586,46 +638,19 @@
   </entry>
   
   <entry>
-    <title>Paddle</title>
-    <link href="http://550-ml.github.io/2024/07/04/gramma/paddle/"/>
-    <id>http://550-ml.github.io/2024/07/04/gramma/paddle/</id>
+    <title>Shell</title>
+    <link href="http://550-ml.github.io/2024/07/04/gramma/shell/"/>
+    <id>http://550-ml.github.io/2024/07/04/gramma/shell/</id>
     <published>2024-07-04T06:31:39.000Z</published>
-    <updated>2024-07-04T05:15:40.291Z</updated>
+    <updated>2024-07-04T05:16:45.788Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="基础语法" scheme="http://550-ml.github.io/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
-    
-    
-    <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
-    
-    <category term="Paddle" scheme="http://550-ml.github.io/tags/Paddle/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MarkDown</title>
-    <link href="http://550-ml.github.io/2024/07/03/gramma/markdown/"/>
-    <id>http://550-ml.github.io/2024/07/03/gramma/markdown/</id>
-    <published>2024-07-03T06:31:39.000Z</published>
-    <updated>2024-07-03T12:21:49.565Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a name=&quot;ixfyf&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;0-写markdown要用半角标点&quot;&gt;&lt;a href=&quot;#0-写markdown要用半角标点&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;p&gt;&lt;a name=&quot;AiypF&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;安装shell&quot;&gt;&lt;a href=&quot;#安装shell&quot; class=&quot;headerlink&quot; title=&quot;安装shell&quot;&gt;&lt;/a&gt;安装shell&lt;/h3&gt;&lt;p&gt;windows</summary>
         
       
     
@@ -636,7 +661,7 @@
     
     <category term="语法" scheme="http://550-ml.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
-    <category term="MarkDown" scheme="http://550-ml.github.io/tags/MarkDown/"/>
+    <category term="Shell" scheme="http://550-ml.github.io/tags/Shell/"/>
     
   </entry>
   

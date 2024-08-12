@@ -48,9 +48,9 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="WT de Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="WT de Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -378,6 +378,151 @@
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2024/07/26/leetcode/base/02mergesort/01-gui-bing-pai-xu/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="算法-归并排序">
+                            
+                            <span class="card-title">算法-归并排序</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+解题思路
+分治的思想，两个函数，一个是分，一个是治
+对于分，就是一直分到数组长度为1，然后治
+治就是排序left和right
+
+代码
+
+n = int(input())
+num_list = list(map(int, input().s
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-07-26
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                                
+                                <a href="/categories/%E7%AE%97%E6%B3%95/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/" class="post-category">
+                                    基础算法
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E7%AE%97%E6%B3%95/">
+                            <span class="chip bg-color">算法</span>
+                        </a>
+                        
+                        <a href="/tags/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/">
+                            <span class="chip bg-color">基础算法</span>
+                        </a>
+                        
+                        <a href="/tags/%E6%8E%92%E5%BA%8F/">
+                            <span class="chip bg-color">排序</span>
+                        </a>
+                        
+                        <a href="/tags/%E6%A8%A1%E6%9D%BF/">
+                            <span class="chip bg-color">模板</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2024/07/25/leetcode/base/01quicksort/02k-ge-shu/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="算法-快速排序-第k个数">
+                            
+                            <span class="card-title">算法-快速排序-第k个数</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+解题思路还是快速排序主要是加一个判断j&lt;k-1
+
+如果相等：相当于基准元素就是第k个。因为每次便利，我能确保的就是中间的那个是正确位置
+如果小于：说明中间坐标比要找的小，所以是(j+1，r)
+
+代码实现(n, k) = map(in
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-07-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                                
+                                <a href="/categories/%E7%AE%97%E6%B3%95/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/" class="post-category">
+                                    基础算法
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E7%AE%97%E6%B3%95/">
+                            <span class="chip bg-color">算法</span>
+                        </a>
+                        
+                        <a href="/tags/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/">
+                            <span class="chip bg-color">基础算法</span>
+                        </a>
+                        
+                        <a href="/tags/%E6%8E%92%E5%BA%8F/">
+                            <span class="chip bg-color">排序</span>
+                        </a>
+                        
+                        <a href="/tags/%E6%A8%A1%E6%9D%BF/">
+                            <span class="chip bg-color">模板</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2024/07/24/leetcode/base/01quicksort/01-kuai-su-pai-xu/">
                         <div class="card-image">
                             
@@ -634,119 +779,6 @@ $表示后面的为变量
             </div>
               <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2024/07/04/gramma/shell/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Shell">
-                            
-                            <span class="card-title">Shell</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-安装shellwindows 的powershell并不好，在这里要安装相应的环境，搜索ubuntu+windows终端进行安装之后在按照语法学习。
-使用shell
-torch 创建文件
-torch+sleep.c创建文件
-
-mv 重命名
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-07-04
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-category">
-                                    基础语法
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                            <span class="chip bg-color">语法</span>
-                        </a>
-                        
-                        <a href="/tags/Shell/">
-                            <span class="chip bg-color">Shell</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2024/07/04/gramma/tmux/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Tmux">
-                            
-                            <span class="card-title">Tmux</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-一、会话操作：启动会话：tmux new -s &lt;name&gt;查看会话：tmux ls分离会话：tmux detach恢复会话：tmux attach -t &lt;name&gt;重命名：tmux rename-session
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-07-04
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-category">
-                                    基础语法
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E8%AF%AD%E6%B3%95/">
-                            <span class="chip bg-color">语法</span>
-                        </a>
-                        
-                        <a href="/tags/Tmux/">
-                            <span class="chip bg-color">Tmux</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
         </div>
     </article>
 
@@ -764,7 +796,7 @@ mv 重命名
             
         </div>
         <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">3 / 4</div>
+            <div class="center-align b-text-gray">3 / 5</div>
         </div>
         <div class="col s6 m4 l4">
             
@@ -851,7 +883,7 @@ mv 重命名
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">10.1k</span>
+                        class="white-color">10.5k</span>
             
             
             
